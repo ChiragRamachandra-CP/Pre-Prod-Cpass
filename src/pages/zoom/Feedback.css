@@ -1,0 +1,217 @@
+:root {
+	--Color: green;
+}
+i.hoveredStars, i.clickedStars {
+	background-color: var(--Color);
+}
+
+.container.feedback {
+    margin-top: 120px!important;
+}
+.rating form { margin-top: 10px; }
+.rating form > * { display: inline-block; }
+.rating form input[type="submit"] {
+    background-color: #c83232;
+    color: black;
+    padding: 10px;
+    border-radius: 3px;
+    transition: 0.1s ease-in-out;
+    width: 100%;
+    border: none;
+}
+.rating form input[type="submit"]:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.rating form input[type="submit"]:active {
+	transform: translate(0, 1px);
+}
+form > i:hover {
+	box-shadow: 1px 1.5px 3px #555;
+	transform: translate(0, -3px);
+}
+form > i:active {
+	transform: translate(0, 1px);
+}
+
+.mainfeed {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+}
+.form-sec {
+    background: #fff;
+    padding: 30px;
+    text-align: left!important;
+    margin-bottom: 45px!important;
+}
+.stars {
+    width: 100%;
+}
+.review label {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.alert-success {
+    color: #000000!important;
+    background-color: #e6a851!important;
+    text-align: center!important;
+}
+
+textarea.review_area {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 25px 0px;
+}
+.review-title {
+    width: 100%;
+}
+.review-title label {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+input.title_review {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 25px 0px;
+}
+.feedback {
+    margin: 70px 0px 0px 0px!important;
+}
+.row.rating {
+    padding: 0px 20px;
+}
+#ratingVal {
+    color: #000000;
+    font-weight: 600;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.stars i {
+    padding: 10px 15px;
+    color: #000000;
+}
+.stars {
+    margin-bottom: 25px;
+}
+.submit_rating {
+    width: 100%;
+    text-align: right;
+}
+h1.new-class-heading a {
+    color: #dabe76;
+}
+
+
+
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+.rating { 
+  border: none;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #000000; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #c83232;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #c83232;  } 
+
+.site-wrap.page-feedback {
+    background: #000000;
+    margin-top: 25%;
+}
+
+.headsecdiff {
+    font-size: 1.6rem!important;
+    font-weight: 600;
+    width: 100%!important;
+    text-align: left!important;
+    color: #c83232!important;
+    padding-bottom: 15px!important;
+    background: #fff!important;
+    padding: 20px;
+    margin-top: -13%;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+span.suggbugs {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .headsecdiff {
+        font-size: 1.6rem!important;
+        font-weight: 600;
+        width: 100%!important;
+        text-align: left!important;
+        color: #c83232!important;
+        padding-bottom: 15px!important;
+        background: #fff!important;
+        padding: 20px;
+        margin-top: -35%;
+        font-family: "Lato", Helvetica, Arial, sans-serif!important;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.headsecdiff {
+    font-size: 1.6rem!important;
+    font-weight: 600;
+    width: 100%!important;
+    text-align: left!important;
+    color: #c83232!important;
+    padding-bottom: 15px!important;
+    background: #fff!important;
+    padding: 20px;
+    margin-top: -45%;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+.site-wrap.page-feedback {
+    background: #fff;
+    margin-top: 45%;
+}
+
+}

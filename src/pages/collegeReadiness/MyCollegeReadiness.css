@@ -1,0 +1,58 @@
+
+        body {
+            font-family: "Lato", Helvetica, Arial, sans-serif!important;
+        }
+        
+        .titlecp {
+            position: absolute!important;
+            top: 0;
+            left: 0;
+            align-self: flex-end!important;
+            text-align: left;
+            padding-top: 56%;
+            width: 100%;
+            padding-left: 5%;
+            color: #FFF;
+        }
+        
+        ul.nav.nav-tabs .active {
+            background: #ce2a2a;
+            color: #333;
+        }
+        
+        .showlessbtn a:hover {
+            cursor: pointer;
+        }
+        
+        #myVideo {
+            right: 0;
+            bottom: 0;
+            top: 5px;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        
+        ul.nav-dropdown {
+            display: grid;
+            position: absolute;
+            background: #fff;
+        }
+        
+        ul.nav-dropdown {
+            display: none;
+        }
+        
+        li.hvrdsp:hover ul.nav-dropdown {
+            display: grid;
+            transition: 0.8s;
+        }
+        
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+        
+        section.ftr-sec {
+            margin-top: 0px!important;
+        }

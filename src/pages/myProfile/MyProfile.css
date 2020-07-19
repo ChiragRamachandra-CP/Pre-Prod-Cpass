@@ -1,0 +1,258 @@
+.titlecp {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	align-self: flex-end !important;
+	text-align: left;
+	width: 100%;
+}
+
+.form-group label {
+	color: #000;
+	padding-top: calc(.375rem + 1px);
+	padding-bottom: calc(.375rem + 1px);
+	margin-bottom: 0;
+	font-size: 0.97rem;
+	line-height: 1.5;
+	font-weight: 700;
+	font-family: "Lato", Helvetica, Arial, sans-serif !important;
+	letter-spacing: 0.8px;
+	opacity: 0.8;
+}
+
+.col-form-label {
+	padding-top: calc(.375rem + 1px);
+	padding-bottom: calc(.375rem + 1px);
+	margin-bottom: 0;
+	font-size: 0.97rem;
+	line-height: 1.5;
+	font-weight: 700;
+	font-family: "Lato", Helvetica, Arial, sans-serif !important;
+	letter-spacing: 0.8px;
+	opacity: 0.8;
+	color: #000;
+}
+
+.header {
+	top: 0;
+}
+
+.hide-top {
+	top: 68px;
+}
+
+a.nav-link.active {
+	background: #c0ae6f !important;
+	border-radius: 10px 10px 0px 0px;
+}
+
+a.nav-link.active b {
+	color: #000;
+}
+
+.nav-tabs .nav-item a {
+	color: #ffffff !important;
+	font-size: 1.1rem;
+	letter-spacing: 0.03rem;
+	opacity: 0.9;
+}
+
+select#grade {
+	margin: 20px 0px;
+}
+
+button.btn.btn-resume.nexttab.btn-direction {
+	background: #24292f;
+	color: #fff;
+}
+
+/*.btn.btn-resume.nexttab.btn-direction:hover {
+    background: #000000;
+    color: #fff;
+}*/
+
+select#country_tags {
+	width: 100%;
+	height: 100% !important;
+	letter-spacing: 0.03em;
+}
+
+select#branch_tags {
+	width: 100%;
+	height: 100% !important;
+	letter-spacing: 0.03em;
+}
+
+button.btn.btn-resume {
+	background: #24292f;
+	color: #fff;
+	margin-left: 10px;
+}
+
+button.btn-clone {
+	background: none;
+	margin: 20px 0px;
+	border: none;
+}
+
+.nav-tabs .nav-item {
+	border-right: 1px solid #c7cbce;
+	border-left: 1px solid #c7cbce;
+	border-top: 1px solid #c7cbce;
+	border-radius: 10px 10px 0px 0px;
+	margin-bottom: -1px;
+	width: 33.33%;
+	max-width: 100%;
+	text-align: center;
+	background: #000000;
+	color: #000;
+	font-family: "Lato", Helvetica, Arial, sans-serif !important;
+}
+
+label.gheading {
+	padding: 20px 0px;
+	color: #000;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	font-size: 1.09rem;
+}
+
+.form-control {
+	margin: 15px 0px;
+}
+
+.tab-content {
+	background: #fff;
+	padding: 30px;
+}
+
+body {
+	font-family: "Lato", Helvetica, Arial, sans-serif !important;
+}
+
+section.page-header.overlay-gradient {
+	padding-top: 80px;
+}
+
+section.ftr-sec {
+	margin-top: 50px !important;
+	border-top: 1px solid #4d4d4d;
+	padding-top: 60px;
+}
+
+input.btn.btn-resume.nexttab.btn-direction {
+	background: #000;
+	color: #fff;
+}
+
+/*.btn.btn-resume.nexttab.btn-direction:hover {
+	background: #d5b66f;
+	color: #000;
+}*/
+
+.lstbtn {
+	background: #000 !important;
+	color: #fff !important;
+	margin: 0px 10px !important;
+}
+
+.lstbtn:hover {
+	background: #d5b66f;
+	color: #000;
+}
+
+.personallheightlab {
+	line-height: 10px !important;
+}
+
+.alert.alert-success {
+	background-color: #e6a851 !important;
+	color: black !important;
+	text-align: center;
+	font-size: 18px;
+}
+
+.alert-info {
+    color: #000000!important;
+    background-color: #dabe76!important;
+    border-color: #dabe76!important;
+}
+
+.alert.alert-info {
+	background-color: #e6a851 !important;
+	color: #000000!important;
+	text-align: center !important;
+	font-size: 18px !important;
+}
+
+.alert.alert-info.fpsm {
+	color: black !important;
+	background-color: #e6a851 !important;
+	border-color: #e6a851 !important;
+	text-align: center !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.col-md-2 {
+		width: 100% !important;
+	}
+
+	.nav-link {
+		display: block;
+		padding: .5rem 0rem !important;
+		font-size: 12px !important;
+	}
+
+	input[type="date"]:after {
+		display: none;
+	}
+}
+
+/*  date  */
+
+input[type="date"] {
+	position: relative;
+}
+
+input[type="date"]:after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f073";
+	color: #555;
+	padding: 0 5px;
+}
+
+input[type="date"]:hover:after {
+	color: #bf1400;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	color: transparent;
+	background: transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+	z-index: 1;
+}
+
+input[type="date"]::-webkit-clear-button {
+	z-index: 1;
+}
+
+/*  date  */
+
+.custom-radio .custom-control-label::before {
+	border-radius: 50%;
+	display: none;
+}
+
+.custom-input {
+	margin: 5px 5px;
+}

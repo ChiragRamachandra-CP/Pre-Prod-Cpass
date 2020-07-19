@@ -1,0 +1,253 @@
+        .col-md-6.bott-btn a {
+            font-weight: 700;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #ce2a2a;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px 10px;
+            margin: 40px 1px 0px 0;
+            border-radius: 10px;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease 0s;
+        }
+        
+        .col-md-6.bott-btn {
+            margin: 100px 0px 0px 0px;
+        }
+        
+        .frst {
+            width: 50px;
+            height: 10px;
+            background: #ffffff;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        
+        .sec {
+            width: 50px;
+            height: 10px;
+            background: #b9b9b9;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        
+        .col-md-7.list ul li {
+            color: #333;
+        }
+        
+        .col-md-6.bott-btn a:hover {
+            background: #000000;
+            color: #ffffff;
+            transition: .5s all;
+        }
+        
+        h3 {
+            color: #000;
+            font-weight: 600!important;
+            font-size: 22px!important;
+        }
+        
+        h5 {
+            font-weight: 600;
+            color: #ff0e01;
+        }
+        
+        .col-md-7.list ul li {
+            color: #ffffff;
+            font-weight: 500;
+        }
+        
+        main.contact-page.bg-white.ptb100 {
+            background: #f7f7f7!important;
+            padding: 90px 0px 0px 0px;
+        }
+        
+        .cpy-wrt {
+            padding-top: 220px!important;
+            padding-bottom: 40px;
+        }
+        
+        .ftr-sec {
+            margin-top: 360px;
+            border-top: 1px solid #4d4d4d;
+            padding-top: 45px;
+        }
+        
+        div#half-donut {
+            /*margin-bottom: 70px;*/
+            text-align: center;
+        }
+        
+        div#half-donut1 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        div#half-donut2 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        div#half-donut3 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        div#half-donut4 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        div#half-donut5 {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+
+        .row:hover {
+            opacity: 0.9;
+        }
+        
+        a:hover,
+        a:focus {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .vertical-tab {
+            display: contents;
+            padding: 10px;
+            border: 1px solid #ded7d7;
+        }
+        
+        .vertical-tab .nav-tabs {
+            display: table-cell;
+            width: 28%;
+            min-width: 28%;
+            vertical-align: top;
+            border: none;
+        }
+        
+        .vertical-tab .nav-tabs li {
+            float: none;
+            vertical-align: top;
+        }
+
+        .vertical-tab .nav-tabs li a:hover {
+            background: #000000;
+        }
+        
+        .vertical-tab .nav-tabs li a {
+            color: #fff;
+            background-color: #333;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 25px 33.4px;
+            margin: 0 1px 9px 0;
+            width: 105%;
+            border: none;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease 0s;
+            clip-path: polygon(0% 0%, 98% 0%, 100% 50%, 98% 100%, 0% 100%);
+        }
+        
+        .vertical-tab .nav-tabs li a:hover,
+        .vertical-tab .nav-tabs li.active a,
+        .vertical-tab .nav-tabs li.active a:hover {
+            color: #fff;/*
+            background-color: #ce2a2a;*/
+            border: none;
+        }
+        
+        .vertical-tab .nav-tabs li a:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all 0.8s;
+        }
+        
+        .vertical-tab .nav-tabs li a:hover:before,
+        .vertical-tab .nav-tabs li.active a:before {
+            transform: scale(2);
+        }
+        
+        .vertical-tab .tab-content {
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 25px;
+            padding: 20px 0px 10px;
+            margin-top: 10px;
+            display: table-cell;
+            position: relative;
+            clip-path: polygon(5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%, 0 5%);
+        }
+        
+        .vertical-tab .tab-content h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 7px 0;
+        }
+
+        .col-md-6{
+                float: left!important;
+            }
+        
+        .header {
+            box-shadow: 3px 3px 5px -4px #ccc;
+            top: 0px;
+        }
+
+
+        /* Media Query Start Here....*/
+
+        
+        @media only screen and (max-width: 479px) {
+            .vertical-tab .nav-tabs {
+                width: 100%;
+                display: block;
+                border: none;
+            }
+            .vertical-tab .nav-tabs li a {
+                margin: 0 0 10px;
+                clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+            }
+            .vertical-tab .tab-content {
+                padding: 20px 15px 5px;
+                display: block;
+            }
+            .vertical-tab .tab-content h3 {
+                font-size: 18px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .col-md-6.bott-btn {
+                margin: 60px 0px 0px 0px!important;
+            }
+            header.header {
+                padding: 25px 10px 5px 20px!important;
+            }
+            main.contact-page.bg-white.ptb100 {
+                background: #000;
+                padding: 30px 0px!important;
+            }
+        }
+        
+        

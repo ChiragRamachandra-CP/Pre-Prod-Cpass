@@ -1,0 +1,102 @@
+
+        @media only screen and (max-width: 600px) {
+        p.pratxt {
+            max-width: 100%!important;
+            padding: 10px 25px!important;
+            text-align: center!important;
+        }
+
+        p.pratxtw {
+            max-width: 100%!important;
+            padding: 10px 35px!important;
+            margin: 0 auto 4px!important;
+        }
+
+        section.fzfm {
+            margin-top: 0%;
+        }
+
+    }
+
+        section.fzfm {
+        margin-top: 10%;
+    }
+
+
+    
+    span.thspg {
+        text-align: center;
+        color: #fff;
+        font-family: "Lato", "Helvetica", "Arial", sans-serif!important;
+    }
+    
+    h4.thspgh {
+        letter-spacing: 0.06em;
+        text-transform: uppercase !important;
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+    
+    h1.forerr {
+        letter-spacing: 0.06em;
+        text-transform: uppercase !important;
+        font-weight: 700;
+        line-height: 1.25;
+        font-size: 2.8rem;
+    }
+    
+    p.pratxtl {
+        max-width: 450px;
+        margin: 0 auto 4px;
+        letter-spacing: .03em;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 100%, .35);
+    }
+    
+    h3.nxttxt {
+        font-weight: 700;
+        line-height: 1.25;
+        font-size: 1.4rem;
+    }
+    
+    p.pratxt {
+        max-width: 100%!important;
+        padding: 10px 25px!important;
+        text-align: center!important;
+        margin: 24px auto;
+        letter-spacing: 0.03em;
+        line-height: 1.3;
+        font-size: 16px;
+    }
+    
+    p.pratxtw {
+        max-width: 100%!important;
+        padding: 10px 35px!important;
+        margin: 0 auto 4px;
+        letter-spacing: .03em;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 100%, .35);
+    }
+    
+    .learnmr {
+        text-align: center;
+        margin: 70px 0px;
+    }
+    
+    .learnmr a {
+        background: #c83232;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        letter-spacing: 1.2px;
+        opacity: 0.9;
+    }
+    
+    .learnmr a:hover {
+        opacity: 1;
+    }
+
+        
