@@ -385,7 +385,7 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
 
     if(redirctTo){
 
-        return <Redirect to="/upgrade" />
+        return <Redirect to={'/upgrade/' + eventPremiumlevel}/>
 
     }else{
 

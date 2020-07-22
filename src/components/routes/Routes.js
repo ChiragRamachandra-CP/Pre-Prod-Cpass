@@ -104,7 +104,7 @@ const Routes = ({ isAuthenticated }) => {
 					<Route exact path="/privacy" component={Privacy} />
 					<Route exact path="/terms" component={Terms} />
 					<PrivateRoute exact path="/expired" component={PaymentExpiry} />
-					<PrivateRoute exact path="/upgrade" component={Upgrade} />
+					<PrivateRoute exact path="/upgrade/:eventPremiumLevel" component={Upgrade} />
 					<PrivateRoute exact path="/vimeo" component={Vimeo} />
 					<Route path="*" component={NotFound} />
 				</Switch>
