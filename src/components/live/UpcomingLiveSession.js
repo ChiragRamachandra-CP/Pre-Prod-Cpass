@@ -12,6 +12,8 @@ const UpcomingLiveSession = () => {
 
 	let curTime = moment();
 
+	let PREMIUM_LEVEL;
+
 	//console.log(curTime.utc().format('YYYY-MM-DD HH:mm'));
 	// const Retime = moment().utc().subtract(1, 'hours').format();
 
@@ -83,6 +85,19 @@ const UpcomingLiveSession = () => {
 						<div className="led-red" />
 						<div className="ledtext">LIVE</div>
 					</div>
+
+					<div className="led-box liveledbox">
+						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (
+							<div className="ledtext silver">Silver</div>
+						)}
+						{availableLiveEvents[i].PREMIUM_LEVEL === 3 && (
+							<div className="ledtext gold">Gold</div>
+						)}
+						{availableLiveEvents[i].PREMIUM_LEVEL === 4 && (
+							<div className="ledtext platinum">Platinum</div>
+						)}
+					</div>
+
 				</div>
 			);
 		});

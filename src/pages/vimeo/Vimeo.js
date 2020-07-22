@@ -68,10 +68,17 @@ const Vimeo = () => {
 
 	return (
         <Fragment>
-        <h1 style={{textAlign: 'center', color: '#fff', marginTop: '10%', fontSize: '30px'}}>Vimeo Page</h1>
-			{/*<Header />
-			
-            <Footer />*/}
+        <h1 style={{textAlign: 'center', color: '#fff', margin: '3%', fontSize: '30px'}}>Vimeo Session</h1>
+			<div className="container">
+				<div className="row">
+					<div className="col-md-8">
+					<div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://player.vimeo.com/video/440595304" frameBorder="0" allow="autoplay; fullscreen" style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}}></iframe></div>
+					</div>
+					<div className="col-md-4">
+					<iframe src="https://vimeo.com/live-chat/440595304/" width="400" height="100%" frameBorder="0"></iframe>
+					</div>
+				</div>
+			</div>
 		</Fragment>
 	);
 };
