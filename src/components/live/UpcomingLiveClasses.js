@@ -97,7 +97,7 @@ const UpcomingLiveClasses = () => {
 							<div className="ledtext platinum">Platinum</div>
 						)}
 					</div>
-
+					
 				</div>
 			);
 		});

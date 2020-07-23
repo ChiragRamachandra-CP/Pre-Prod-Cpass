@@ -39,17 +39,17 @@ const MyProfile = () => {
 
 					<ul className="nav nav-tabs" role="tablist">
 						<li className="nav-item">
-							<a className="nav-link active" data-toggle="tab" href="#home">
+							<a className="nav-link active p1p" data-toggle="tab" href="#home">
 								<b>Personal Details</b>
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" data-toggle="tab" href="#menu1">
+							<a className="nav-link p2p" data-toggle="tab" href="#menu1">
 								<b>Education Details</b>
 							</a>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" data-toggle="tab" href="#menu2">
+							<a className="nav-link p3p" data-toggle="tab" href="#menu2">
 								<b>Extracurricular</b>
 							</a>
 						</li>

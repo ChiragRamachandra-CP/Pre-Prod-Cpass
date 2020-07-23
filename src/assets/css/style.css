@@ -6,7 +6,7 @@ li.top_login {
     color: #fff!important;
     margin: 5px 15px 0px 5px;
 	cursor: pointer;
-	font-size: 13px!important;
+	font-size: 15px!important;
 }
 
 .lgncontct a {
@@ -15,7 +15,8 @@ li.top_login {
 
 .lgncontct i {
     margin-right: 5px;
-    color: #eedd92;
+    color: #c83232;
+    font-size: 17px;
 }
 
 .liveledbox {
