@@ -1,6 +1,6 @@
 export const APIgetUserDetailByToken = 'https://api.collegepass.org/api/v1/auth/getUserDetailByToken';
 export const APIregister = 'https://api.collegepass.org/api/v1/auth/register';
-export const APIlogin = 'http://apitest.collegepass.org/api/v1/auth/login';
+export const APIlogin = 'https://api.collegepass.org/api/v1/auth/login';
 export const APIthirdPartyUserAuthentication = 'https://api.collegepass.org/api/v1/auth/thirdPartyUserAuthentication';
 export const APIgetUserAccessLevel = `https://api.collegepass.org/api/v1/User/getUserAccessLevel/`;
 export const APIgetVideoByCategoryID = 'https://api.collegepass.org/api/v1/videos/getVideoByCategoryID/';
