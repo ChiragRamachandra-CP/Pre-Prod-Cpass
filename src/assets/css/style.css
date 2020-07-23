@@ -52,6 +52,10 @@ li.top_login {
     color: #fff;
 }
 
+.wss.w_lst {
+    padding-bottom: 35px;
+}
+
 p.clscmingsn {
     margin-top: -10px;
     text-align: center;
@@ -1895,6 +1899,14 @@ main.contact-page.bg-white.ptb100.readiness_D {
 		display: none;
 	}
 
+	.bnnrhedsndlne {
+		font-size: 13px;
+	}
+
+	.banner-cont h1 {
+		font-size: 1.3rem;
+	}
+
 	a.carousel-control-next{
 		display: none;
 	}
@@ -2042,8 +2054,9 @@ main.contact-page.bg-white.ptb100.readiness_D {
 	}
 
 	.banner-cont h5 {
-		margin-top: 75px;
+		margin-top: 35px;
 		margin-bottom: 40px!important;
+		font-size: 12px!important;
 	}
 	.mobile-banner {
 		display: block;
@@ -2386,17 +2399,7 @@ main.contact-page.bg-white.ptb100.readiness_D {
 	.faq h2.new-class-heading {
 		margin: 87.8rem 0 1.5rem;
 	}
-
-
-	/*.site-wrap.page-id-4 li.td-lst-lesson.set {
-		border-radius: 90px;
-		margin: 20px 0px;
-		box-shadow: 10px 10px 5px #aaaaaa;
-	}
-
-	.site-wrap.page-id-4 ul.td-lst.expanded {
-		padding: 10px 1.25em!important;
-	}*/
+	
 }
 
 
@@ -2409,6 +2412,7 @@ and (max-device-width : 1024px) {
 	.container-fluid {
 		padding: 0px!important;
 	}
+	
 
 	.cls_top p {
 		font-size: 1.1rem;
@@ -2631,6 +2635,10 @@ and (max-device-width : 1024px) {
 		padding: 2.4rem 0rem 2rem 0rem;
 	}
 
+	.wss.w_lst {
+		padding-bottom: 12px;
+	}
+
 }    
 
 /* --------- small lappy ------ */
@@ -2671,6 +2679,68 @@ and (max-device-width : 1024px) {
 
  }
 
+ @media only screen 
+  and (min-device-width: 1024px){
+	.container {
+		max-width: 930px!important;
+	}
+
+	.wss.w_lst {
+		padding-bottom: 13px;
+	}
+
+	.aftrloginpage .titlecp {
+		padding-top: 47%;
+	}
+
+	.cls_top p {
+		font-size: 1.5rem;
+	}
+
+	.bimg {
+		padding-top: 53%!important;
+	}
+
+	.wss.w_2nd {
+		padding-bottom: 42px;
+	}
+
+	.wss.w_3rd {
+		padding-bottom: 38px;
+	}
+
+	.faq h2.new-class-heading {
+		margin: 38.8rem 0rem 1.5rem 0rem;
+	}
+
+
+  }
+
+  @media only screen 
+  and (min-device-width: 1366px){
+	.faq h2.new-class-heading {
+		margin: 33.8rem 0rem 1.5rem 0rem;
+	}
+
+	.wss.w_lst {
+		padding-bottom: 36px;
+	}
+
+	.bimg {
+		padding-top: 50%!important;
+	}
+
+	.container {
+		max-width: 1330px!important;
+	}
+
+	.cls_top p {
+		font-size: 1.3rem;
+	}
+
+
+  }
+
 
 
  /* ------------ I Pad Pro ----------*/
@@ -2680,6 +2750,10 @@ and (max-device-width : 1024px) {
   and (max-device-width: 834px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
+
+	.container {
+		max-width: 900px!important;
+	}
 
 	section.client {
 		margin: 4.8rem 0px;
