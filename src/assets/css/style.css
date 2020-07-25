@@ -1,3 +1,99 @@
+ul.lgomnu {
+    margin-top: 10px!important;
+    display: flex;
+    float: right;
+}
+ul.lgomnu li a p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+}
+.col-md-8 {
+    float: left;
+}
+.col-md-4 {
+    float: left;
+}
+.blgimg img {
+    max-width: 100%;
+    width: 750px;
+}
+section.blogmain {
+    padding: 140px 0px 0px 0px;
+}
+h2.blghdng {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+p.blgdesc {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 300;
+	line-height: 30px;
+	margin-top: 10px;
+}
+p.blglgo img {
+    max-width: 41px;
+}
+.blgftersec {
+    display: flex;
+	color: #fff;
+	padding-top: 15px;
+}
+p.blglgotxt {
+    margin: 0px 15px;
+}
+span.blgtxt1 {
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+span.blgtxt2 {
+    opacity: 0.8;
+    font-weight: 200;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.doubleBlog.blogspacing h2.blghdng {
+	font-size: 24px;
+	margin-top: 15px;
+}
+.tripleBlog.blogspacing h2.blghdng {
+	font-size: 24px;
+	margin-top: 15px;
+}
+p.latesthdng {
+    width: 100%;
+    display: inline-block;
+    padding: 60px 0px 15px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    border-bottom: 1px solid #2c2b2b;
+}
+.blogsecdev {
+    padding-top: 20px;
+    padding-left: 0;
+}
+.blogspacing {
+    padding: 0px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 li.top_login {
     display: flex;
 }
@@ -34,23 +130,50 @@ li.top_login {
 
 .liveledbox .silver {
     background: rgb(192, 192, 192);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #000;
+    border-radius: 4px;
+    color: #fff!important;
+    font-size: 12px!important;
+    font-weight: 600!important;
+    letter-spacing: .12em!important;
+    line-height: normal!important;
+    text-transform: uppercase!important;
+    transition: background .25s ease, box-shadow .25s ease, opacity .25s ease;
+    vertical-align: middle;
+    border: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+    padding: 0.4rem 1.2rem;
 }
 
 .liveledbox .gold {
     background: rgb(225, 168, 82);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #000;
+    border-radius: 4px;
+    color: #000!important;
+    font-size: 12px!important;
+    font-weight: 600!important;
+    letter-spacing: .12em!important;
+    line-height: normal!important;
+    text-transform: uppercase!important;
+    transition: background .25s ease, box-shadow .25s ease, opacity .25s ease;
+    vertical-align: middle;
+    border: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+    padding: 0.4rem 1.2rem;
 }
 
 .liveledbox .platinum {
     background: rgb(101, 100, 98);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #fff;
+    border-radius: 4px;
+    color: #fff!important;
+    font-size: 12px!important;
+    font-weight: 600!important;
+    letter-spacing: .12em!important;
+    line-height: normal!important;
+    text-transform: uppercase!important;
+    transition: background .25s ease, box-shadow .25s ease, opacity .25s ease;
+    vertical-align: middle;
+    border: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+    padding: 0.4rem 1.2rem;
 }
 
 .wss.w_lst {
@@ -3242,9 +3365,19 @@ button.close.imgpopup {
   .ledtext {
     margin-left: 15px;
     margin-top: -2px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
+    color: #fff!important;
+    font-size: 12px!important;
+    font-weight: 600!important;
+    letter-spacing: .12em!important;
+    line-height: normal!important;
+    text-transform: uppercase!important;
+    background: #c83232;
+    border-radius: 4px;
+    transition: background .25s ease, box-shadow .25s ease, opacity .25s ease;
+    vertical-align: middle;
+    border: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+    padding: 0.4rem 1.2rem;
 }
   
   .led-red {

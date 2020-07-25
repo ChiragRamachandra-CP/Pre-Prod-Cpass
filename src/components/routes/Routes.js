@@ -11,6 +11,7 @@ const Registration = lazy(() => import('../../pages/auth/Registration.js'));
 const Privacy = lazy(() => import('../../pages/privacy/Privacy'));
 const Terms = lazy(() => import('../../pages/terms/Terms'));
 const AboutUs = lazy(() => import('../../pages/about/AboutUs'));
+const Blog = lazy(() => import('../../pages/blog/Blog'));
 const Login = lazy(() => import('../../pages/auth/Login'));
 const ResetPassword = lazy(() => import('../../pages/auth/ResetPassword'));
 const ChangePassword = lazy(() => import('../../pages/auth/ChangePassword'));
@@ -101,6 +102,7 @@ const Routes = ({ isAuthenticated }) => {
 					<PrivateRoute exact path="/liveSessions" component={UpcomingLiveSessionAll} />
 					{/*<PrivateRoute exact path="/readiness" component={MyCollegeReadiness} />*/}
 					<Route exact path="/about" component={AboutUs} />
+					<Route exacy path="/blog" component={Blog} />
 					<Route exact path="/privacy" component={Privacy} />
 					<Route exact path="/terms" component={Terms} />
 					<PrivateRoute exact path="/expired" component={PaymentExpiry} />

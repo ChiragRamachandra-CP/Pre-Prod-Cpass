@@ -4,10 +4,66 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/Footer';
 import './Plan.css';
 import axios from 'axios';
+import {connect} from "react-redux";
+import PropTypes from "prop-types";
 
 import { APIstoreUserMoment } from '../../config/API';
 
-const Plan = () => {
+const Plan = (premiumLevel) => {
+
+	let continueSilver = null;
+	continueSilver = (
+		<label className="headplncards btncnt">
+			<span className="bxplan">
+				<Link to="/plan/payment/silver">
+					<input
+						type="button"
+						name=""
+						value="CONTINUE"
+						className="cntbtn"
+					/>
+				</Link>
+			</span>
+		</label>
+	);
+	let continueGold = null;
+	continueGold = (
+		<label className="headplncards btncnt">
+			<span className="bxplan">
+				<Link to="/plan/payment/gold">
+					<input
+						type="button"
+						name=""
+						value="CONTINUE"
+						className="cntbtn"
+					/>
+				</Link>
+			</span>
+		</label>
+	);
+	let continuePlatinum = null;
+	continuePlatinum = (
+		<label className="headplncards btncnt">
+			<span className="bxplan">
+				<Link to="/plan/payment/platinum">
+					<input
+						type="button"
+						name=""
+						value="CONTINUE"
+						className="cntbtn"
+					/>
+				</Link>
+			</span>
+		</label>
+	);
+
+	/*if (premiumLevel === "Basic") {
+		buttonUpgrade = (
+			<Link to="/plan/info">
+				<p className="bannerbtnbl">UPGRADE NOW</p>
+			</Link>
+		);
+	}*/
 
 	useEffect( ()=> {
 		const storeUserMovement = async () => {
@@ -408,71 +464,7 @@ const Plan = () => {
 												</td>
 											</tr>
 
-											{/*<tr className="mobtlpln">
-												<td>
-													IB Live Online Sessions: English & Math (Coming Soon: August 2020)
-												</td>
-											</tr>
-											<tr role="row" className="planGrid__featureTableRow">
-												<td className="lftttl planGrid__cell planGrid__featureCell" role="cell">
-													IB Live Online Sessions: English & Math (Coming Soon: August 2020)
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
-													role="cell"
-													aria-label="Basic"
-												>
-													<span className="planGrid__booleanLabel">&#10005;</span>
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
-													role="cell"
-													aria-label="Standard"
-												>
-													<span className="planGrid__booleanLabel">&#10005;</span>
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
-													role="cell"
-													aria-label="Premium"
-												>
-													<span className="planGrid__booleanLabel">&#10004;</span>
-												</td>
-											</tr>
-
-											<tr className="mobtlpln">
-												<td>
-													IGCSE Live Online Sessions: English & Math (Coming Soon: August
-													2020)
-												</td>
-											</tr>
-											<tr role="row" className="planGrid__featureTableRow">
-												<td className="lftttl planGrid__cell planGrid__featureCell" role="cell">
-													IGCSE Live Online Sessions: English & Math (Coming Soon: August
-													2020)
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
-													role="cell"
-													aria-label="Basic"
-												>
-													<span className="planGrid__booleanLabel">&#10005;</span>
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
-													role="cell"
-													aria-label="Standard"
-												>
-													<span className="planGrid__booleanLabel">&#10005;</span>
-												</td>
-												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
-													role="cell"
-													aria-label="Premium"
-												>
-													<span className="planGrid__booleanLabel">&#10004;</span>
-												</td>
-											</tr>*/}
+											
 										</tbody>
 									</table>
 									<div className="headpln">
@@ -482,42 +474,9 @@ const Plan = () => {
                                                     <input type="button" name="" value="CONTINUE" className="cntbtn" />
                                                 </span>
                                             </label>*/}
-											<label className="headplncards btncnt">
-												<span className="bxplan">
-													<Link to="/plan/payment/silver">
-														<input
-															type="button"
-															name=""
-															value="CONTINUE"
-															className="cntbtn"
-														/>
-													</Link>
-												</span>
-											</label>
-											<label className="headplncards btncnt">
-												<span className="bxplan">
-													<Link to="/plan/payment/gold">
-														<input
-															type="button"
-															name=""
-															value="CONTINUE"
-															className="cntbtn"
-														/>
-													</Link>
-												</span>
-											</label>
-											<label className="headplncards btncnt">
-												<span className="bxplan">
-													<Link to="/plan/payment/platinum">
-														<input
-															type="button"
-															name=""
-															value="CONTINUE"
-															className="cntbtn"
-														/>
-													</Link>
-												</span>
-											</label>
+											{continueSilver}
+											{continueGold}
+											{continuePlatinum}
 										</div>
 									</div>
 								</div>
@@ -538,4 +497,12 @@ const Plan = () => {
 	);
 };
 
-export default Plan;
+
+Plan.propTypes = {
+	premiumLevel: PropTypes.string.isRequired,
+};
+const mapStateToProps = (state) => ({
+	premiumLevel: state.auth.premiumLevel,
+});
+
+export default connect(mapStateToProps, null)(Plan);

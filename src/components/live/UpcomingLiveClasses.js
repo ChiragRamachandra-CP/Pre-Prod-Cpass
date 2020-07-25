@@ -82,7 +82,7 @@ const UpcomingLiveClasses = () => {
 					</div>
 
 					<div className="led-box">
-						<div className="led-red" />
+						{/*<div className="led-red" />*/}
 						<div className="ledtext">LIVE</div>
 					</div>
 

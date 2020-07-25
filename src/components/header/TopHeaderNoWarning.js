@@ -26,6 +26,28 @@ const AfterLoggedInHeader = ({ logout }) => {
 									className="f_logo"
 								/>
 							</Link>
+							<ul className="lgomnu">
+									<li>
+										<Link to="/">
+											<p>Home</p>
+										</Link>
+									</li>
+									<li>
+										<Link to="https://calendly.com/collegepass">
+											<p>College Admissions</p>
+										</Link>
+									</li>
+									<li>
+										<Link to="">
+											<p>Tutoring</p>
+										</Link>
+									</li>
+									<li>
+										<Link to="/blog">
+											<p>Blogs</p>
+										</Link>
+									</li>
+								</ul>
 							<input className="menu-btn" type="checkbox" id="menu-btn" />
 							<label className="menu-icon" htmlFor="menu-btn">
 								<span className="navicon" />
