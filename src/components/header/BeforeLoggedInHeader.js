@@ -31,9 +31,9 @@ const BeforeLoggedInHeader = () => {
 										</Link>
 									</li>
 									<li>
-										<Link to="https://calendly.com/collegepass">
+										<a href="https://www.calendly.com/collegepass">
 											<p>College Admissions</p>
-										</Link>
+										</a>
 									</li>
 									<li>
 										<Link to="">

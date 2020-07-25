@@ -33,9 +33,9 @@ const AfterLoggedInHeader = ({ logout }) => {
 										</Link>
 									</li>
 									<li>
-										<Link to="https://calendly.com/collegepass">
-											<p>College Admissions</p>
-										</Link>
+									<a href="https://www.calendly.com/collegepass">
+									<p>College Admissions</p>
+								</a>
 									</li>
 									<li>
 										<Link to="">
