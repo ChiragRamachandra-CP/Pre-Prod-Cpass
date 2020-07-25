@@ -41,7 +41,7 @@ form > i:active {
 }
 .form-sec {
     background: #fff;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
     text-align: left!important;
     margin-bottom: 45px!important;
 }
@@ -122,7 +122,7 @@ h1.new-class-heading a {
 .rating > input { display: none; } 
 .rating > label:before { 
   margin: 5px;
-  font-size: 1.25em;
+  font-size: 2.2em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";
@@ -152,7 +152,7 @@ h1.new-class-heading a {
 
 .site-wrap.page-feedback {
     background: #000000;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 
 .headsecdiff {
@@ -163,11 +163,10 @@ h1.new-class-heading a {
     color: #c83232!important;
     padding-bottom: 15px!important;
     background: #fff!important;
-    padding: 20px;
+    padding: 20px 20px 0px 30px;
     margin-top: -13%;
     font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
-
 span.suggbugs {
     font-size: 16px;
     font-weight: 500;

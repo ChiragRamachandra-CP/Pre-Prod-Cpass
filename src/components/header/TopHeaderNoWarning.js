@@ -32,10 +32,17 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<p>Home</p>
 										</Link>
 									</li>
-									<li>
-									<a href="https://www.calendly.com/collegepass">
-									<p>College Admissions</p>
-								</a>
+									<li className="hvrdsp mnuicon">
+										<a href="">
+											<p>College Admissions</p>
+										</a>
+										{/*<ul className="nav-dropdown">
+											<li>
+												<a href="https://www.calendly.com/collegepass">
+													<p>PROFILE</p>
+												</a>
+											</li>
+	</ul>*/}
 									</li>
 									<li>
 										<Link to="">

@@ -98,7 +98,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 										paddingBottom: '15px'
 									}}
 								>
-									Please share your feedback!
+									Review the Session!
 									{/*<span className="suggbugs">
 										Do you have a suggestion or found some bugs?<br /> let us know in the field
 										bellow.
@@ -209,7 +209,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 														className="review_area"
 														value={review}
 														onChange={onChange}
-														placeholder="Share your honest experience, and help others make better choices."
+														placeholder=""
 													/>
 												</div>
 

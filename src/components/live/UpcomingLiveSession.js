@@ -83,7 +83,7 @@ const UpcomingLiveSession = () => {
 
 					<div className="led-box">
 						{/*<div className="led-red" />*/}
-						<div className="ledtext">LIVE</div>
+						<div className="ledtext">LIVE STREAM</div>
 					</div>
 
 					<div className="led-box liveledbox">
