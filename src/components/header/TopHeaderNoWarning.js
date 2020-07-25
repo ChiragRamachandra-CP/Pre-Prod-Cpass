@@ -26,7 +26,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 									className="f_logo"
 								/>
 							</Link>
-							<ul className="lgomnu">
+							<ul className="lgomnulogn">
 									<li>
 										<Link to="/">
 											<p>Home</p>

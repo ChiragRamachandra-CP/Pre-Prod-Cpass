@@ -3,7 +3,20 @@ ul.lgomnu {
     display: flex;
     float: right;
 }
+
+ul.lgomnulogn {
+    margin-top: 22px!important;
+    display: flex;
+    float: left;
+}
+
 ul.lgomnu li a p {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+}
+ul.lgomnulogn li a p {
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
