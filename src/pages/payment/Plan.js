@@ -9,61 +9,165 @@ import PropTypes from "prop-types";
 
 import { APIstoreUserMoment } from '../../config/API';
 
-const Plan = (premiumLevel) => {
+const Plan = ({premiumLevel}) => {
 
 	let continueSilver = null;
-	continueSilver = (
-		<label className="headplncards btncnt">
-			<span className="bxplan">
-				<Link to="/plan/payment/silver">
-					<input
-						type="button"
-						name=""
-						value="CONTINUE"
-						className="cntbtn"
-					/>
-				</Link>
-			</span>
-		</label>
-	);
+	
 	let continueGold = null;
-	continueGold = (
-		<label className="headplncards btncnt">
-			<span className="bxplan">
-				<Link to="/plan/payment/gold">
-					<input
-						type="button"
-						name=""
-						value="CONTINUE"
-						className="cntbtn"
-					/>
-				</Link>
-			</span>
-		</label>
-	);
+	
 	let continuePlatinum = null;
-	continuePlatinum = (
-		<label className="headplncards btncnt">
-			<span className="bxplan">
-				<Link to="/plan/payment/platinum">
-					<input
-						type="button"
-						name=""
-						value="CONTINUE"
-						className="cntbtn"
-					/>
-				</Link>
-			</span>
-		</label>
-	);
+	
+	let upgradePlan = null
 
-	/*if (premiumLevel === "Basic") {
-		buttonUpgrade = (
-			<Link to="/plan/info">
-				<p className="bannerbtnbl">UPGRADE NOW</p>
-			</Link>
+	let plnchnge = null;
+
+	console.log("test preminum", premiumLevel);
+	if (premiumLevel === "Basic") {
+		continueSilver = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment/silver">
+						<input
+							type="button"
+							name=""
+							value="CONTINUE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
 		);
-	}*/
+		continueGold = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment/gold">
+						<input
+							type="button"
+							name=""
+							value="CONTINUE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+		continuePlatinum = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment/platinum">
+						<input
+							type="button"
+							name=""
+							value="CONTINUE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+	}
+
+	else if (premiumLevel === "Silver") {
+		continueSilver = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="#">
+						<input
+							type="button"
+							name=""
+							value="Uurrent Plan"
+							className="cntbtn crntplnclr"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+		continueGold = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment-upgrade/:planId">
+						<input
+							type="button"
+							name=""
+							value="UPGRADE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+		continuePlatinum = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment-upgrade/:planId">
+						<input
+							type="button"
+							name=""
+							value="UPGRADE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+	}
+
+	else if (premiumLevel === "Gold") {
+		continueSilver = null;
+		continueGold = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="#">
+						<input
+							type="button"
+							name=""
+							value="Current Plan"
+							className="cntbtn crntplnclr"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+		continuePlatinum = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="/plan/payment-upgrade/:planId">
+						<input
+							type="button"
+							name=""
+							value="UPGRADE"
+							className="cntbtn"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+	}
+
+	else if (premiumLevel === "Platinum") {
+		continueSilver = null;
+		continueGold = null ;
+		continuePlatinum = (
+			<label className="headplncards btncnt">
+				<span className="bxplan">
+					<Link to="#">
+						<input
+							type="button"
+							name=""
+							value="Current Plan"
+							className="cntbtn crntplnclr"
+						/>
+					</Link>
+				</span>
+			</label>
+		);
+		plnchnge = "currntpln";
+	}
+
+
+
+
+
 
 	useEffect( ()=> {
 		const storeUserMovement = async () => {
@@ -161,21 +265,22 @@ const Plan = (premiumLevel) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                     </td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell plnchnge"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className="rttttl planGrid__cell planGrid__booleanCell plnchnge"
 													role="cell"
 													aria-label="Standard"
+
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className="rttttl planGrid__cell planGrid__booleanCell plnchnge"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -477,6 +582,7 @@ const Plan = (premiumLevel) => {
 											{continueSilver}
 											{continueGold}
 											{continuePlatinum}
+											{upgradePlan}
 										</div>
 									</div>
 								</div>

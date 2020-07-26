@@ -50,6 +50,7 @@ const MyProfile = lazy(() => import('../../pages/myProfile/MyProfile'));
 const Plan = lazy(() => import('../../pages/payment/Plan'));
 const Notes = lazy(() => import('../../pages/payment/Notes'));
 const Payment = lazy(() => import('../../pages/payment/Payment'));
+const PaymentUpgrade = lazy(() => import('../../pages/payment/PaymentUpgrade'));
 const ThankYou = lazy(() => import('../../pages/payment/ThankYou'));
 const Account = lazy(() => import('../../pages/payment/Account'));
 const EmailValidate = lazy(() => import('../../pages/emailValidation/EmailValidate'));
@@ -93,6 +94,7 @@ const Routes = ({ isAuthenticated }) => {
 					<PrivateRoute exact path="/plan/info" component={Notes} />
 					<PrivateRoute exact path="/plan/choose" component={Plan} />
 					<PrivateRoute exact path="/plan/payment/:planId" component={Payment} />
+					<PrivateRoute exact path="/plan/payment-upgrade/:planId" component={PaymentUpgrade} />
 					<PrivateRoute exact path="/plan/completed" component={ThankYou} />
 					<PrivateRoute exact path="/live/:sessionId" component={Zoom} />
 					<PrivateRoute exact path="/my-profile" component={MyProfile} />

@@ -4,6 +4,11 @@ ul.lgomnu {
     float: right;
 }
 
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    outline: none!important;
+}
+
 ul.lgomnulogn {
     margin-top: 22px!important;
     display: flex;
