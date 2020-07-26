@@ -19,9 +19,12 @@ const Plan = ({premiumLevel}) => {
 	
 	let upgradePlan = null
 
-	let plnchnge = null;
+	let plnchngeSilver = null;
+	let plnchngeGold = null;
+	let plnchngePlatinum = null;
+	
 
-	console.log("test preminum", premiumLevel);
+	//console.log("test preminum", premiumLevel);
 	if (premiumLevel === "Basic") {
 		continueSilver = (
 			<label className="headplncards btncnt">
@@ -110,6 +113,7 @@ const Plan = ({premiumLevel}) => {
 				</span>
 			</label>
 		);
+		plnchngeSilver = "currntpln";
 	}
 
 	else if (premiumLevel === "Gold") {
@@ -142,6 +146,7 @@ const Plan = ({premiumLevel}) => {
 				</span>
 			</label>
 		);
+		plnchngeGold = "currntpln";
 	}
 
 	else if (premiumLevel === "Platinum") {
@@ -161,7 +166,7 @@ const Plan = ({premiumLevel}) => {
 				</span>
 			</label>
 		);
-		plnchnge = "currntpln";
+		plnchngePlatinum = "currntpln";
 	}
 
 
@@ -265,14 +270,14 @@ const Plan = ({premiumLevel}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                     </td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell plnchnge"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell plnchnge"
+													className={'rttttl planGrid__cell planGrid__booleanCell plnchnge ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 
@@ -280,7 +285,7 @@ const Plan = ({premiumLevel}) => {
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell plnchnge"
+													className={'rttttl planGrid__cell planGrid__booleanCell plnchnge ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -298,21 +303,21 @@ const Plan = ({premiumLevel}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                 </td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -330,21 +335,21 @@ const Plan = ({premiumLevel}) => {
                                                     <span className="planGrid__booleanLabel">&#10004;</span>
                             </td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -360,21 +365,21 @@ const Plan = ({premiumLevel}) => {
 												</td>
 												{/*<td className="rttttl planGrid__cell planGrid__stringCell" role="cell" aria-label="Mobile">1</td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													&#10004;
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													&#10004;
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngePlatinum }
 													role="cell"
 													aria-label="Premium"
 												>
@@ -394,21 +399,21 @@ const Plan = ({premiumLevel}) => {
                                                     <span className="planGrid__booleanLabel">&#10004;</span>
                         </td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' +plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' +plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -423,21 +428,21 @@ const Plan = ({premiumLevel}) => {
 												PSAT Livestream
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' +plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum }
 													role="cell"
 													aria-label="Premium"
 												>
@@ -453,21 +458,21 @@ const Plan = ({premiumLevel}) => {
 												SAT Livestream
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -483,21 +488,21 @@ const Plan = ({premiumLevel}) => {
 												SAT Pro: Intensive SAT Tutoring
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -514,21 +519,21 @@ const Plan = ({premiumLevel}) => {
 												</td>
 												{/*<td className="rttttl planGrid__cell planGrid__stringCell" role="cell" aria-label="Mobile">₹&nbsp;199</td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell ' +plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													₹&nbsp;999
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													₹&nbsp;3999
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__stringCell"
+													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
@@ -547,21 +552,21 @@ const Plan = ({premiumLevel}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                         		</td>*/}
 												<td
-													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">₹&nbsp;9999</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">₹&nbsp;29999</span>
 												</td>
 												<td
-													className="rttttl planGrid__cell planGrid__booleanCell"
+													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
 													role="cell"
 													aria-label="Premium"
 												>
