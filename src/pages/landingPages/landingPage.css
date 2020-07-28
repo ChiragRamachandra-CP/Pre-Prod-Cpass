@@ -9,6 +9,15 @@ img.satbnner {
     padding: 0px 0px 40px 0px;
 }
 
+.satID-2 {
+    background: #fff;
+    padding: 0px 0px 40px 0px;
+}
+
+.satID-2 .stdnt-sy {
+    margin-top: 280px;
+}
+
 .new-class-heading {
     margin: 0rem 0rem 1.5rem 0!important;
     text-align: center;
@@ -60,4 +69,14 @@ section.landingVideo {
 .booksbmt {
     float: right;
     margin-top: 20px;
+}
+
+.satID-1 .banner-cont h5 {
+    margin-bottom: -3.8rem!important;
+    opacity: 0.8 !important;
+    color: #fff;
+    font-weight: 700;
+    line-height: 14.4!important;
+    font-size: 1.0rem;
+    letter-spacing: 0.03em;
 }
