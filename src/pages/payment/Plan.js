@@ -78,7 +78,7 @@ const Plan = ({premiumLevel}) => {
 						<input
 							type="button"
 							name=""
-							value="Uurrent Plan"
+							value="Current Plan"
 							className="cntbtn crntplnclr"
 						/>
 					</Link>
@@ -88,7 +88,7 @@ const Plan = ({premiumLevel}) => {
 		continueGold = (
 			<label className="headplncards btncnt">
 				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/:planId">
+					<Link to="/plan/payment-upgrade/gold">
 						<input
 							type="button"
 							name=""
@@ -102,7 +102,7 @@ const Plan = ({premiumLevel}) => {
 		continuePlatinum = (
 			<label className="headplncards btncnt">
 				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/:planId">
+					<Link to="/plan/payment-upgrade/platinum">
 						<input
 							type="button"
 							name=""
@@ -135,7 +135,7 @@ const Plan = ({premiumLevel}) => {
 		continuePlatinum = (
 			<label className="headplncards btncnt">
 				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/:planId">
+					<Link to="/plan/payment-upgrade/platinum">
 						<input
 							type="button"
 							name=""
