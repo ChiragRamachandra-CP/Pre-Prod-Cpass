@@ -31,13 +31,25 @@ const BeforeLoggedInHeader = () => {
 										</Link>
 									</li>
 									<li>
-										<a href="https://www.calendly.com/collegepass">
+										<a href="/collegeAdmission">
 											<p>College Admissions</p>
 										</a>
 									</li>
-									<li>
+									<li className="hvrdsp mnuicon">
 										<Link to="">
 											<p>Tutoring</p>
+											<ul className="nav-dropdown">
+												<li>
+													<Link to="/satMasterClassPro">
+														<p>SAT MasterClassPro</p>
+													</Link>
+												</li>
+												<li>
+													<Link to="/ibTutoring">
+														<p>IB Tutoring</p>
+													</Link>
+												</li>
+											</ul>
 										</Link>
 									</li>
 									<li>

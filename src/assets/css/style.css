@@ -869,6 +869,14 @@ p.sign-up-need {
 	font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
 
+.lgomnu {
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+.lgomnu li, p {
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
 .lgomnulogn {
 	font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
@@ -904,6 +912,12 @@ ul.menu li p {
     letter-spacing: 1px;
 }
 
+ul.lgomnu li p {
+    font-size: 0.78rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
 ul.lgomnulogn li p {
     font-size: 0.78rem;
     opacity: 0.9;
@@ -919,6 +933,11 @@ ul.menu li p:hover {
     opacity: 10;
 }
 
+ul.lgomnu li p:hover {
+    color: #fff;
+    opacity: 10;
+}
+
 ul.lgomnulogn li p:hover {
     color: #fff;
     opacity: 10;
@@ -929,6 +948,18 @@ ul.nav-dropdown {
 }
 
 ul.menu li ul.nav-dropdown li p {
+	color: #000!important;
+	padding: 15px 20px;
+	margin-left: 0px;
+	font-size: 10.5px!important;
+	font-weight: 600!important;
+	letter-spacing: .12em!important;
+	line-height: normal!important;
+	opacity: .8!important;
+	text-transform: uppercase!important;
+}
+
+ul.lgomnu li ul.nav-dropdown li p {
 	color: #000!important;
 	padding: 15px 20px;
 	margin-left: 0px;
@@ -964,6 +995,18 @@ ul.menu li ul.nav-dropdown li a p {
 	text-transform: uppercase!important;
 }
 
+ul.lgomnu li ul.nav-dropdown li a p {
+	color: #000!important;
+	padding: 15px 20px;
+	margin-left: 0px;
+	font-size: 10.5px!important;
+	font-weight: 600!important;
+	letter-spacing: .12em!important;
+	line-height: normal!important;
+	opacity: .8!important;
+	text-transform: uppercase!important;
+}
+
 ul.lgomnulogn li ul.nav-dropdown li a p {
 	color: #000!important;
 	padding: 15px 20px;
@@ -985,12 +1028,22 @@ ul.menu li ul.nav-dropdown li p:hover {
 	background: #000;
 }
 
+ul.lgomnu li ul.nav-dropdown li p:hover {
+	color: #fff!important;
+	background: #000;
+}
+
 ul.lgomnulogn li ul.nav-dropdown li p:hover {
 	color: #fff!important;
 	background: #000;
 }
 
 ul.menu li ul.nav-dropdown li a p:hover {
+	color: #fff!important;
+	background: #000;
+}
+
+ul.lgomnu li ul.nav-dropdown li a p:hover {
 	color: #fff!important;
 	background: #000;
 }
@@ -1010,6 +1063,14 @@ ul.menu li ul.nav-dropdown {
 }
 
 ul.menu li ul.nav-dropdown:hover {
+	color: #fff!important;
+}
+
+ul.lgomnu li ul.nav-dropdown {
+	padding-top: 10px;
+}
+
+ul.lgomnu li ul.nav-dropdown:hover {
 	color: #fff!important;
 }
 
