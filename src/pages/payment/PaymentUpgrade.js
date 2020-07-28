@@ -180,7 +180,10 @@ const PaymentUpgrade = ({ match }) => {
 			const res = await axios.post(
 				createSubscriptionURL,
 				{
-					plan_id: planID
+					plan_id: planID,
+					upgrade:1,
+					user_email:localStorage.user
+
 				},
 				config
 			);
