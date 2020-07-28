@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
+import Notify from '../modal/Notify';
 
 import { APIgetLiveSession } from '../../config/API';
 
@@ -65,15 +66,11 @@ const UpcomingLiveSession = () => {
 						)}
 					</div>
 
-					<div className="vidicncntr">
+					<div className="vidicncntrlve">
 						{enableButtons === false && (
-							<a
-								href={`${availableLiveEvents[i].CALLENDER_LINK}`}
-								target="_BLANK"
-								rel="noopener noreferrer"
-							>
-								<i className="fa fa-calendar" aria-hidden="true" />
-							</a>
+							<Link to="" className="vidlivebtnn">
+								Notify Me
+							</Link>
 						)}
 					</div>
 
@@ -86,7 +83,7 @@ const UpcomingLiveSession = () => {
 						<div className="ledtext">LIVE STREAM</div>
 					</div>
 
-					<div className="led-box liveledbox">
+					{/*<div className="led-box liveledbox">
 						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (
 							<div className="ledtext silver">Silver</div>
 						)}
@@ -96,7 +93,9 @@ const UpcomingLiveSession = () => {
 						{availableLiveEvents[i].PREMIUM_LEVEL === 4 && (
 							<div className="ledtext platinum">Platinum</div>
 						)}
-					</div>
+						</div>*/}
+
+						<Notify />
 
 				</div>
 			);

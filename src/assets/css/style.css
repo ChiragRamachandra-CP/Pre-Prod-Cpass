@@ -3634,6 +3634,10 @@ ul.breadcrumb {
     background: #0000008f;
 }
 
+#notify {
+    background: #0000008f;
+}
+
 .modal-content button.kep-login-facebook.metro {
     padding: 15px 48px!important;
 }
