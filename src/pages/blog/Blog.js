@@ -13,8 +13,9 @@ const Blog = ({ auth: { isAuthenticated } }) => {
 	return (
 		<Fragment>
 			{headerComponent}
-			<div className="site-wrap">
-                <section className="blogmain">
+            <div className="site-wrap" style={{marginTop: '120px'}}>
+            <h1 style={{textAlign:'center', color: '#fff', padding: '60px 0px', fontSize: '30px', fontWeight: '600'}}>Coming Soon</h1>
+                {/*<section className="blogmain">
                     <div className="container">
                         <div className="singleBlog blogspacing">
                             <div className="col-md-12 blogsecdev">
@@ -315,7 +316,7 @@ const Blog = ({ auth: { isAuthenticated } }) => {
                         </div>
 
                     </div>
-                </section>
+    </section>*/}
 			</div>
 			<Footer />
 		</Fragment>
