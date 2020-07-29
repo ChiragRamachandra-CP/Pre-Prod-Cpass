@@ -18,7 +18,17 @@ img.satbnner {
     margin-top: 280px;
 }
 
-.new-class-heading {
+.satID-1 .new-class-heading {
+    margin: 0rem 0rem 1.5rem 0!important;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 1.9rem;
+    color: #000!important;
+    font-family: "Lato","Helvetica","Arial",sans-serif!important;
+}
+
+.satID-2 .new-class-heading {
     margin: 0rem 0rem 1.5rem 0!important;
     text-align: center;
     font-weight: 700;
@@ -82,6 +92,10 @@ section.landingVideo {
 }
 
 .satID-2 .banner-cont h5 {
+    color: #000;
+}
+
+.satID-2 .banner-cont h5 {
     margin-bottom: -3.8rem!important;
     opacity: 0.8 !important;
     color: #fff;
@@ -89,4 +103,13 @@ section.landingVideo {
     line-height: 14.4!important;
     font-size: 1.0rem;
     letter-spacing: 0.03em;
+}
+
+.satID-1 .banner-cont h1 {
+    color: rgb(200, 50, 50);
+}
+
+.satID-1 .bnnrhedsndlne {
+    font-size: 22px;
+    color: #fbf2a4;
 }

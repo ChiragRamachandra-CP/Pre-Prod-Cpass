@@ -14,7 +14,7 @@ const SliderLandingPage = () => {
 							</div>
 						</div>
 						<img
-							src={'../../assets/images/SATT.png'}
+							src={'../../assets/images/SATTT.png'}
 							alt="Banner" className="satbnner"
 						/>
 						<div className="container top-bnnr">
@@ -22,7 +22,7 @@ const SliderLandingPage = () => {
 								<div className="col-md-8 banner-cont">
 									<h1>Score 1500+ With SAT Masterclass<span className="bnnrhedsndlne"><br/>COLLEGEPASS STUDENT HAVE CONSISTENTLY SCORED 1500+ ON CONSECUTIVE SAT TESTS IN 2019-20.</span></h1>
 									<h5>LEARN FROM TOP RATED, INTERNATIONAL TUTORS!</h5>
-									<p className="bannerbtnbl">Book Your Free Consultant</p>
+									<p className="bannerbtnbl">Book Your Free Consultation</p>
 </div>
 								
 							</div>

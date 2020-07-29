@@ -15,24 +15,32 @@ const LandingPageForm = () => {
                                 <div className="row">
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                    <label for="first">Full Name</label>
+                                    <label for="first">First Name</label>
                                     <input type="text" className="form-control" placeholder="" id="first" />
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="form-group">
-                                    <label for="last">Email</label>
-                                    <input type="email" class="form-control" placeholder="" id="Email" />
+                                    <label for="first">Last Name</label>
+                                    <input type="text" className="form-control" placeholder="" id="last" />
                                     </div>
                                 </div>
                                 </div>
                                 <div className="row">
                                 <div className="col-md-6">
                                     <div className="form-group">
+                                    <label for="last">Email</label>
+                                    <input type="email" class="form-control" placeholder="" id="Email" />
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <div className="form-group">
                                     <label for="company">Mobile</label>
                                     <input type="tel" className="form-control" placeholder="" id="phone" />
                                     </div>
                                 </div>
+                                </div>
+                                <div className="row">
                                 <div className="col-md-6">
 
                                     <div className="form-group">
@@ -40,9 +48,7 @@ const LandingPageForm = () => {
                                     <input type="text" className="form-control" id="school" placeholder="" />
                                     </div>
                                 </div>
-                                </div>
-                                <div className="row">
-                                <div className="col-md-12">
+                                <div className="col-md-6">
 
                                     <div className="form-group">
                                     <label for="email">City</label>
