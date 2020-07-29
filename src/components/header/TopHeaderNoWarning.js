@@ -32,9 +32,21 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<p>Home</p>
 										</Link>
 									</li>
-									<li>
-										<Link to="/collegeAdmission">
+									<li className="hvrdsp mnuicon">
+										<Link to="">
 											<p>College Admissions</p>
+											<ul className="nav-dropdown">
+												<li>
+													<Link to="/#upcomigTop">
+														<p>Live Session</p>
+													</Link>
+												</li>
+												<li>
+													<a href="https://www.calendly.com/collegepass" target="_blank" rel="noopener noreferrer">
+														<p>Book a free consultation</p>
+													</a>
+												</li>
+											</ul>
 										</Link>
 									</li>
 									<li className="hvrdsp mnuicon">
@@ -49,6 +61,11 @@ const AfterLoggedInHeader = ({ logout }) => {
 												<li>
 													<Link to="/ibTutoring">
 														<p>IB Tutoring</p>
+													</Link>
+												</li>
+												<li>
+													<Link to="psatTutoring">
+														<p>PSAT Tutoring</p>
 													</Link>
 												</li>
 											</ul>

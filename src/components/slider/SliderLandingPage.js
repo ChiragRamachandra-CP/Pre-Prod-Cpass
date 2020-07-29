@@ -19,6 +19,11 @@ const SliderLandingPage = ({sliderNumber}) => {
 			<img src={"/assets/images/IB.png"} alt="Banner" className="satbnner" />
 		);
 	}
+	if (sliderNumber === "PSAT") {
+		imageComponent = (
+			<img src={"/assets/images/PSAT.png"} alt="Banner" className="satbnner" />
+		);
+	}
 
 	return (
 		<Fragment>
@@ -46,7 +51,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 										</span>
 									</h1>
 									<h5>LEARN FROM TOP RATED, INTERNATIONAL TUTORS!</h5>
-									<p className="bannerbtnbl">Book Your Free Consultant</p>
+									<p className="bannerbtnbl">Book Your Free Consultation</p>
 								</div>
 							</div>
 						</div>

@@ -68,7 +68,7 @@ const UpcomingLiveSession = () => {
 
 					<div className="vidicncntrlve">
 						{enableButtons === false && (
-							<Link to="" className="vidlivebtnn">
+							<Link to="" className="vidlivebtnn"  data-toggle="modal" data-target="#notify">
 								Notify Me
 							</Link>
 						)}
