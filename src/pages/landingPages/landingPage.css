@@ -14,8 +14,12 @@ img.satbnner {
     padding: 0px 0px 40px 0px;
 }
 
-.satID-2 .stdnt-sy {
-    margin-top: 280px;
+.bookingformmain .new-class-heading{
+    color: #fff!important;
+}
+
+p.bannerbtnbl a {
+    color: #fff;
 }
 
 .satID-1 .new-class-heading {
@@ -24,7 +28,7 @@ img.satbnner {
     font-weight: 700;
     line-height: 1.25;
     font-size: 1.9rem;
-    color: #000!important;
+    color: #000;
     font-family: "Lato","Helvetica","Arial",sans-serif!important;
 }
 
@@ -34,7 +38,7 @@ img.satbnner {
     font-weight: 700;
     line-height: 1.25;
     font-size: 1.9rem;
-    color: #000!important;
+    color: #000;
     font-family: "Lato","Helvetica","Arial",sans-serif!important;
 }
 
@@ -59,13 +63,25 @@ li.fvlnetxt {
 }
 
 section.landingVideo {
-    padding: 280px 0px 0px 0px;
+    /*padding: 280px 0px 0px 0px;*/
     text-align: center;
+}
+
+.satID-1 .bkngsec {
+    padding-top: 15px!important;
+}
+
+.bookingformmain {
+    background: #191c21;
+}
+
+.satID-2 .bkngsec {
+    padding-top: 15px!important;
 }
 
 .bookform {
     background: #191c21;
-    padding: 50px 70px 85px 70px;
+    padding: 10px 70px 85px 70px;
 }
 
 .bookform label {
@@ -82,11 +98,11 @@ section.landingVideo {
 }
 
 .satID-1 .banner-cont h5 {
-    margin-bottom: -3.8rem!important;
+    margin-bottom: 0.1rem!important;
     opacity: 0.8 !important;
     color: #fff;
     font-weight: 700;
-    line-height: 14.4!important;
+    line-height: 8!important;
     font-size: 1.0rem;
     letter-spacing: 0.03em;
 }
@@ -96,20 +112,42 @@ section.landingVideo {
 }
 
 .satID-2 .banner-cont h5 {
-    margin-bottom: -3.8rem!important;
+    margin-bottom: 0.1rem!important;
     opacity: 0.8 !important;
     color: #fff;
     font-weight: 700;
-    line-height: 14.4!important;
+    line-height: 8!important;
     font-size: 1.0rem;
     letter-spacing: 0.03em;
 }
 
+.satID-1 .heros-sections img {
+    opacity: 0.5;
+}
+
+.satID-2 .heros-sections img {
+    opacity: 0.5;
+}
+
 .satID-1 .banner-cont h1 {
-    color: rgb(200, 50, 50);
+    color: #e6a851;
+    max-width: 650px;
+}
+
+.satID-2 .banner-cont h1 {
+    color: #e6a851;
+    max-width: 650px;
+}
+
+.satID-2 .Sliders {
+    background: #000000;
+}
+
+.satID-1 .Sliders {
+    background: #000000;
 }
 
 .satID-1 .bnnrhedsndlne {
     font-size: 22px;
-    color: #fbf2a4;
+    color: #ffffff;
 }

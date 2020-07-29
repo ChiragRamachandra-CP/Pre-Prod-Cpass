@@ -2,8 +2,8 @@ import React, {Fragment} from "react";
 import AfterLoggedInHeader from "../../components/header/AfterLoggedInHeader";
 import Footer from "../../components/footer/Footer";
 import SliderLandingPage from "../../components/slider/SliderLandingPage";
-import LandingPageIcon from "../../components/marketBanner/LandingPageIcon";
-//import Video from '../../components/video/Video';
+//import LandingPageIcon from "../../components/marketBanner/LandingPageIcon";
+import Video from '../../components/video/Video';
 import Testimonial from "../../components/testimonial/Testimonial";
 import LandingPageForm from "../../components/form/LandingPageForm";
 
@@ -46,9 +46,10 @@ const IBTutoring = () => {
 						</section>
 					</div>
 				</section>
-				<LandingPageIcon />
-				<Testimonial />
+				{/*<LandingPageIcon />*/}
 				<LandingPageForm />
+				<Testimonial />
+				<Video />
 				<Footer />
 			</div>
 		</Fragment>
