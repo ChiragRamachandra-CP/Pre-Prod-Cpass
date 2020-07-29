@@ -80,3 +80,13 @@ section.landingVideo {
     font-size: 1.0rem;
     letter-spacing: 0.03em;
 }
+
+.satID-2 .banner-cont h5 {
+    margin-bottom: -3.8rem!important;
+    opacity: 0.8 !important;
+    color: #fff;
+    font-weight: 700;
+    line-height: 14.4!important;
+    font-size: 1.0rem;
+    letter-spacing: 0.03em;
+}

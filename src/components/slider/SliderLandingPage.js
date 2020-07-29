@@ -14,7 +14,7 @@ const SliderLandingPage = () => {
 							</div>
 						</div>
 						<img
-							src={'../../assets/images/SAT.png'}
+							src={'../../assets/images/SATT.png'}
 							alt="Banner" className="satbnner"
 						/>
 						<div className="container top-bnnr">
