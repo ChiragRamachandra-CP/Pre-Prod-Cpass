@@ -1,6 +1,25 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from "react";
 
-const SliderLandingPage = () => {
+const SliderLandingPage = ({sliderNumber}) => {
+	let imageComponent = (
+		<img
+			src={"../../../public/assets/images/SAT.png"}
+			alt="Banner"
+			className="satbnner"
+		/>
+	);
+
+	if (sliderNumber === "SAT_MASTER_PRO") {
+		imageComponent = (
+			<img src={"/assets/images/SAT.png"} alt="Banner" className="satbnner" />
+		);
+	}
+	if (sliderNumber === "IB_TUTORING") {
+		imageComponent = (
+			<img src={"/assets/images/IB.png"} alt="Banner" className="satbnner" />
+		);
+	}
+
 	return (
 		<Fragment>
 			<div className="Sliders">
@@ -13,22 +32,25 @@ const SliderLandingPage = () => {
     <p className="bannerbtnbl" data-toggle="modal" data-target="#myModal">Create Your Free Account</p>*/}
 							</div>
 						</div>
-						<img
-							src={'../../assets/images/SATT.png'}
-							alt="Banner" className="satbnner"
-						/>
+
+						{imageComponent}
 						<div className="container top-bnnr">
 							<div className="row">
 								<div className="col-md-8 banner-cont">
-									<h1>Score 1500+ With SAT Masterclass<span className="bnnrhedsndlne"><br/>COLLEGEPASS STUDENT HAVE CONSISTENTLY SCORED 1500+ ON CONSECUTIVE SAT TESTS IN 2019-20.</span></h1>
+									<h1>
+										Score 1500+ With SAT Masterclass
+										<span className="bnnrhedsndlne">
+											<br />
+											COLLEGEPASS STUDENT HAVE CONSISTENTLY SCORED 1500+ ON
+											CONSECUTIVE SAT TESTS IN 2019-20.
+										</span>
+									</h1>
 									<h5>LEARN FROM TOP RATED, INTERNATIONAL TUTORS!</h5>
 									<p className="bannerbtnbl">Book Your Free Consultant</p>
-</div>
-								
+								</div>
 							</div>
 						</div>
-							
-						</div>
+					</div>
 				</section>
 			</div>
 		</Fragment>
