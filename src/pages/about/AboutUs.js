@@ -4,8 +4,9 @@ import AfterLoggedInHeader from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import Testimonial from "../../components/testimonial/Testimonial";
 
-const AboutUs = ({ auth: { isAuthenticated } }) => {
+const About = ({ auth: { isAuthenticated } }) => {
 	let headerComponent = <BeforeLoggedInHeader />;
 	if (isAuthenticated) {
 		headerComponent = <AfterLoggedInHeader />;
@@ -14,53 +15,43 @@ const AboutUs = ({ auth: { isAuthenticated } }) => {
 		<Fragment>
 			{headerComponent}
 			<div className="site-wrap">
-				<section className="newest-class aboutmain">
+				<section className="newest-class aboutmain aboutmainTest">
 					<div className="container">
-						<div className="new-className">
-							<h2>ABOUT US</h2>
-							<p>
-							CollegePass has been founded to help students and parents access high quality, reliable college and career advice at the click of a button.
-							</p>
-							<p>
-							"A college education is more important now than ever before, for both tangible and intangible reasons. A college degree is still the surest way to increase wage potential. In addition, with the rise of artificial intelligence and the consistent call for multi-talented and flexible critical thinkers in our workplaces, college is — and will increasingly be — the best way to prepare for an uncertain future."
-							</p>
-							<p>Mark A Heckler, Chicago Tribune</p>
+						<div className="new-class aboutestw">
+							<h2 style={{textAlign: 'center', fontSize: '40px', lineHeight: '0.2'}}>Join Your Dream College</h2>
+							<p style={{fontSize: '20px', lineHeight: '1.9rem', color: '#000', fontWeight: '500', opacity: '0.8'}}>CollegePass is making High Quality College Admission Advice, Standardised Test Preparation accessible to High Schoolers worldwide at the click of a button!</p>
+                        </div>
+                        
+                        <div className="new-class aboutestv">
+                            <div className="testmenu">
+                            <ul>
+                                <li><a href="#missionID">Our Mission <i class="fa fa-chevron-right" aria-hidden="true" style={{fontSize: '12px', fontWeight: '200'}}></i></a></li>
+                                <li style={{display: 'none'}}><a href="#">Meet the Team <i class="fa fa-chevron-right" aria-hidden="true" style={{fontSize: '12px', fontWeight: '200'}}></i></a></li>
+                                <li><a href="#studentTestimonial">What Students are Saying <i class="fa fa-chevron-right" aria-hidden="true" style={{fontSize: '12px', fontWeight: '200'}}></i></a></li>
+                            </ul>
+                            </div>
+                            <div className="testvideo">
+                            <video width="1000px" id="sing_vd" autoplay muted>
+                                <source src="../../assets/images/Marketing.mp4" type="video/mp4" />
+                            </video>
+                            </div>
+                        </div>
 
-							<h3>Vision</h3>
-							<p>
-							 "Every student worldwide should have access to High Quality, College & Career Counselling."
-							</p>
-							<p>
-							At CollegePass, our mission is connecting students to Colleges & Careers by leveraging artificial intelligence and expert advisors worldwide.
-							</p>
-							<p>
-							We believe World Class Original & Curated Content delivered in a personalised and affordable way using technology is the key to ensuring every child has access to his own virtual private college and career counsellor.
-							</p>
-
-							<h3>Mission 2025</h3>
-							<p>Enable 15 Million Higher Education Decisions!</p>
-							<p>
-							If our vision inspires you, contribute (part time) or join our international team committed to making high quality college and career advice accessible to every student worldwide. Please email us your interest at{' '}
-								<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
-									support@collegepass.org
-								</a>
-							</p>
-
-							<p>Aakash Abraham Aaron</p>
-
-							<p>
-								Founder & CEO<br />CollegePass
-							</p>
-						</div>
+                        <div className="new-class aboutestw" id="missionID">
+							<h2 style={{textAlign: 'center', fontSize: '22px', lineHeight: '0.2', marginTop: '70px'}}>Our Mission</h2>
+							<p style={{fontSize: '20px', lineHeight: '1.9rem', color: '#000', fontWeight: '500', opacity: '0.8'}}>We believe World Class, Live Content delivered in a personalised and affordable way using technology is the key to ensuring every child has access to his own virtual private college coach.</p>
+                        </div>
+                        
 					</div>
 				</section>
-			</div>
+            </div>
+				<Testimonial />
 			<Footer />
 		</Fragment>
 	);
 };
 
-AboutUs.propTypes = {
+About.propTypes = {
 	auth: PropTypes.object.isRequired
 };
 
@@ -68,4 +59,4 @@ const mapStateToProps = (state) => ({
 	auth: state.auth
 });
 
-export default connect(mapStateToProps)(AboutUs);
+export default connect(mapStateToProps)(About);

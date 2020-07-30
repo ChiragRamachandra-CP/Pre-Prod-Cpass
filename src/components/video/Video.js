@@ -27,7 +27,7 @@ const Video = ({landingVideo}) => {
         videoTextComponent = 
         <div className="vidtext">
             <h2 className="new-class-heading">SAT Masterclass</h2>
-            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>Class Preview</p>
+            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>A Preview</p>
         </div>
     }
     
@@ -47,7 +47,7 @@ const Video = ({landingVideo}) => {
         videoTextComponent = 
         <div className="vidtext">
             <h2 className="new-class-heading">CollegePass - Your Personal College Coach</h2>
-            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>Class Preview</p>
+            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>A Preview</p>
         </div>
     }
     
@@ -67,7 +67,7 @@ const Video = ({landingVideo}) => {
         videoTextComponent = 
         <div className="vidtext">
             <h2 className="new-class-heading">CollegePass Admission Advising </h2>
-            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>Class Preview</p>
+            <p className="heddesc" style={{marginBottom: '1.5rem', marginTop: '-1rem'}}>A Preview</p>
         </div>
 	}
 
