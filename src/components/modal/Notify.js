@@ -1,31 +1,164 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import axios from 'axios';
+import { setAlert } from '../../actions/alert';
+import { APInotify } from '../../config/API';
 
-const Notify = () => {
+import { succFeedback } from '../../config/success';
+import { errorFeedback } from '../../config/error';
+
+
+const Notify = (setAlert) => {
+	const [ formData, setFormData ] = useState({
+		fname: '',
+		lname: '',
+		email: '',
+		phone: ''
+	});
+
+	const { fname, lname, email, phone } = formData;
+
+	const onChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const onSubmit = async (e) => {
+		e.preventDefault();
+
+		try {
+			const config = {
+				headers: {
+					//Authorization: `Bearer ${localStorage.token}`,
+					'Content-Type': 'application/json'
+				}
+			};
+			const result = await axios.post(
+				APInotify,
+				{
+					"EMAIL": email,
+					"Phone": phone,
+					"first_name": fname,
+					"last_name": lname
+				},
+				config
+			);
+			//console.log('Feedback completed', result);
+			setAlert(succFeedback, 'success');
+
+		} catch (err) {
+			setAlert(errorFeedback, 'danger');
+		}
+	};
+
+	
 
 	return (
 		<Fragment>
-			<div class="modal" id="notify">
-			<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h4 class="modal-title">Modal Heading</h4>
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div className="modal fade" id="notify">
+				<div className="modal-dialog">
+					<div className="modal-content">
+						<div className="head">
+							<h4 className="log-title">Notify Me</h4>
+							<button type="button" className="close imgpopup" data-dismiss="modal">
+								&times;
+							</button>
+						</div>
+						<div className="content">
+							<div>
+								<form onSubmit={onSubmit}>
+									<div className="">
+										<div className="">
+											<div className="col align-self-end">
+												<label htmlFor="firstName" className="txt-i">
+													First Name
+												</label>
+											</div>
+											<div className="col-12">
+												<input
+													name="fname"
+													type="text"
+													className="fit"
+													value={fname}
+													onChange={onChange}
+													required
+												/>
+											</div>
+										</div>
+									</div>
+									<div className="">
+										<div className="">
+											<div className="col align-self-end">
+												<label htmlFor="lastName" className="txt-i">
+													Last Name
+												</label>
+											</div>
+											<div className="col-12">
+												<input
+													name="lname"
+													type="text"
+													className="fit"
+													value={lname}
+													onChange={onChange}
+													required
+												/>
+											</div>
+										</div>
+									</div>
+									<div className="">
+										<div className="">
+											<div className="col align-self-end">
+												<label htmlFor="email" className="txt-i">
+													Email
+												</label>
+											</div>
+											<div className="col-12">
+												<input
+													name="email"
+													type="email"
+													className="fit"
+													value={email}
+													onChange={onChange}
+												/>
+											</div>
+										</div>
+									</div>
+									<div className="">
+										<div className="">
+											<div className="col align-self-end">
+												<label htmlFor="phone" className="txt-i">
+													Phone
+												</label>
+											</div>
+											<div className="col-12">
+												<input
+													name="phone"
+													type="tel"
+													className="fit"
+													value={phone}
+													onChange={onChange}
+												/>
+											</div>
+										</div>
+									</div>
+									<button className="lgn-btn" onSubmit={onSubmit}>
+										Submit
+									</button>
+									<p></p>
+									<br/>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
-				
-				<div class="modal-body">
-				Modal body..
-				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-				</div>
-				
 			</div>
-			</div>
-		</div>
-
-			
 		</Fragment>
 	);
 };
 
-export default Notify;
+Notify.propTypes = {
+	setAlert: PropTypes.func.isRequired
+};
+
+
+export default connect(null, { setAlert })(Notify);

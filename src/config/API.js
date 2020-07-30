@@ -40,3 +40,8 @@ export const APIgetZoomSignature = 'https://apitest.collegepass.org/api/v1/event
 export const APIstoreJoinedUser = 'https://apitest.collegepass.org/api/v1/events/storeJoinedUser/';
 export const APIupdateEventSpentTime = 'https://apitest.collegepass.org/api/v1/events/updateEventSpentTime/';
 export const APIgetLiveClass = 'https://apitest.collegepass.org/api/v1/events/getLiveClasses/';
+export const APInotify = 'https://apitest.collegepass.org/api/v2/auth/notifyMe';
+
+
+
+

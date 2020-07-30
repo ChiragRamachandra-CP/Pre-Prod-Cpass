@@ -45,7 +45,6 @@ const UpcomingLiveSession = () => {
 			// console.log(eventTime.format());
 			//console.log(enableTime);
 			//console.log(stopTime);
-
 			// enableButtons = moment('2020-10-20').isBetween('2020-01-20', '2020-12-25');
 			enableButtons = curTime.isBetween(enableTime, stopTime);
 			//enableButtons = curTime.isBetween(enableTime.format(formatted), stopTime.format(formatted));
