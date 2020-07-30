@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from "react";
 
-const LandingPageForm = () => {
+const LandingPageForm = (landingFormText) => {
 	const [formData, setFormData] = useState({
 		fname: "",
 		lname: "",
@@ -19,33 +19,126 @@ const LandingPageForm = () => {
 		e.preventDefault();
 		// login(email, password);
 	};
+
+
+	let landigFormHeading = (
+		<div>
+			<p
+				style={{
+					textAlign: "center",
+					color: "#fff",
+					opacity: "0.6",
+					marginTop: "0.8rem",
+					marginBottom: "0.5rem",
+				}}
+			>
+			The CollegePass Experience
+			</p>
+			<h2
+				className="new-class-heading"
+				style={{
+					marginTop: "-1.5rem!important",
+					marginBottom: "2.0rem!important",
+					color: '#fff!important',
+				}}
+			>
+			Book Your Free Trial Class
+			</h2>
+	</div>
+	);
+
+	if (landingFormText === "SAT_FORM") {
+		landigFormHeading = (
+			<div>
+				<p
+					style={{
+						textAlign: "center",
+						color: "#fff",
+						opacity: "0.6",
+						marginTop: "0.8rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+				Beat the SAT/PSAT
+				</p>
+				<h2
+					className="new-class-heading"
+					style={{
+						marginTop: "-1.5rem!important",
+						marginBottom: "2.0rem!important",
+						color: '#fff!important',
+					}}
+				>
+				Book Your Free Trial Class
+				</h2>
+			</div>
+		);
+	}
+
+	if (landingFormText === "IB_FORM") {
+		landigFormHeading = (
+			<div>
+				<p
+					style={{
+						textAlign: "center",
+						color: "#fff",
+						opacity: "0.6",
+						marginTop: "0.8rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+				IB/IGCSE Masterclasses
+				</p>
+				<h2
+					className="new-class-heading"
+					style={{
+						marginTop: "-1.5rem!important",
+						marginBottom: "2.0rem!important",
+						color: '#fff!important',
+					}}
+				>
+				Book Your Free Trial Class
+				</h2>
+			</div>
+		);
+	}
+
+	if (landingFormText === "CA_FORM") {
+		landigFormHeading = (
+			<div>
+				<p
+					style={{
+						textAlign: "center",
+						color: "#fff",
+						opacity: "0.6",
+						marginTop: "0.8rem",
+						marginBottom: "0.5rem",
+					}}
+				>
+				Join Your Dream College
+				</p>
+				<h2
+					className="new-class-heading"
+					style={{
+						marginTop: "-1.5rem!important",
+						marginBottom: "2.0rem!important",
+						color: '#fff!important',
+					}}
+				>
+				Book Your Free Consultation
+				</h2>
+			</div>
+		);
+	}
+
+
+
 	return (
 		<Fragment>
 			<section className="bookingformmain" id="gotolandingform">
 				<div className="container bkngsec">
 					<div className="col-md-12">
-						<p
-							style={{
-								textAlign: "center",
-								color: "#fff",
-								opacity: "0.6",
-								marginTop: "0.8rem",
-								marginBottom: "0.5rem",
-							}}
-						>
-							The CollegePass SAT Masterclass Pro Experience
-						</p>
-
-						<h2
-							className="new-class-heading"
-							style={{
-								marginTop: "-1.5rem!important",
-								marginBottom: "2.0rem!important",
-								color: '#fff!important',
-							}}
-						>
-							Book Your Free 30 Minute Trial Class
-						</h2>
+						{landigFormHeading}
 						<div className="upcmnglsv">
 							<div className="bookform">
 								<form>

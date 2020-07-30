@@ -42,9 +42,9 @@ const AfterLoggedInHeader = ({ logout }) => {
 													</Link>
 												</li>
 												<li>
-													<a href="https://www.calendly.com/collegepass" target="_blank" rel="noopener noreferrer">
+													<Link to="/college-admission">
 														<p>Book a free consultation</p>
-													</a>
+													</Link>
 												</li>
 											</ul>
 										</Link>
@@ -55,17 +55,12 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<ul className="nav-dropdown">
 												<li>
 													<Link to="/sat-master-class-pro">
-														<p>SAT MasterClassPro</p>
+														<p>SAT/PSAT Tutoring</p>
 													</Link>
 												</li>
 												<li>
 													<Link to="/ib-tutoring">
-														<p>IB Tutoring</p>
-													</Link>
-												</li>
-												<li>
-													<Link to="/college-admission">
-														<p>College Admission</p>
+														<p>IB/IGCSE Tutoring</p>
 													</Link>
 												</li>
 											</ul>

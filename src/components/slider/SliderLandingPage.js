@@ -9,21 +9,61 @@ const SliderLandingPage = ({sliderNumber}) => {
 		/>
 	);
 
+	let sliderTextLanding = '';
+
 	if (sliderNumber === "SAT_MASTER_PRO") {
 		imageComponent = (
-			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner3.jpg"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/SAT.png"} alt="Banner" className="satbnner" />
 		);
+
+		sliderTextLanding = <div className="col-md-8 banner-cont">
+		<h1>
+		Score 1500+ on the SAT
+			<span className="bnnrhedsndlne">
+				<br />
+				Learn from Top Rated, Experienced Tutors
+			</span>
+		</h1>
+		<h5>80+ Live Classes</h5>
+		<p className="bannerbtnbl"><a href="#gotolandingform">Book Your Free Trial Class</a></p>
+	</div>
 	}
+
+
 	if (sliderNumber === "IB_TUTORING") {
 		imageComponent = (
-			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner1.jpg"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/IBTutoring.png"} alt="Banner" className="satbnner" />
 		);
+		sliderTextLanding = <div className="col-md-8 banner-cont">
+		<h1>
+		IB/IGCSE Masterclasses
+			<span className="bnnrhedsndlne">
+				<br />
+				Learn from Top Rated, Experienced IB/IGCSE Tutors
+			</span>
+		</h1>
+		<h5>IB/IGCSE Tutoring</h5>
+		<p className="bannerbtnbl"><a href="#gotolandingform">Book Your Free Trial Class</a></p>
+	</div>
 	}
+
 	if (sliderNumber === "COLLEGE_ADMISSION") {
 		imageComponent = (
-			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner2.jpg"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/CollegeAdmission.png"} alt="Banner" className="satbnner" />
 		);
+		sliderTextLanding = <div className="col-md-8 banner-cont">
+		<h1>
+		Join Your Dream College
+			<span className="bnnrhedsndlne">
+				<br />
+				Learn from Ivy League/Oxbridge Admission Advisors
+			</span>
+		</h1>
+		<h5>100+ Live Online Sessions</h5>
+		<p className="bannerbtnbl"><a href="#gotolandingform">Book Your Free Consultation</a></p>
+	</div>
 	}
+
 
 	return (
 		<Fragment>
@@ -41,18 +81,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 						{imageComponent}
 						<div className="container top-bnnr">
 							<div className="row">
-								<div className="col-md-8 banner-cont">
-									<h1>
-										Score 1500+ With SAT Masterclass
-										<span className="bnnrhedsndlne">
-											<br />
-											CollegePass Students have Consistently Scored 1500+ on
-											Consecutive SAT Tests in 2019-20.
-										</span>
-									</h1>
-									<h5>Learn from top Rated, International Tutors!</h5>
-									<p className="bannerbtnbl"><a href="#gotolandingform">Book Your Free Consultation</a></p>
-								</div>
+								{sliderTextLanding}
 							</div>
 						</div>
 					</div>

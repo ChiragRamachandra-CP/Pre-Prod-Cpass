@@ -3561,7 +3561,8 @@ button.close.imgpopup {
 }
   
   .led-red {
-    float: left;
+	float: left;
+	margin-top: 4px;
     width: 10px;
     color: #c83232;
     height: 10px;

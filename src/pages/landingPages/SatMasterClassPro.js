@@ -2,7 +2,6 @@ import React, {Fragment} from "react";
 import AfterLoggedInHeader from "../../components/header/AfterLoggedInHeader";
 import Footer from "../../components/footer/Footer";
 import SliderLandingPage from "../../components/slider/SliderLandingPage";
-//import LandingPageIcon from "../../components/marketBanner/LandingPageIcon";
 import Video from "../../components/video/Video";
 import Testimonial from "../../components/testimonial/Testimonial";
 import LandingPageForm from "../../components/form/LandingPageForm";
@@ -22,32 +21,31 @@ const SatMasterClassPro = () => {
 								<div className="frsttxt">
 									<p className="heddesc">The CollegePass Experience</p>
 									<h2 className="new-class-heading" style={{textAlign: "left"}}>
-										Join Your Dream College
+									Beat the SAT/PSAT
 									</h2>
 									<li className="fvlnetxt">
-										CollegePass Tutors are Internationally, Experienced Tutors!
+									CollegePass students have consistently scored 1500+ in consecutive test dates across 2019-20
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Tutors have graduated from leading universities
-										worldwide.
+									Learn from Top Rated, Internationally Experienced Tutors
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Students have consistently scored 1500+ in
-										Consecutive SAT Test Dates in 2019-20
+									Classes Every Week
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Students have a Personal Student Success
-										Manager.
+									10+ Practice Tests 
+									</li>
+									<li className="fvlnetxt">
+									Personalised Tutor Feedback
 									</li>
 								</div>
 							</div>
 						</section>
 					</div>
 				</section>
-				{/*<LandingPageIcon />*/}
-				<LandingPageForm />
+				<LandingPageForm landingFormText={"CA_FORM"} />
 				<Testimonial />
-				<Video />
+				<Video landingVideo={"SAT_VID"} />
 				<Footer />
 			</div>
 		</Fragment>

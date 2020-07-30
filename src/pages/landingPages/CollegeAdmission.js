@@ -2,7 +2,6 @@ import React, {Fragment} from "react";
 import AfterLoggedInHeader from "../../components/header/AfterLoggedInHeader";
 import Footer from "../../components/footer/Footer";
 import SliderLandingPage from "../../components/slider/SliderLandingPage";
-//import LandingPageIcon from "../../components/marketBanner/LandingPageIcon";
 import Video from "../../components/video/Video";
 import Testimonial from "../../components/testimonial/Testimonial";
 import LandingPageForm from "../../components/form/LandingPageForm";
@@ -20,32 +19,31 @@ const CollegeAdmission = () => {
 								<div className="frsttxt">
 									<p className="heddesc">The CollegePass Experience</p>
 									<h2 className="new-class-heading" style={{textAlign: "left"}}>
-										Join Your Dream College
+									Join Your Dream College
 									</h2>
 									<li className="fvlnetxt">
-										CollegePass Tutors are Internationally, Experienced Tutors!
+									Learn from Ivy League/OxBridge Admission Advisors
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Tutors have graduated from leading universities
-										worldwide.
+									Get your Personalised College Application Timeline
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Students have consistently scored 1500+ in
-										Consecutive SAT Test Dates in 2019-20
+									Craft Your College Application Strategy
 									</li>
 									<li className="fvlnetxt">
-										CollegePass Students have a Personal Student Success
-										Manager.
+									Choose Your Extracurriculars
+									</li>
+									<li className="fvlnetxt">
+									Prepare for SAT/ACT/BMAT/APs
 									</li>
 								</div>
 							</div>
 						</section>
 					</div>
 				</section>
-				{/*<LandingPageIcon />*/}
-				<LandingPageForm />
+				<LandingPageForm landingFormText={"IB_FORM"} />
 				<Testimonial />
-				<Video />
+				<Video landingVideo={"COLLEGE_ADMISSION_VID"} />
 				<Footer />
 			</div>
 		</Fragment>

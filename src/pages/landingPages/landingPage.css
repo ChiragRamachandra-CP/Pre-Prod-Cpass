@@ -98,6 +98,10 @@ section.landingVideo {
 }
 
 .satID-1 .banner-cont h5 {
+    line-height: 1.99;
+}
+
+/*.satID-2 .banner-cont h5 {
     margin-bottom: 0.1rem!important;
     opacity: 0.8 !important;
     color: #fff;
@@ -105,21 +109,7 @@ section.landingVideo {
     line-height: 8!important;
     font-size: 1.0rem;
     letter-spacing: 0.03em;
-}
-
-.satID-2 .banner-cont h5 {
-    color: #000;
-}
-
-.satID-2 .banner-cont h5 {
-    margin-bottom: 0.1rem!important;
-    opacity: 0.8 !important;
-    color: #fff;
-    font-weight: 700;
-    line-height: 8!important;
-    font-size: 1.0rem;
-    letter-spacing: 0.03em;
-}
+}*/
 
 .satID-1 .heros-sections img {
     opacity: 0.5;
@@ -130,13 +120,11 @@ section.landingVideo {
 }
 
 .satID-1 .banner-cont h1 {
-    color: #e6a851;
-    max-width: 650px;
+    line-height: 35px;
 }
 
 .satID-2 .banner-cont h1 {
-    color: #e6a851;
-    max-width: 650px;
+    line-height: 35px;
 }
 
 .satID-2 .Sliders {
@@ -147,7 +135,7 @@ section.landingVideo {
     background: #000000;
 }
 
-.satID-1 .bnnrhedsndlne {
+/*.satID-1 .bnnrhedsndlne {
     font-size: 22px;
     color: #ffffff;
-}
+}*/
