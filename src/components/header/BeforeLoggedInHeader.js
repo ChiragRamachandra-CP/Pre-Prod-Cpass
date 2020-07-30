@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import WindowScroll from '../window/WindowScroll';
-import Modal from '../modal/Modal';
+import React, {Fragment} from "react";
+import {Link} from "react-router-dom";
+import WindowScroll from "../window/WindowScroll";
+import Modal from "../modal/Modal";
 
 const BeforeLoggedInHeader = () => {
 	return (
@@ -65,9 +65,13 @@ const BeforeLoggedInHeader = () => {
 										</Link>
 									</li>
 									<li>
-										<Link to="/blog">
-											<p>Blogs</p>
-										</Link>
+										<a
+											href="https://medium.com/collegepass"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Blogs
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -78,9 +82,23 @@ const BeforeLoggedInHeader = () => {
 							</label>
 							<ul className="menu">
 								<li className="top_login">
-									<i className="icon-user" style={{ color: 'black', fontWeight: '900' }} />
-									<p className="lgncontct"><a href="tel:+918802216273"><i class="fa fa-phone" aria-hidden="true"></i> +91 88022-16273</a></p>
-									<p className="trigger1" data-toggle="modal" data-target="#myModal">Log in</p>
+									<i
+										className="icon-user"
+										style={{color: "black", fontWeight: "900"}}
+									/>
+									<p className="lgncontct">
+										<a href="tel:+918802216273">
+											<i class="fa fa-phone" aria-hidden="true"></i> +91
+											88022-16273
+										</a>
+									</p>
+									<p
+										className="trigger1"
+										data-toggle="modal"
+										data-target="#myModal"
+									>
+										Log in
+									</p>
 								</li>
 								<Modal />
 							</ul>
