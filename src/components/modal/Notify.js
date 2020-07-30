@@ -1,84 +1,73 @@
-import React, { Fragment, useState } from 'react';
-import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import axios from 'axios';
-import { setAlert } from '../../actions/alert';
-import { APInotify } from '../../config/API';
-import { errorFeedback } from '../../config/error';
-
+import React, {Fragment, useState} from "react";
+import {connect} from "react-redux";
+import PropTypes from "prop-types";
+import axios from "axios";
+import {setAlert} from "../../actions/alert";
+import {APInotify} from "../../config/API";
+import {errorFeedback} from "../../config/error";
 
 const Notify = ({setAlert}) => {
-	const [ formData, setFormData ] = useState({
-		fname: '',
-		lname: '',
-		email: '',
-		phone: ''
+	const [formData, setFormData] = useState({
+		fname: "",
+		lname: "",
+		email: "",
+		phone: "",
 	});
 
-	const { fname, lname, email, phone } = formData;
+	const {fname, lname, email, phone} = formData;
 
 	const onChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
+		setFormData({...formData, [e.target.name]: e.target.value});
 	};
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
 
-		try{
+		try {
 			const config = {
 				headers: {
 					//Authorization: `Bearer ${localStorage.token}`,
-					'Content-Type': 'application/json'
-				}
+					"Content-Type": "application/json",
+				},
 			};
 			const result = await axios.post(
 				APInotify,
 				{
-					"EMAIL": email,
-					"Phone": phone,
-					"first_name": fname,
-					"last_name": lname
+					EMAIL: email,
+					Phone: phone,
+					first_name: fname,
+					last_name: lname,
 				},
 				config
 			);
-			console.log('notify me result', result);
+			console.log("notify me result", result);
 
 			if (result.status === 200) {
-
-				setAlert('Successfully Notification Alert Activated', 'info');
-
+				setAlert("Successfully Notification Alert Activated", "info");
 			} else {
-
-				setAlert(errorFeedback, 'danger');
-
+				setAlert(errorFeedback, "danger");
 			}
-			
-		}catch(err){
-
-			if(err.response.status === 409){
-
-				setAlert('Already In Notification list.Thank You', 'info');
-
-			}else {
-
-				setAlert(errorFeedback, 'danger');
-
+		} catch (err) {
+			if (err.response.status === 409) {
+				setAlert("Already In Notification list.Thank You", "info");
+			} else {
+				setAlert(errorFeedback, "danger");
 			}
 		}
-
-		
 	};
-
-	
 
 	return (
 		<Fragment>
-			<div className="modal fade" id="notify">
+			<div style={{zIndex: "auto"}} className="modal fade" id="notify">
 				<div className="modal-dialog">
 					<div className="modal-content">
 						<div className="head">
 							<h4 className="log-title">Notify Me</h4>
-							<button type="button" className="close imgpopup" data-dismiss="modal">
+							<button
+								type="button"
+								className="close imgpopup"
+								data-dismiss="modal"
+							>
 								&times;
 							</button>
 						</div>
@@ -118,7 +107,6 @@ const Notify = ({setAlert}) => {
 													className="fit"
 													value={lname}
 													onChange={onChange}
-													
 												/>
 											</div>
 										</div>
@@ -163,7 +151,7 @@ const Notify = ({setAlert}) => {
 										Submit
 									</button>
 									<p></p>
-									<br/>
+									<br />
 								</form>
 							</div>
 						</div>
@@ -175,8 +163,7 @@ const Notify = ({setAlert}) => {
 };
 
 Notify.propTypes = {
-	setAlert: PropTypes.func.isRequired
+	setAlert: PropTypes.func.isRequired,
 };
 
-
-export default connect(null, { setAlert })(Notify);
+export default connect(null, {setAlert})(Notify);

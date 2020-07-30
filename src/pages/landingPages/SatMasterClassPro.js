@@ -21,29 +21,24 @@ const SatMasterClassPro = () => {
 								<div className="frsttxt">
 									<p className="heddesc">The CollegePass Experience</p>
 									<h2 className="new-class-heading" style={{textAlign: "left"}}>
-									Beat the SAT/PSAT
+										Beat the SAT/PSAT
 									</h2>
 									<li className="fvlnetxt">
-									CollegePass students have consistently scored 1500+ in consecutive test dates across 2019-20
+										CollegePass students have consistently scored 1500+ in
+										consecutive test dates across 2019-20
 									</li>
 									<li className="fvlnetxt">
-									Learn from Top Rated, Internationally Experienced Tutors
+										Learn from Top Rated, Internationally Experienced Tutors
 									</li>
-									<li className="fvlnetxt">
-									Classes Every Week
-									</li>
-									<li className="fvlnetxt">
-									10+ Practice Tests 
-									</li>
-									<li className="fvlnetxt">
-									Personalised Tutor Feedback
-									</li>
+									<li className="fvlnetxt">Classes Every Week</li>
+									<li className="fvlnetxt">10+ Practice Tests</li>
+									<li className="fvlnetxt">Personalised Tutor Feedback</li>
 								</div>
 							</div>
 						</section>
 					</div>
 				</section>
-				<LandingPageForm landingFormText={"CA_FORM"} />
+				<LandingPageForm landingFormText={"SAT Master Class PRO"} />
 				<Testimonial />
 				<Video landingVideo={"SAT_VID"} />
 				<Footer />

@@ -19,29 +19,25 @@ const CollegeAdmission = () => {
 								<div className="frsttxt">
 									<p className="heddesc">The CollegePass Experience</p>
 									<h2 className="new-class-heading" style={{textAlign: "left"}}>
-									Join Your Dream College
+										Join Your Dream College
 									</h2>
 									<li className="fvlnetxt">
-									Learn from Ivy League/OxBridge Admission Advisors
+										Learn from Ivy League/OxBridge Admission Advisors
 									</li>
 									<li className="fvlnetxt">
-									Get your Personalised College Application Timeline
+										Get your Personalised College Application Timeline
 									</li>
 									<li className="fvlnetxt">
-									Craft Your College Application Strategy
+										Craft Your College Application Strategy
 									</li>
-									<li className="fvlnetxt">
-									Choose Your Extracurriculars
-									</li>
-									<li className="fvlnetxt">
-									Prepare for SAT/ACT/BMAT/APs
-									</li>
+									<li className="fvlnetxt">Choose Your Extracurriculars</li>
+									<li className="fvlnetxt">Prepare for SAT/ACT/BMAT/APs</li>
 								</div>
 							</div>
 						</section>
 					</div>
 				</section>
-				<LandingPageForm landingFormText={"IB_FORM"} />
+				<LandingPageForm landingFormText={"College Admission"} />
 				<Testimonial />
 				<Video landingVideo={"COLLEGE_ADMISSION_VID"} />
 				<Footer />
