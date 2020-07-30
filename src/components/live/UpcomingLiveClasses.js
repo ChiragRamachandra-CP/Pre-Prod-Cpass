@@ -77,10 +77,24 @@ const UpcomingLiveClasses = () => {
 						<h6 className="title-text-h4">{availableLiveEvents[i].NAME}</h6>
 					</div>
 
-					<div className="led-box">
-						{/*<div className="led-red" />*/}
-						<div className="ledtext">LIVE CLASS</div>
-					</div>
+					{enableButtons === true && (
+						
+						<div class="led-box">
+							<div class="led-red"></div>
+							<div class="ledtext">LIVE</div>
+						</div>
+							
+					)}
+
+					{enableButtons === false && (
+
+						<div className="led-box">						
+							<div className="ledtext">LIVE CLASS</div>
+						</div>
+						
+					)}
+
+				
 
 					{/*<div className="led-box liveledbox">
 						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (
