@@ -4,12 +4,10 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import { setAlert } from '../../actions/alert';
 import { APInotify } from '../../config/API';
-
-import { succFeedback } from '../../config/success';
 import { errorFeedback } from '../../config/error';
 
 
-const Notify = (setAlert) => {
+const Notify = ({setAlert}) => {
 	const [ formData, setFormData ] = useState({
 		fname: '',
 		lname: '',
@@ -26,7 +24,7 @@ const Notify = (setAlert) => {
 	const onSubmit = async (e) => {
 		e.preventDefault();
 
-		try {
+		try{
 			const config = {
 				headers: {
 					//Authorization: `Bearer ${localStorage.token}`,
@@ -43,12 +41,32 @@ const Notify = (setAlert) => {
 				},
 				config
 			);
-			//console.log('Feedback completed', result);
-			setAlert(succFeedback, 'success');
+			console.log('notify me result', result);
 
-		} catch (err) {
-			setAlert(errorFeedback, 'danger');
+			if (result.status === 200) {
+
+				setAlert('Successfully Notification Alert Activated', 'info');
+
+			} else {
+
+				setAlert(errorFeedback, 'danger');
+
+			}
+			
+		}catch(err){
+
+			if(err.response.status === 409){
+
+				setAlert('Already In Notification list.Thank You', 'info');
+
+			}else {
+
+				setAlert(errorFeedback, 'danger');
+
+			}
 		}
+
+		
 	};
 
 	
@@ -100,7 +118,7 @@ const Notify = (setAlert) => {
 													className="fit"
 													value={lname}
 													onChange={onChange}
-													required
+													
 												/>
 											</div>
 										</div>
