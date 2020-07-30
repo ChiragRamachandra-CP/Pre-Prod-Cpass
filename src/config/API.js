@@ -41,7 +41,7 @@ export const APIstoreJoinedUser = 'https://apitest.collegepass.org/api/v1/events
 export const APIupdateEventSpentTime = 'https://apitest.collegepass.org/api/v1/events/updateEventSpentTime/';
 export const APIgetLiveClass = 'https://apitest.collegepass.org/api/v1/events/getLiveClasses/';
 export const APInotify = 'https://apitest.collegepass.org/api/v2/auth/notifyMe';
-
+export const APILandingPageInfo = 'https://apitest.collegepass.org/api/v2/tutoring/storeLandingPageInfo';
 
 
 

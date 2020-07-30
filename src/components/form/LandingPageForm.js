@@ -1,23 +1,75 @@
 import React, {Fragment, useState} from "react";
+import { setAlert } from '../../actions/alert';
+import { APILandingPageInfo } from '../../config/API';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import axios from 'axios';
+import { errorFeedback } from '../../config/error';
+
 
 const LandingPageForm = (landingFormText) => {
 	const [formData, setFormData] = useState({
 		fname: "",
 		lname: "",
-		emailForm: "",
+		email: "",
 		phone: "",
 		school: "",
 		city: "",
 	});
-	const {fName, lName, emailForm, phone, school, city} = formData;
+	const {fName, lname, email, phone, school, city} = formData;
 
 	const onChange = (e) => {
 		setFormData({...formData, [e.target.name]: e.target.value});
 	};
 
-	const onSubmit = (e) => {
+	const onSubmit = async (e) => {
 		e.preventDefault();
-		// login(email, password);
+
+		try{
+			const config = {
+				headers: {
+					//Authorization: `Bearer ${localStorage.token}`,
+					'Content-Type': 'application/json'
+				}
+			};
+			const result = await axios.post(
+				APILandingPageInfo,
+				{
+					"EMAIL": email,
+					"Phone": phone,
+					"first_name": fName,
+					"last_name": lname,
+					"city": city,
+					"school": school,
+				},
+				config
+			);
+			//console.log('notify me result', result);
+
+			if (result.status === 200) {
+
+				setAlert('Successfully Notification Alert Activated', 'info');
+
+			} else {
+
+				setAlert(errorFeedback, 'danger');
+
+			}
+			
+		}catch(err){
+
+			if(err.response.status === 409){
+
+				setAlert('Already In Notification list.Thank You', 'info');
+
+			}else {
+
+				setAlert(errorFeedback, 'danger');
+
+			}
+		}
+
+		
 	};
 
 
@@ -141,7 +193,7 @@ const LandingPageForm = (landingFormText) => {
 						{landigFormHeading}
 						<div className="upcmnglsv">
 							<div className="bookform">
-								<form>
+								<form onSubmit={onSubmit}>
 									<div className="row">
 										<div className="col-md-6">
 											<div className="form-group">
@@ -149,6 +201,7 @@ const LandingPageForm = (landingFormText) => {
 												<input
 													name="fName"
 													value={fName}
+													onChange={onChange}
 													type="text"
 													className="form-control"
 													placeholder=""
@@ -160,8 +213,9 @@ const LandingPageForm = (landingFormText) => {
 											<div className="form-group">
 												<label for="first">Last Name</label>
 												<input
-													name="lName"
-													value={lName}
+													name="lname"
+													value={lname}
+													onChange={onChange}
 													type="text"
 													className="form-control"
 													placeholder=""
@@ -175,8 +229,9 @@ const LandingPageForm = (landingFormText) => {
 											<div className="form-group">
 												<label for="last">Email</label>
 												<input
-													name="emailForm"
-													value={emailForm}
+													name="email"
+													value={email}
+													onChange={onChange}
 													type="email"
 													class="form-control"
 													placeholder=""
@@ -190,6 +245,7 @@ const LandingPageForm = (landingFormText) => {
 												<input
 													name="phone"
 													value={phone}
+													onChange={onChange}
 													type="tel"
 													className="form-control"
 													placeholder=""
@@ -205,6 +261,7 @@ const LandingPageForm = (landingFormText) => {
 												<input
 													name="school"
 													value={school}
+													onChange={onChange}
 													type="text"
 													className="form-control"
 													id="school"
@@ -218,6 +275,7 @@ const LandingPageForm = (landingFormText) => {
 												<input
 													name="city"
 													value={city}
+													onChange={onChange}
 													type="text"
 													className="form-control form-control-danger"
 													id="city"
@@ -227,7 +285,7 @@ const LandingPageForm = (landingFormText) => {
 										</div>
 									</div>
 
-									<button type="submit" className="btn btn-danger booksbmt">
+									<button onSubmit={onSubmit} className="btn btn-danger booksbmt">
 										Submit
 									</button>
 								</form>
@@ -240,4 +298,8 @@ const LandingPageForm = (landingFormText) => {
 	);
 };
 
-export default LandingPageForm;
+LandingPageForm.propTypes = {
+	setAlert: PropTypes.func.isRequired
+};
+
+export default connect(null, { setAlert })(LandingPageForm);
