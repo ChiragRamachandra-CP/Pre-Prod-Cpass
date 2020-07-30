@@ -55,6 +55,7 @@ li.fvlnetxt {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.7rem;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
 
 .upcmngls.twoicnsl .icnimgt {
@@ -72,7 +73,7 @@ section.landingVideo {
 }
 
 .bookingformmain {
-    background: #191c21;
+    background: #000000;
 }
 
 .satID-2 .bkngsec {
@@ -80,7 +81,7 @@ section.landingVideo {
 }
 
 .bookform {
-    background: #191c21;
+    background: #000000;
     padding: 10px 70px 85px 70px;
 }
 

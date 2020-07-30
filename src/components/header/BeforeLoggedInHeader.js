@@ -36,7 +36,7 @@ const BeforeLoggedInHeader = () => {
 											<ul className="nav-dropdown">
 												<li>
 													<a href="#upcomigTop">
-														<p>Live Session</p>
+														<p>Live Sessions</p>
 													</a>
 												</li>
 												<li>
@@ -71,7 +71,7 @@ const BeforeLoggedInHeader = () => {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											<p>Blogs</p>
+											<p>Blog</p>
 										</a>
 									</li>
 								</ul>

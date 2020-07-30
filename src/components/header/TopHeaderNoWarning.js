@@ -38,7 +38,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<ul className="nav-dropdown">
 												<li>
 													<Link to="/#upcomigTop">
-														<p>Live Session</p>
+														<p>Live Sessions</p>
 													</Link>
 												</li>
 												<li>
@@ -73,7 +73,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											<p>Blogs</p>
+											<p>Blog</p>
 										</a>
 									</li>
 								</ul>
