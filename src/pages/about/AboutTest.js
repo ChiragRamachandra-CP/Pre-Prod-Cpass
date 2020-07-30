@@ -42,7 +42,9 @@ const AboutTest = ({ auth: { isAuthenticated } }) => {
 							<p style={{fontSize: '20px', lineHeight: '1.9rem', color: '#000', fontWeight: '500', opacity: '0.8'}}>We believe World Class, Live Content delivered in a personalised and affordable way using technology is the key to ensuring every child has access to his own virtual private college coach.</p>
                         </div>
 
-                        <section className="single_video">
+                        <section className="single_video" style={{maxWidth: '100%', 
+                        width: '900px', 
+                        margin: 'auto'}}>
                             <div className="upcmngls">
                                 <div className="frsttxt">
                                     <h2 className="new-class-heading" style={{textAlign: 'left', color: '#000', fontSize: '22px', opacity: '0.9'}}>CollegePass Comprehensive College Preparation includes:</h2>
