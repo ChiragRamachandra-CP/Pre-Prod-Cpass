@@ -77,6 +77,7 @@ const UpcomingLiveSession = () => {
 						<h6 className="title-text-h4">{availableLiveEvents[i].NAME}</h6>
 					</div>
 
+					
 					{enableButtons === true && (
 						<div class="led-box">
 							<div class="led-red"></div>
@@ -84,6 +85,13 @@ const UpcomingLiveSession = () => {
 						</div>
 					)}
 					{enableButtons === false && (
+						<div className="led-box">						
+							<div className="ledtext">LIVE STREAM</div>
+						</div>
+					)}
+
+					{enableButtons === false && (
+
 						<div className="led-box">						
 							<div className="ledtext">LIVE STREAM</div>
 						</div>

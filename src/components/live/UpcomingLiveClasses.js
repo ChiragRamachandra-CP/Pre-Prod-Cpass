@@ -88,6 +88,17 @@ const UpcomingLiveClasses = () => {
 							<div className="ledtext">LIVE CLASS</div>
 						</div>
 					)}
+							
+					)}
+
+					{enableButtons === false && (
+
+						<div className="led-box">						
+							<div className="ledtext">LIVE CLASS</div>
+						</div>
+						
+					)}
+
 
 					{/*<div className="led-box liveledbox">
 						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (
