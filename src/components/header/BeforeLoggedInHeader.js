@@ -71,7 +71,7 @@ const BeforeLoggedInHeader = () => {
 											target="_blank"
 											rel="noopener noreferrer"
 										>
-											Blogs
+											<p>Blogs</p>
 										</a>
 									</li>
 								</ul>

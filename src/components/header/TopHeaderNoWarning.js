@@ -67,9 +67,14 @@ const AfterLoggedInHeader = ({ logout }) => {
 										</Link>
 									</li>
 									<li>
-										<Link to="/blog">
+										<a
+											style={{textDecoration: "none"}}
+											href="https://medium.com/collegepass"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<p>Blogs</p>
-										</Link>
+										</a>
 									</li>
 								</ul>
 							<input className="menu-btn" type="checkbox" id="menu-btn" />
