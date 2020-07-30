@@ -45,7 +45,6 @@ const UpcomingLiveSession = () => {
 			// console.log(eventTime.format());
 			//console.log(enableTime);
 			//console.log(stopTime);
-
 			// enableButtons = moment('2020-10-20').isBetween('2020-01-20', '2020-12-25');
 			enableButtons = curTime.isBetween(enableTime, stopTime);
 			//enableButtons = curTime.isBetween(enableTime.format(formatted), stopTime.format(formatted));
@@ -78,10 +77,23 @@ const UpcomingLiveSession = () => {
 						<h6 className="title-text-h4">{availableLiveEvents[i].NAME}</h6>
 					</div>
 
-					<div className="led-box">
-						{/*<div className="led-red" />*/}
-						<div className="ledtext">LIVE STREAM</div>
-					</div>
+				
+					{enableButtons === true && (
+						
+						<div class="led-box">
+							<div class="led-red"></div>
+							<div class="ledtext">LIVE</div>
+						</div>
+							
+					)}
+
+					{enableButtons === false && (
+
+						<div className="led-box">						
+							<div className="ledtext">LIVE STREAM</div>
+						</div>
+						
+					)}
 
 					{/*<div className="led-box liveledbox">
 						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (

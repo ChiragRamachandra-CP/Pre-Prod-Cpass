@@ -3671,7 +3671,8 @@ ul.breadcrumb {
 }
 
 #notify {
-    background: #0000008f;
+	background: #0000008f;
+	padding-top: 7%;
 }
 
 .modal-content button.kep-login-facebook.metro {
