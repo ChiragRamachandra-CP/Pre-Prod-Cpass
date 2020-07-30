@@ -50,7 +50,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 			//console.log('notify me result', result);
 
 			setAlert(
-				"Thanks for your interest, we will get back to you shortly",
+				"Thanks for your interest. A CollegePass Advisor will be in touch within 24 Hrs!",
 				"info"
 			);
 		} catch (err) {
