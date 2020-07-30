@@ -19,7 +19,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner1.jpg"} alt="Banner" className="satbnner" />
 		);
 	}
-	if (sliderNumber === "PSAT") {
+	if (sliderNumber === "COLLEGE_ADMISSION") {
 		imageComponent = (
 			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner2.jpg"} alt="Banner" className="satbnner" />
 		);

@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const Testimonial = () => {
 	return (
 		<Fragment>
-			<div className="stdnt-sy">
+			<div className="stdnt-sy" id="studentTestimonial">
 				<div className="container">
 					<div className="student-says">
 						<h2 className="new-class-heading">What Students Are Saying</h2>

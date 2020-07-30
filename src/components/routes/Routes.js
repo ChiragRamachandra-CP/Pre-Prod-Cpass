@@ -11,6 +11,7 @@ const Registration = lazy(() => import("../../pages/auth/Registration.js"));
 const Privacy = lazy(() => import("../../pages/privacy/Privacy"));
 const Terms = lazy(() => import("../../pages/terms/Terms"));
 const AboutUs = lazy(() => import("../../pages/about/AboutUs"));
+const AboutTest = lazy(() => import("../../pages/about/AboutTest"));
 const Blog = lazy(() => import("../../pages/blog/Blog"));
 const Login = lazy(() => import("../../pages/auth/Login"));
 const ResetPassword = lazy(() => import("../../pages/auth/ResetPassword"));
@@ -65,8 +66,8 @@ const EmailValidate = lazy(() =>
 const SuccesfullValidate = lazy(() =>
 	import("../../pages/emailValidation/SuccesfullValidate")
 );
-const PSATTutoring = lazy(() =>
-	import("../../pages/landingPages/PSATTutoring")
+const CollegeAdmission = lazy(() =>
+	import("../../pages/landingPages/CollegeAdmission")
 );
 const SatMasterClassPro = lazy(() =>
 	import("../../pages/landingPages/SatMasterClassPro")
@@ -144,7 +145,7 @@ const Routes = ({isAuthenticated}) => {
 					<PrivateRoute exact path="/my-profile" component={MyProfile} />
 					<PrivateRoute exact path="/feedback/:eventID" component={Feedback} />
 					<PrivateRoute exact path="/account" component={Account} />
-					<Route exact path="/psat-tutoring" component={PSATTutoring} />
+					<Route exact path="/college-admission" component={CollegeAdmission} />
 					<Route
 						exact
 						path="/sat-master-class-pro"
@@ -163,6 +164,7 @@ const Routes = ({isAuthenticated}) => {
 					/>
 					{/*<PrivateRoute exact path="/readiness" component={MyCollegeReadiness} />*/}
 					<Route exact path="/about" component={AboutUs} />
+					<Route exact path="/about-test" component={AboutTest} />
 					<Route exacy path="/blog" component={Blog} />
 					<Route exact path="/privacy" component={Privacy} />
 					<Route exact path="/terms" component={Terms} />

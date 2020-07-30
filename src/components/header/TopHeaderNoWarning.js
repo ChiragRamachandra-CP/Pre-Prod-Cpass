@@ -64,8 +64,8 @@ const AfterLoggedInHeader = ({ logout }) => {
 													</Link>
 												</li>
 												<li>
-													<Link to="psat-tutoring">
-														<p>PSAT Tutoring</p>
+													<Link to="/college-admission">
+														<p>College Admission</p>
 													</Link>
 												</li>
 											</ul>
