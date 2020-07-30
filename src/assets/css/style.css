@@ -1,3 +1,39 @@
+.aboutestw {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.testmenu ul {
+    text-align: center;
+}
+.testmenu ul li {
+    display: contents;
+}
+.testmenu ul li a {
+    margin: 0px 90px;
+    color: #c83232;
+    font-weight: 600;
+}
+.aboutestv {
+    padding: 45px 0px 0px 0px;
+}
+.testvideo {
+    text-align: center;
+}
+.aboutmainTest {
+    padding: 171px 0px 60px 0px!important;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 ul.lgomnu {
     margin-top: 10px!important;
     display: flex;

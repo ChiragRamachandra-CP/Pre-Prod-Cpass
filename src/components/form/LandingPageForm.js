@@ -21,13 +21,13 @@ const LandingPageForm = () => {
 	};
 	return (
 		<Fragment>
-			<section className="bookingformmain">
+			<section className="bookingformmain" id="gotolandingform">
 				<div className="container bkngsec">
 					<div className="col-md-12">
 						<p
 							style={{
 								textAlign: "center",
-								color: "#000",
+								color: "#fff",
 								opacity: "0.6",
 								marginTop: "0.8rem",
 								marginBottom: "0.5rem",
@@ -41,6 +41,7 @@ const LandingPageForm = () => {
 							style={{
 								marginTop: "-1.5rem!important",
 								marginBottom: "2.0rem!important",
+								color: '#fff!important',
 							}}
 						>
 							Book Your Free 30 Minute Trial Class

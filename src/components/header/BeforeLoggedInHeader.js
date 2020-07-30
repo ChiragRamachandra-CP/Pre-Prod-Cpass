@@ -52,18 +52,18 @@ const BeforeLoggedInHeader = () => {
 											<p>Tutoring</p>
 											<ul className="nav-dropdown">
 												<li>
-													<Link to="/satMasterClassPro">
+													<Link to="/sat-master-class-pro">
 														<p>SAT MasterClassPro</p>
 													</Link>
 												</li>
 												<li>
-													<Link to="/ibTutoring">
+													<Link to="/ib-tutoring">
 														<p>IB Tutoring</p>
 													</Link>
 												</li>
 												<li>
-													<Link to="psatTutoring">
-														<p>PSAT Tutoring</p>
+													<Link to="/college-admission">
+														<p>College Admission</p>
 													</Link>
 												</li>
 											</ul>

@@ -11,17 +11,17 @@ const SliderLandingPage = ({sliderNumber}) => {
 
 	if (sliderNumber === "SAT_MASTER_PRO") {
 		imageComponent = (
-			<img src={"/assets/images/SAT.png"} alt="Banner" className="satbnner" />
+			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner3.jpg"} alt="Banner" className="satbnner" />
 		);
 	}
 	if (sliderNumber === "IB_TUTORING") {
 		imageComponent = (
-			<img src={"/assets/images/IB.png"} alt="Banner" className="satbnner" />
+			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner1.jpg"} alt="Banner" className="satbnner" />
 		);
 	}
-	if (sliderNumber === "PSAT") {
+	if (sliderNumber === "COLLEGE_ADMISSION") {
 		imageComponent = (
-			<img src={"/assets/images/PSAT.png"} alt="Banner" className="satbnner" />
+			<img src={"https://collegepass-slider.s3.ap-south-1.amazonaws.com/banner2.jpg"} alt="Banner" className="satbnner" />
 		);
 	}
 
@@ -46,12 +46,12 @@ const SliderLandingPage = ({sliderNumber}) => {
 										Score 1500+ With SAT Masterclass
 										<span className="bnnrhedsndlne">
 											<br />
-											COLLEGEPASS STUDENT HAVE CONSISTENTLY SCORED 1500+ ON
-											CONSECUTIVE SAT TESTS IN 2019-20.
+											CollegePass Students have Consistently Scored 1500+ on
+											Consecutive SAT Tests in 2019-20.
 										</span>
 									</h1>
-									<h5>LEARN FROM TOP RATED, INTERNATIONAL TUTORS!</h5>
-									<p className="bannerbtnbl">Book Your Free Consultation</p>
+									<h5>Learn from top Rated, International Tutors!</h5>
+									<p className="bannerbtnbl"><a href="#gotolandingform">Book Your Free Consultation</a></p>
 								</div>
 							</div>
 						</div>
