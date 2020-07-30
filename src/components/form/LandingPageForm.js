@@ -4,12 +4,12 @@ const LandingPageForm = () => {
 	const [formData, setFormData] = useState({
 		fname: "",
 		lname: "",
-		email: "",
+		emailForm: "",
 		phone: "",
 		school: "",
 		city: "",
 	});
-	const {fName, lName, email, phone, school, city} = formData;
+	const {fName, lName, emailForm, phone, school, city} = formData;
 
 	const onChange = (e) => {
 		setFormData({...formData, [e.target.name]: e.target.value});
@@ -81,12 +81,12 @@ const LandingPageForm = () => {
 											<div className="form-group">
 												<label for="last">Email</label>
 												<input
-													name="email"
-													value={email}
+													name="emailForm"
+													value={emailForm}
 													type="email"
 													class="form-control"
 													placeholder=""
-													id="Email"
+													id="email"
 												/>
 											</div>
 										</div>
