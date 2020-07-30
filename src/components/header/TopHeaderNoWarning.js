@@ -38,7 +38,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<ul className="nav-dropdown">
 												<li>
 													<Link to="/#upcomigTop">
-														<p>Live Session</p>
+														<p>Live Sessions</p>
 													</Link>
 												</li>
 												<li>
@@ -67,9 +67,14 @@ const AfterLoggedInHeader = ({ logout }) => {
 										</Link>
 									</li>
 									<li>
-										<Link to="/blog">
-											<p>Blogs</p>
-										</Link>
+										<a
+											style={{textDecoration: "none"}}
+											href="https://medium.com/collegepass"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<p>Blog</p>
+										</a>
 									</li>
 								</ul>
 							<input className="menu-btn" type="checkbox" id="menu-btn" />
