@@ -66,6 +66,7 @@ const BeforeLoggedInHeader = () => {
 									</li>
 									<li>
 										<a
+											style={{textDecoration: "none"}}
 											href="https://medium.com/collegepass"
 											target="_blank"
 											rel="noopener noreferrer"
