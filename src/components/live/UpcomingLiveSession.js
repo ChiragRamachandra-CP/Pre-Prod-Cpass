@@ -1,14 +1,14 @@
-import React, { Fragment, useEffect, useState } from 'react';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
-import moment from 'moment';
-import Notify from '../modal/Notify';
+import React, {Fragment, useEffect, useState} from "react";
+import axios from "axios";
+import {Link} from "react-router-dom";
+import moment from "moment";
+import Notify from "../modal/Notify";
 
-import { APIgetLiveSession } from '../../config/API';
+import {APIgetLiveSession} from "../../config/API";
 
 const UpcomingLiveSession = () => {
-	const [ availableLiveEvents, setAvailableLiveEvents ] = useState([]);
-	let bodyContent = 'Loading';
+	const [availableLiveEvents, setAvailableLiveEvents] = useState([]);
+	let bodyContent = "Loading";
 	let enableButtons = false;
 
 	let curTime = moment();
@@ -36,9 +36,15 @@ const UpcomingLiveSession = () => {
 	if (availableLiveEvents) {
 		bodyContent = availableLiveEvents.map((availableCategory, i) => {
 			const utcTime = moment.utc(availableLiveEvents[i].DATE_TIME).format();
-			const enableTime = moment.utc(availableLiveEvents[i].DATE_TIME).subtract(15, 'minute').format();
+			const enableTime = moment
+				.utc(availableLiveEvents[i].DATE_TIME)
+				.subtract(15, "minute")
+				.format();
 
-			const stopTime = moment.utc(availableLiveEvents[i].DATE_TIME).add(2, 'h').format();
+			const stopTime = moment
+				.utc(availableLiveEvents[i].DATE_TIME)
+				.add(2, "h")
+				.format();
 			//console.log(utcTime);
 
 			//console.log(availableLiveEvents[i].DATE_TIME);
@@ -59,7 +65,10 @@ const UpcomingLiveSession = () => {
 					<div className="overlay" />
 					<div className="vidicncntrlve">
 						{enableButtons === true && (
-							<Link to={`/live/${availableLiveEvents[i].ZOOMID}`} className="vidlivebtnn">
+							<Link
+								to={`/live/${availableLiveEvents[i].ZOOMID}`}
+								className="vidlivebtnn"
+							>
 								Join Now
 							</Link>
 						)}
@@ -67,7 +76,12 @@ const UpcomingLiveSession = () => {
 
 					<div className="vidicncntrlve">
 						{enableButtons === false && (
-							<Link to="" className="vidlivebtnn"  data-toggle="modal" data-target="#notify">
+							<Link
+								to=""
+								className="vidlivebtnn"
+								data-toggle="modal"
+								data-target="#notify"
+							>
 								Notify Me
 							</Link>
 						)}
@@ -77,7 +91,6 @@ const UpcomingLiveSession = () => {
 						<h6 className="title-text-h4">{availableLiveEvents[i].NAME}</h6>
 					</div>
 
-					
 					{enableButtons === true && (
 						<div class="led-box">
 							<div class="led-red"></div>
@@ -85,14 +98,13 @@ const UpcomingLiveSession = () => {
 						</div>
 					)}
 					{enableButtons === false && (
-						<div className="led-box">						
+						<div className="led-box">
 							<div className="ledtext">LIVE STREAM</div>
 						</div>
 					)}
 
 					{enableButtons === false && (
-
-						<div className="led-box">						
+						<div className="led-box">
 							<div className="ledtext">LIVE STREAM</div>
 						</div>
 					)}
@@ -109,8 +121,7 @@ const UpcomingLiveSession = () => {
 						)}
 						</div>*/}
 
-						<Notify />
-
+					<Notify />
 				</div>
 			);
 		});
@@ -122,10 +133,13 @@ const UpcomingLiveSession = () => {
 				<section className="single_video">
 					<div className="upcmngls">
 						<div className="mobbtncntrv" id="upcomigTop">
-							<h2 className="new-class-heading" style={{ marginLeft: '0px!important' }}>
+							<h2
+								className="new-class-heading"
+								style={{marginLeft: "0px!important"}}
+							>
 								Upcoming Live Sessions
 							</h2>
-							<span className="catvm" style={{ display: 'none' }}>
+							<span className="catvm" style={{display: "none"}}>
 								<a href="/liveSessions">View All</a>
 							</span>
 						</div>

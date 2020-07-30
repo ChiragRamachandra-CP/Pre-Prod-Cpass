@@ -2,6 +2,7 @@ import React, {Fragment} from "react";
 import {Link} from "react-router-dom";
 import WindowScroll from "../window/WindowScroll";
 import Modal from "../modal/Modal";
+import Notify from "../modal/Notify";
 
 const BeforeLoggedInHeader = () => {
 	return (
@@ -102,6 +103,7 @@ const BeforeLoggedInHeader = () => {
 									</p>
 								</li>
 								<Modal />
+								<Notify></Notify>
 							</ul>
 						</div>
 					</header>
