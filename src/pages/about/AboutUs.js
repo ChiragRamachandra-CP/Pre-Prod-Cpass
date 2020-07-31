@@ -31,9 +31,16 @@ const About = ({ auth: { isAuthenticated } }) => {
                             </ul>
                             </div>
                             <div className="testvideo">
-                            <video width="1000px" id="sing_vd" autoplay muted>
-                                <source src="../../assets/images/Marketing.mp4" type="video/mp4" />
-                            </video>
+                            <iframe
+							src="https://player.vimeo.com/video/409699040"
+							width="1000"
+							//height="564"
+							frameBorder="0"
+							id="sing_vd"
+							allow="autoplay; fullscreen"
+							title="video"
+							allowFullScreen
+						/>
                             </div>
                         </div>
 

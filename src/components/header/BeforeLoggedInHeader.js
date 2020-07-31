@@ -4,6 +4,7 @@ import WindowScroll from "../window/WindowScroll";
 import Modal from "../modal/Modal";
 import Notify from "../modal/Notify";
 
+
 const BeforeLoggedInHeader = () => {
 	return (
 		<Fragment>
@@ -26,12 +27,12 @@ const BeforeLoggedInHeader = () => {
 									/>
 								</Link>
 								<ul className="lgomnu">
-									<li>
+									<li className="mnuhidemob">
 										<Link to="/">
 											<p>Home</p>
 										</Link>
 									</li>
-									<li className="hvrdsp mnuicon">
+									<li className="hvrdsp mnuicon mnuhidemob">
 										<Link to="">
 											<p>College Admissions</p>
 											<ul className="nav-dropdown">
@@ -48,7 +49,7 @@ const BeforeLoggedInHeader = () => {
 											</ul>
 										</Link>
 									</li>
-									<li className="hvrdsp mnuicon">
+									<li className="hvrdsp mnuicon mnuhidemob">
 										<Link to="">
 											<p>Tutoring</p>
 											<ul className="nav-dropdown">
@@ -65,7 +66,7 @@ const BeforeLoggedInHeader = () => {
 											</ul>
 										</Link>
 									</li>
-									<li>
+									<li className="mnuhidemob">
 										<a
 											style={{textDecoration: "none"}}
 											href="https://medium.com/collegepass"
@@ -83,7 +84,7 @@ const BeforeLoggedInHeader = () => {
 								<span className="navicon" />
 							</label>
 							<ul className="menu">
-								<li className="top_login">
+								<li className="top_login lgomnulogn">
 									<i
 										className="icon-user"
 										style={{color: "black", fontWeight: "900"}}
@@ -101,6 +102,31 @@ const BeforeLoggedInHeader = () => {
 									>
 										Log in
 									</p>
+								</li>	
+								<li className="mnuhideshow">
+								<Link to="/">
+									<p>Home</p>
+								</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/#upcomigTop">
+										<p>Live Sessions</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/college-admission">
+										<p>Book a free consultation</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/sat-master-class-pro">
+										<p>SAT/PSAT Tutoring</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/ib-tutoring">
+										<p>IB/IGCSE Tutoring</p>
+									</Link>
 								</li>
 								<Modal />
 								<Notify></Notify>

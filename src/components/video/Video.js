@@ -15,7 +15,7 @@ const Video = ({landingVideo}) => {
 			<iframe
                 src="https://player.vimeo.com/video/408877583"
                 width="1200"
-                height="564"
+                //height="564"
                 frameBorder="0"
                 id="sing_vd"
                 allow="autoplay"
@@ -36,7 +36,7 @@ const Video = ({landingVideo}) => {
                 <iframe
                     src="https://player.vimeo.com/video/409699040"
                     width="1200"
-                    height="564"
+                    //height="564"
                     frameBorder="0"
                     id="sing_vd"
                     allow="autoplay"
@@ -56,7 +56,7 @@ const Video = ({landingVideo}) => {
                 <iframe
                     src="https://player.vimeo.com/video/409699040"
                     width="1200"
-                    height="564"
+                    //height="564"
                     frameBorder="0"
                     id="sing_vd"
                     allow="autoplay"

@@ -136,7 +136,77 @@ section.landingVideo {
     background: #000000;
 }
 
+.upcmnglsv iframe#sing_vd {
+    height: 564px;
+    max-height: 100%;
+}
+
+.testvideo iframe#sing_vd {
+    height: 564px;
+    max-height: 100%;
+}
+
 /*.satID-1 .bnnrhedsndlne {
     font-size: 22px;
     color: #ffffff;
 }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    img.satbnner {
+        margin-top: 0px;
+    }
+
+    .bookform {
+		background: #000000;
+		padding: 10px 0px 85px 0px;
+    }
+    
+    .upcmnglsv iframe#sing_vd {
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .testvideo iframe#sing_vd {
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .satID-1 .banner-cont p.bannerbtnbl {
+		padding: 0.5rem 0.8rem;
+	}
+
+	.satID-2 .banner-cont p.bannerbtnbl {
+		padding: 0.5rem 0.8rem;
+    }
+    
+    .satID-1 .banner-cont h1 {
+		line-height: 20px;
+	}
+
+	.satID-2 .banner-cont h1 {
+		line-height: 20px;
+	}
+
+	.satID-1 .banner-cont h5 {
+		line-height: 0.1;
+	}
+
+	.satID-2 .banner-cont h5 {
+		line-height: 0.1;
+	}
+
+}
