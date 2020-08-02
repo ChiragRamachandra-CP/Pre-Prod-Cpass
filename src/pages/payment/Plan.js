@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 
 import { APIstoreUserMoment } from '../../config/API';
 
-const Plan = ({premiumLevel}) => {
+const Plan = ({premiumLevel,plan_type}) => {
 
 	let continueSilver = null;
 	
@@ -24,149 +24,305 @@ const Plan = ({premiumLevel}) => {
 	let plnchngePlatinum = null;
 	
 
-	//console.log("test preminum", premiumLevel);
-	if (premiumLevel === "Basic") {
-		continueSilver = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment/silver">
-						<input
-							type="button"
-							name=""
-							value="CONTINUE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		continueGold = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment/gold">
-						<input
-							type="button"
-							name=""
-							value="CONTINUE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		continuePlatinum = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment/platinum">
-						<input
-							type="button"
-							name=""
-							value="CONTINUE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-	}
+	console.log("test plan_type", plan_type);
 
-	else if (premiumLevel === "Silver") {
-		continueSilver = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="#">
-						<input
-							type="button"
-							name=""
-							value="Current Plan"
-							className="cntbtn crntplnclr"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		continueGold = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/gold">
-						<input
-							type="button"
-							name=""
-							value="UPGRADE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		continuePlatinum = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/platinum">
-						<input
-							type="button"
-							name=""
-							value="UPGRADE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		plnchngeSilver = "currntpln";
-	}
+	if(plan_type === 'subscription'){
 
-	else if (premiumLevel === "Gold") {
-		continueSilver = null;
-		continueGold = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="#">
-						<input
-							type="button"
-							name=""
-							value="Current Plan"
-							className="cntbtn crntplnclr"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		continuePlatinum = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="/plan/payment-upgrade/platinum">
-						<input
-							type="button"
-							name=""
-							value="UPGRADE"
-							className="cntbtn"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		plnchngeGold = "currntpln";
-	}
+		if (premiumLevel === "Basic") {
+			continueSilver = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/silver">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/gold">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/platinum">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+		}
 
-	else if (premiumLevel === "Platinum") {
-		continueSilver = null;
-		continueGold = null ;
-		continuePlatinum = (
-			<label className="headplncards btncnt">
-				<span className="bxplan">
-					<Link to="#">
-						<input
-							type="button"
-							name=""
-							value="Current Plan"
-							className="cntbtn crntplnclr"
-						/>
-					</Link>
-				</span>
-			</label>
-		);
-		plnchngePlatinum = "currntpln";
+		else if (premiumLevel === "Silver") {
+			continueSilver = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="#">
+							<input
+								type="button"
+								name=""
+								value="Current Plan"
+								className="cntbtn crntplnclr"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment-upgrade/gold">
+							<input
+								type="button"
+								name=""
+								value="UPGRADE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment-upgrade/platinum">
+							<input
+								type="button"
+								name=""
+								value="UPGRADE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			
+			plnchngeGold = "currntpln";
+			plnchngePlatinum = "currntpln";
+		}
+
+		else if (premiumLevel === "Gold") {
+			continueSilver = null;
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="#">
+							<input
+								type="button"
+								name=""
+								value="Current Plan"
+								className="cntbtn crntplnclr"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment-upgrade/platinum">
+							<input
+								type="button"
+								name=""
+								value="UPGRADE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+		
+			plnchngePlatinum = "currntpln";
+		}
+
+		else if (premiumLevel === "Platinum") {
+			continueSilver = null;
+			continueGold = null ;
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="#">
+							<input
+								type="button"
+								name=""
+								value="Current Plan"
+								className="cntbtn crntplnclr"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			
+		}
+	}else{
+		//for one time payment block
+		if (premiumLevel === "Basic") {
+			continueSilver = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/silver">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/gold">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="/plan/payment/platinum">
+							<input
+								type="button"
+								name=""
+								value="CONTINUE"
+								className="cntbtn"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+		}
+
+		else if (premiumLevel === "Silver") {
+			continueSilver = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="#">
+							<input
+								type="button"
+								name=""
+								value="Current Plan"
+								className="cntbtn crntplnclr"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
+							<input
+								type="button"
+								name=""
+								value="Support"
+								className="cntbtn"
+							/>
+						</a>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
+							<input
+								type="button"
+								name=""
+								value="Support"
+								className="cntbtn"
+							/>
+						</a>
+					</span>
+				</label>
+			);
+			
+			plnchngeGold = "currntpln";
+			plnchngePlatinum = "currntpln";
+		}
+
+		else if (premiumLevel === "Gold") {
+			continueSilver = null;
+			continueGold = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
+							<input
+								type="button"
+								name=""
+								value="Support"
+								className="cntbtn"
+							/>
+						</a>
+					</span>
+				</label>
+			);
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
+							<input
+								type="button"
+								name=""
+								value="Support"
+								className="cntbtn"
+							/>
+						</a>
+					</span>
+				</label>
+			);
+			
+			plnchngePlatinum = "currntpln";
+		}
+
+		else if (premiumLevel === "Platinum") {
+			continueSilver = null;
+			continueGold = null ;
+			continuePlatinum = (
+				<label className="headplncards btncnt">
+					<span className="bxplan">
+						<Link to="#">
+							<input
+								type="button"
+								name=""
+								value="Current Plan"
+								className="cntbtn crntplnclr"
+							/>
+						</Link>
+					</span>
+				</label>
+			);
+			
+		}
+
 	}
 
 
@@ -181,7 +337,8 @@ const Plan = ({premiumLevel}) => {
 			let body={"user_email": localStorage.user,
 			    "page": [{"page": window.location.href},{"date": new Date().toLocaleString()}]}
 			try {
-				const result = await axios.post(APIstoreUserMoment, body);
+
+				await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 				
 			} catch (error) {
@@ -611,9 +768,11 @@ const Plan = ({premiumLevel}) => {
 
 Plan.propTypes = {
 	premiumLevel: PropTypes.string.isRequired,
+	plan_type:PropTypes.string.isRequired
 };
 const mapStateToProps = (state) => ({
 	premiumLevel: state.auth.premiumLevel,
+	plan_type: state.auth.plan_type
 });
 
 export default connect(mapStateToProps, null)(Plan);
