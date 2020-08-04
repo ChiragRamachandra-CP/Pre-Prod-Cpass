@@ -81,7 +81,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Current Plan"
+								value="CURRENT PLAN"
 								className="cntbtn crntplnclr"
 							/>
 						</Link>
@@ -130,7 +130,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Current Plan"
+								value="CURRENT PLAN"
 								className="cntbtn crntplnclr"
 							/>
 						</Link>
@@ -165,7 +165,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Current Plan"
+								value="CURRENT PLAN"
 								className="cntbtn crntplnclr"
 							/>
 						</Link>
@@ -229,7 +229,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Current Plan"
+								value="CURRENT PLAN"
 								className="cntbtn crntplnclr"
 							/>
 						</Link>
@@ -243,7 +243,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Support"
+								value="SUPPORT"
 								className="cntbtn"
 							/>
 						</a>
@@ -257,7 +257,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Support"
+								value="SUPPORT"
 								className="cntbtn"
 							/>
 						</a>
@@ -278,7 +278,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Support"
+								value="SUPPORT"
 								className="cntbtn"
 							/>
 						</a>
@@ -292,7 +292,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Support"
+								value="SUPPORT"
 								className="cntbtn"
 							/>
 						</a>
@@ -313,7 +313,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 							<input
 								type="button"
 								name=""
-								value="Current Plan"
+								value="CURRENT PLAN"
 								className="cntbtn crntplnclr"
 							/>
 						</Link>
