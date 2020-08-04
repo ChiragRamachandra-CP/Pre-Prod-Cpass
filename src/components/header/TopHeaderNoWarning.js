@@ -37,7 +37,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<p>College Admissions</p>
 											<ul className="nav-dropdown">
 												<li>
-													<Link to="/#upcomigTop">
+													<Link to="/liveSessions">
 														<p>Live Sessions</p>
 													</Link>
 												</li>
@@ -100,7 +100,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 									</Link>
 								</li>
 								<li className="mnuhideshow">
-									<Link to="/#upcomigTop">
+									<Link to="/liveSessions">
 										<p>Live Sessions</p>
 									</Link>
 								</li>
