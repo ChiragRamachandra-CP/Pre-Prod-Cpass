@@ -4,7 +4,6 @@ import WindowScroll from "../window/WindowScroll";
 import Modal from "../modal/Modal";
 import Notify from "../modal/Notify";
 
-
 const BeforeLoggedInHeader = () => {
 	return (
 		<Fragment>
@@ -37,9 +36,10 @@ const BeforeLoggedInHeader = () => {
 											<p>College Admissions</p>
 											<ul className="nav-dropdown">
 												<li>
-													<a href="#upcomigTop">
+													{/* Made Changes here to scroll to live class Button */}
+													<Link to={`/#sectionLive`}>
 														<p>Live Sessions</p>
-													</a>
+													</Link>
 												</li>
 												<li>
 													<Link to="/college-admission">
@@ -102,11 +102,11 @@ const BeforeLoggedInHeader = () => {
 									>
 										Log in
 									</p>
-								</li>	
+								</li>
 								<li className="mnuhideshow">
-								<Link to="/">
-									<p>Home</p>
-								</Link>
+									<Link to="/">
+										<p>Home</p>
+									</Link>
 								</li>
 								<li className="mnuhideshow">
 									<Link to="/#upcomigTop">
