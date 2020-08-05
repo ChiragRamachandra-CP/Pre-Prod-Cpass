@@ -1,16 +1,11 @@
-import React, {Fragment, useRef } from "react";
+import React, {Fragment} from "react";
 import {Link} from "react-router-dom";
 import WindowScroll from "../window/WindowScroll";
 import Modal from "../modal/Modal";
 import Notify from "../modal/Notify";
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)  
 
 const BeforeLoggedInHeader = () => {
-
-	const executeScroll = () => scrollToRef(myRef)
-	const myRef = useRef(null);
-
 	return (
 		<Fragment>
 			<div className="Header">
@@ -42,7 +37,7 @@ const BeforeLoggedInHeader = () => {
 											<p>College Admissions</p>
 											<ul className="nav-dropdown">
 												<li>
-													<a onClick={executeScroll}>
+													<a href="#upcomigTop">
 														<p>Live Sessions</p>
 													</a>
 												</li>
@@ -114,7 +109,7 @@ const BeforeLoggedInHeader = () => {
 								</Link>
 								</li>
 								<li className="mnuhideshow">
-									<Link to="/liveSessions">
+									<Link to="/#upcomigTop">
 										<p>Live Sessions</p>
 									</Link>
 								</li>

@@ -159,7 +159,7 @@ const Routes = ({isAuthenticated}) => {
 					/>
 					<PrivateRoute
 						exact
-						path="/liveSessions"
+						path="/live-sessions"
 						component={UpcomingLiveSessionAll}
 					/>
 					{/*<PrivateRoute exact path="/readiness" component={MyCollegeReadiness} />*/}

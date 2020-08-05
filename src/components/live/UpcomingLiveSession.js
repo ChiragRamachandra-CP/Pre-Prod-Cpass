@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState, useRef} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import axios from "axios";
 import {Link} from "react-router-dom";
 import moment from "moment";
@@ -6,12 +6,7 @@ import Notify from "../modal/Notify";
 
 import {APIgetLiveSession} from "../../config/API";
 
-
-
 const UpcomingLiveSession = () => {
-
-   const myRef = useRef(null)
-
 	const [availableLiveEvents, setAvailableLiveEvents] = useState([]);
 	let bodyContent = "Loading";
 	let enableButtons = false;
@@ -108,11 +103,11 @@ const UpcomingLiveSession = () => {
 						</div>
 					)}
 
-					{/*{enableButtons === false && (
+					{enableButtons === false && (
 						<div className="led-box">
 							<div className="ledtext">LIVE STREAM</div>
 						</div>
-					)}*/}
+					)}
 
 					{/*<div className="led-box liveledbox">
 						{availableLiveEvents[i].PREMIUM_LEVEL === 2 && (
@@ -134,10 +129,10 @@ const UpcomingLiveSession = () => {
 
 	return (
 		<Fragment>
-			<div className="container join_live" id="upcomigTop" ref={myRef}>
+			<div className="container join_live" id="upcomigTop">
 				<section className="single_video">
 					<div className="upcmngls">
-						<div className="mobbtncntrv">
+						<div className="mobbtncntrv" id="upcomigTop">
 							<h2
 								className="new-class-heading"
 								style={{marginLeft: "0px!important"}}
