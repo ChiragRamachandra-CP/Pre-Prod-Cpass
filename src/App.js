@@ -17,6 +17,7 @@ import Routes from './components/routes/Routes';
 import Alert from './components/alert/Alert';
 
 //CSS imports
+import './pages/userDetails/userDetails.css';
 import './pages/home/HomeBeforeLogin.css';
 import './assets/css/bootstrap.min.css';
 import './assets/css/style.css';

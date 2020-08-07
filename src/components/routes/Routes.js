@@ -19,6 +19,7 @@ const ChangePassword = lazy(() => import("../../pages/auth/ChangePassword"));
 const NotFound = lazy(() => import("../../pages/error/NotFound"));
 const PaymentExpiry = lazy(() => import("../../pages/error/PaymentExpiry"));
 const Upgrade = lazy(() => import("../../pages/error/Upgrade"));
+const UserDetails = lazy(() => import("../../pages/userDetails/UserDetails"));
 
 // import Registration from '../pages/auth/Registration.js';
 // import Privacy from '../pages/privacy/Privacy';
@@ -168,6 +169,7 @@ const Routes = ({isAuthenticated}) => {
 					<Route exacy path="/blog" component={Blog} />
 					<Route exact path="/privacy" component={Privacy} />
 					<Route exact path="/terms" component={Terms} />
+					<Route exact path="/user-details" component={UserDetails} />
 					<PrivateRoute exact path="/expired" component={PaymentExpiry} />
 					<PrivateRoute
 						exact

@@ -550,13 +550,13 @@ p.free-cunsultation a {
     padding: 11px 15px;
     border-radius: 4px;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
 
 .vidlivebtnn:hover {
-	background: #000000;
+	/*background: #000000;*/
 	color: #fff;
 }
 

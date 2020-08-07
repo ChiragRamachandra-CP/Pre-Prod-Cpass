@@ -70,7 +70,7 @@ const UpcomingLiveClasses = () => {
 								to={`/live/${availableLiveEvents[i].ZOOMID}`}
 								className="vidlivebtnn"
 							>
-								Join Now
+								JOIN NOW
 							</Link>
 						)}
 					</div>
@@ -82,7 +82,7 @@ const UpcomingLiveClasses = () => {
 								data-toggle="modal"
 								data-target="#notify"
 							>
-								Notify Me
+								NOTIFY ME
 							</Link>
 						)}
 					</div>
