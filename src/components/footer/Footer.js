@@ -1,8 +1,10 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from "react";
+import ScrollHeader from "../scrollHandler/ScrollHandler";
 
 const Footer = () => {
 	return (
 		<Fragment>
+			<ScrollHeader></ScrollHeader>
 			<div className="Footer-main">
 				<div className="ftr-sec">
 					<div className="container">
@@ -44,7 +46,13 @@ const Footer = () => {
 												<a href="/terms">Terms</a>
 											</li>
 											<li>
-												<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">Support</a>
+												<a
+													href="mailto:support@collegepass.org"
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													Support
+												</a>
 											</li>
 										</ul>
 									</div>
@@ -59,23 +67,32 @@ const Footer = () => {
 										<ul>
 											<li>
 												<a href="noLink">
-													<i className="fa fa-twitter-square" aria-hidden="true" /> Twitter
+													<i
+														className="fa fa-twitter-square"
+														aria-hidden="true"
+													/>{" "}
+													Twitter
 												</a>
 											</li>
 											<li>
 												<a href="https://www.instagram.com/_collegepass/">
-													<i className="fa fa-instagram" aria-hidden="true" /> Instagram
+													<i className="fa fa-instagram" aria-hidden="true" />{" "}
+													Instagram
 												</a>
 											</li>
 											<li>
 												<a href="https://www.facebook.com/CollegePassPremiere/">
-													<i className="fa fa-facebook-official" aria-hidden="true" />{' '}
+													<i
+														className="fa fa-facebook-official"
+														aria-hidden="true"
+													/>{" "}
 													Facebook
 												</a>
 											</li>
 											<li>
 												<a href="https://www.linkedin.com/company/collegepass/">
-													<i className="fa fa-linkedin" aria-hidden="true" />LinkedIn
+													<i className="fa fa-linkedin" aria-hidden="true" />
+													LinkedIn
 												</a>
 											</li>
 										</ul>
@@ -90,7 +107,10 @@ const Footer = () => {
 										<ul>
 											<li>
 												<a href="noLink">
-													<i className="fa fa-twitter-square" aria-hidden="true" />
+													<i
+														className="fa fa-twitter-square"
+														aria-hidden="true"
+													/>
 												</a>
 											</li>
 											<li>
@@ -100,7 +120,10 @@ const Footer = () => {
 											</li>
 											<li>
 												<a href="https://www.facebook.com/CollegePassPremiere/">
-													<i className="fa fa-facebook-official" aria-hidden="true" />
+													<i
+														className="fa fa-facebook-official"
+														aria-hidden="true"
+													/>
 												</a>
 											</li>
 											<li>
@@ -113,8 +136,6 @@ const Footer = () => {
 								</div>
 							</div>
 						</div>
-
-						
 					</div>
 				</div>
 
@@ -123,7 +144,10 @@ const Footer = () => {
 						<div className="row copyright">
 							<div
 								className="copy-e"
-								style={{ borderRight: '1px solid rgba(255, 255, 255, 0.3)', paddingRight: '1.6rem' }}
+								style={{
+									borderRight: "1px solid rgba(255, 255, 255, 0.3)",
+									paddingRight: "1.6rem",
+								}}
 							>
 								<a href="# ">
 									<img
@@ -142,7 +166,7 @@ const Footer = () => {
 								</a>
 							</div>
 							<div className="copy-e ctt">
-									<span className="cpy-m-20">&copy; 2019  CollegePass</span>
+								<span className="cpy-m-20">&copy; 2019 CollegePass</span>
 							</div>
 						</div>
 					</div>
@@ -152,7 +176,6 @@ const Footer = () => {
 			{/*<div id="calendybtn">
 				<button data-toggle="tooltip" title="Book Your Free Personal Consultation!" class="clndfeed"><i class="fa fa-calendar" aria-hidden="true"></i></button>
 			</div>*/}
-
 
 			{/*<div className="modal fade" id="free_counselling" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				<div className="modal-dialog modal-dialog-centered" role="document">
@@ -178,7 +201,6 @@ const Footer = () => {
 					<i className="fa fa-calendar" aria-hidden="true" style={{fontSize: '29px'}}></i>
 				</button>  
 			</div>*/}
-
 		</Fragment>
 	);
 };

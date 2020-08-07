@@ -1,9 +1,10 @@
-import React, { Fragment, Suspense } from 'react';
-import './HomeBeforeLogin.css';
+import React, {Fragment, Suspense} from "react";
+import "./HomeBeforeLogin.css";
+import ScrollHandler from "../../components/scrollHandler/ScrollHandler";
 // import axios from 'axios';
 
 //import Header from '../../header/BeforeLoggedInHeader';
-import BounceLoader from '../../utils/Loader';
+import BounceLoader from "../../utils/Loader";
 
 // import Slider from '../../slider/Slider';
 // import Content from '../../marketBanner/Content';
@@ -13,23 +14,36 @@ import BounceLoader from '../../utils/Loader';
 // import Faq from '../../feedback/Faq';
 // import Footer from '../../footer/Footer';
 
-const Header = React.lazy(() => import('./../../components/header/BeforeLoggedInHeader'));
-const Slider = React.lazy(() => import('./../../components/slider/Slider'));
-const Content = React.lazy(() => import('./../../components/marketBanner/Content'));
-const UpcomingLiveSession = React.lazy(() => import('./../../components/live/UpcomingLiveSession'));
-const UpcomingLiveClass = React.lazy(() => import('./../../components/live/UpcomingLiveClasses'));
-const CategoryHorizontalSection = React.lazy(() =>
-	import('./../../components/categoryHorizontalSection/CategoryHorizontalSection')
+const Header = React.lazy(() =>
+	import("./../../components/header/BeforeLoggedInHeader")
 );
-const Testimonial = React.lazy(() => import('./../../components/testimonial/Testimonial'));
-const Faq = React.lazy(() => import('./../../components/feedback/Faq'));
-const Footer = React.lazy(() => import('./../../components/footer/Footer'));
+const Slider = React.lazy(() => import("./../../components/slider/Slider"));
+const Content = React.lazy(() =>
+	import("./../../components/marketBanner/Content")
+);
+const UpcomingLiveSession = React.lazy(() =>
+	import("./../../components/live/UpcomingLiveSession")
+);
+const UpcomingLiveClass = React.lazy(() =>
+	import("./../../components/live/UpcomingLiveClasses")
+);
+const CategoryHorizontalSection = React.lazy(() =>
+	import(
+		"./../../components/categoryHorizontalSection/CategoryHorizontalSection"
+	)
+);
+const Testimonial = React.lazy(() =>
+	import("./../../components/testimonial/Testimonial")
+);
+const Faq = React.lazy(() => import("./../../components/feedback/Faq"));
+const Footer = React.lazy(() => import("./../../components/footer/Footer"));
 
 const HomeBeforeLogin = () => {
 	return (
 		<Fragment>
-			<div className={'text-center'}>
+			<div className={"text-center"}>
 				<Suspense fallback={<BounceLoader />}>
+					<ScrollHandler></ScrollHandler>
 					<Header />
 					<Slider />
 					<Content />

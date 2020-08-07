@@ -1,5 +1,5 @@
 import React, {Fragment} from "react";
-import AfterLoggedInHeader from "../../components/header/AfterLoggedInHeader";
+import AfterLoggedInHeader from "../../components/header/BeforeLoggedInHeader";
 import Footer from "../../components/footer/Footer";
 import SliderLandingPage from "../../components/slider/SliderLandingPage";
 import Video from "../../components/video/Video";

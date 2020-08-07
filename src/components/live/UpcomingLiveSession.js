@@ -129,8 +129,8 @@ const UpcomingLiveSession = () => {
 
 	return (
 		<Fragment>
-			<div className="container join_live" id="upcomigTop">
-				<section className="single_video">
+			<div className="container join_live">
+				<section className="single_video" id={`#sectionLive`}>
 					<div className="upcmngls">
 						<div className="mobbtncntrv" id="upcomigTop">
 							<h2
