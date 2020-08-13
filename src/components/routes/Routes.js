@@ -20,6 +20,8 @@ const NotFound = lazy(() => import("../../pages/error/NotFound"));
 const PaymentExpiry = lazy(() => import("../../pages/error/PaymentExpiry"));
 const Upgrade = lazy(() => import("../../pages/error/Upgrade"));
 const UserDetails = lazy(() => import("../../pages/userDetails/UserDetails"));
+const AllPlans = lazy(() => import("../../pages/plans/AllPlans"));
+const PurchasePlan = lazy(() => import("../../pages/plans/PurchasePlan"));
 
 // import Registration from '../pages/auth/Registration.js';
 // import Privacy from '../pages/privacy/Privacy';
@@ -131,6 +133,8 @@ const Routes = ({isAuthenticated}) => {
 					/>
 					<PrivateRoute exact path="/plan/info" component={Notes} />
 					<PrivateRoute exact path="/plan/choose" component={Plan} />
+					<PrivateRoute exact path="/all-plans" component={AllPlans} />
+					<PrivateRoute exact path="/purchase" component={PurchasePlan} />
 					<PrivateRoute
 						exact
 						path="/plan/payment/:planId"

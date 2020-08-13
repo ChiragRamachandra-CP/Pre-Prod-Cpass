@@ -1,0 +1,66 @@
+.plan-purchase button {
+    background: #c83232;
+    padding: 10px 15px;
+    border: 1px solid #c83232;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+.vidicncntr.plan-purchase {
+    top: 40%;
+}
+.purchasemain .wss.w_3rd {
+    padding-bottom: 53px!important;
+}
+.purchasemain div#studentTestimonial {
+    background: #000;
+    padding: 10px 10px 455px 10px;
+}
+.purchasemain .stdnt-sy {
+    margin-bottom: 30px;
+}
+.purchasemain .student-says h2.new-class-heading {
+    color: #fff!important;
+}
+.purchasemain img.satbnner {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -410px;
+}
+.purchasemain .wss.w_lst {
+    padding-bottom: 29px;
+}
+.purchasebtn {
+    text-align: center;
+    padding: 50px 0px 15px 0px;
+}
+.purchasebtn a {
+    background: #c83232;
+    padding: 13px 45px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+.purchasemain .banner-cont p.bannerbtnbl {
+    cursor: pointer;
+    background-color: #c83232;
+    padding: 0.5rem 1.8rem;
+    font-size: 0.65rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background .25s ease, box-shadow .25s ease, opacity .25s ease;
+    vertical-align: middle;
+    border: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+}
