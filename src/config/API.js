@@ -42,6 +42,7 @@ export const APIupdateEventSpentTime = 'https://apitest.collegepass.org/api/v1/e
 export const APIgetLiveClass = 'https://apitest.collegepass.org/api/v1/events/getLiveClasses/';
 export const APInotify = 'https://apitest.collegepass.org/api/v2/auth/notifyMe';
 export const APILandingPageInfo = 'https://apitest.collegepass.org/api/v2/tutoring/storeLandingPageInfo';
+export const APITimeZoneData = 'https://apitest.collegepass.org/api/v2/getTimeZoneDetails'; // add this : timezone@astitva
 
 
 
