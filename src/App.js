@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 import store from './store/store';
 import setAuthToken from './utils/setAuthToken';
-import { loadUser, loadAccess } from './actions/auth';
+import { loadUser, loadAccess ,getTimeZoneData } from './actions/auth'; //replace this : timezone@astitva
 
 //Components imports
 
@@ -33,6 +33,7 @@ const App = ({ isAuthenticated }) => {
 		setAuthToken(localStorage.token);
 		store.dispatch(loadUser());
 		store.dispatch(loadAccess());
+		store.dispatch(getTimeZoneData()); //add this : timezone@astitva
 	}, []);
 
 	return (

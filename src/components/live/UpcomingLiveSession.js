@@ -3,21 +3,17 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import moment from "moment";
 import Notify from "../modal/Notify";
-import TimeZone from "../live/TimeZone"
-
+//import TimeZone from "../live/TimeZone"
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import {APIgetLiveSession} from "../../config/API";
 
-const UpcomingLiveSession = () => {
+const UpcomingLiveSession = ({timezone,utc_offset}) => {
 	const [availableLiveEvents, setAvailableLiveEvents] = useState([]);
 	let bodyContent = "Loading";
 	let enableButtons = false;
 
 	let curTime = moment();
-
-	let PREMIUM_LEVEL;
-
-	//console.log(curTime.utc().format('YYYY-MM-DD HH:mm'));
-	// const Retime = moment().utc().subtract(1, 'hours').format();
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -36,7 +32,7 @@ const UpcomingLiveSession = () => {
 
 	if (availableLiveEvents) {
 		bodyContent = availableLiveEvents.map((availableCategory, i) => {
-			const utcTime = moment.utc(availableLiveEvents[i].DATE_TIME).format();
+			 moment.utc(availableLiveEvents[i].DATE_TIME).format();
 			const enableTime = moment
 				.utc(availableLiveEvents[i].DATE_TIME)
 				.subtract(15, "minute")
@@ -46,18 +42,14 @@ const UpcomingLiveSession = () => {
 				.utc(availableLiveEvents[i].DATE_TIME)
 				.add(2, "h")
 				.format();
-			//console.log(utcTime);
 
-			//console.log(availableLiveEvents[i].DATE_TIME);
-			// console.log(eventTime.format());
-			//console.log(enableTime);
-			//console.log(stopTime);
-			// enableButtons = moment('2020-10-20').isBetween('2020-01-20', '2020-12-25');
+			console.log('utc_offset',utc_offset);
+
+			const local_time = moment.utc(availableLiveEvents[i].DATE_TIME).utcOffset(utc_offset).format("hh:mm A");
+
+			
 			enableButtons = curTime.isBetween(enableTime, stopTime);
-			//enableButtons = curTime.isBetween(enableTime.format(formatted), stopTime.format(formatted));
-
-			//console.log(enableButtons);
-
+		
 			return (
 				<div key={i} className="col-md-6 teacher-self-exp">
 					<div className="title-img-sec">
@@ -66,7 +58,25 @@ const UpcomingLiveSession = () => {
 					<div className="overlay" />
 					
 					<div className="vidicncntrlve timesec">
-						<TimeZone />
+						<div className="container live-time-zome">
+							<section className="time-zone">
+								{/*<div className="time-logo">
+								</div>
+								<div className="time-date">
+								</div>*/}
+								<div className="time-heading">
+									<h6>{availableLiveEvents[i].NAME}</h6>
+								</div>
+								
+								<div className="time-desc">
+									<h6>{availableLiveEvents[i].DESC}</h6> 
+								</div>
+
+								<div className="time-main">
+								<h6>{local_time} {timezone}</h6>
+								</div>
+							</section>
+						</div>
 					</div>
 
 					<div className="vidicncntrlve">
@@ -160,4 +170,14 @@ const UpcomingLiveSession = () => {
 	);
 };
 
-export default UpcomingLiveSession;
+UpcomingLiveSession.propTypes = {
+    timezone: PropTypes.string.isRequired,
+    utc_offset: PropTypes.bool.isRequired
+};
+
+const mapStateToProps = (state) => ({
+    timezone: state.auth.timezone,
+    utc_offset: state.auth.utc_offset
+});
+
+export default connect(mapStateToProps, null)(UpcomingLiveSession);

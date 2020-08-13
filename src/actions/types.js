@@ -20,3 +20,6 @@ export const SOCIAL_LOGIN = 'SOCIAL_LOGIN';
 
 export const SET_ACCESS = 'SET_ACCESS';
 export const CLEAR_ACCESS = 'CLEAR_ACCESS';
+
+export const SET_TIMEZONEDATA = 'SET_TIMEZONEDATA'; // add this : timezone@astitva
+export const CLEAR_TIMEZONEDATA = 'CLEAR_TIMEZONEDATA'; // add this : timezone@astitva
