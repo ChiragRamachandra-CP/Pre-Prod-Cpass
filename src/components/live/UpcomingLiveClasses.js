@@ -3,6 +3,7 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import moment from "moment";
 import Modal from "../modal/Modal";
+import TimeZone from "../live/TimeZone"
 
 import {APIgetLiveClass} from "../../config/API";
 
@@ -64,6 +65,11 @@ const UpcomingLiveClasses = () => {
 						<img src={availableLiveEvents[i].s3_image} alt="live Session" />
 					</div>
 					<div className="overlay" />
+
+					<div className="vidicncntrlve timesec">
+						<TimeZone />
+					</div>
+
 					<div className="vidicncntrlve">
 						{enableButtons === true && (
 							<Link
