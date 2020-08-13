@@ -21,6 +21,8 @@ import './pages/userDetails/userDetails.css';
 import './pages/home/HomeBeforeLogin.css';
 import './assets/css/bootstrap.min.css';
 import './assets/css/style.css';
+import './assets/css/mediaquery.css';
+import './components/live/time-zone.css';
 import './pages/landingPages/landingPage.css';
 import './assets/css/readliness.css';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
