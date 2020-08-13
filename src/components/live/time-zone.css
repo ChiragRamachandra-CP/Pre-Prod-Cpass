@@ -5,18 +5,23 @@
     line-height: 3.25;
     font-weight: 800;
     letter-spacing: 0px;
-    color: #000;
+    color: #fff;
+    opacity: 0.8;
     font-size: 17px!important;
 }
 .time-heading h6 {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
-    color: #000;
+    color: #fff;
+    opacity: 0.8;
     line-height: 45px;
 }
 .time-desc h6 {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -1px;
-    color: #d85151;
+    color: #e6a851;
+}
+.join_live .title-img-sec img {
+    opacity: 0.4;
 }
