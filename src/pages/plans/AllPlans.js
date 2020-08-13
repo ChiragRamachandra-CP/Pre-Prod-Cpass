@@ -2,7 +2,9 @@ import React, { Fragment } from 'react';
 import Header from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
 
+
 const AllPlans = () => {
+
 
 	
 	return (
