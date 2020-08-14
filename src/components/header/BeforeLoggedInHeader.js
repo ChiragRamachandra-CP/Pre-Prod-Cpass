@@ -26,43 +26,49 @@ const BeforeLoggedInHeader = () => {
 									/>
 								</Link>
 								<ul className="lgomnu">
-									<li className="mnuhidemob">
+									{/*<li className="mnuhidemob">
 										<Link to="/">
 											<p>Home</p>
 										</Link>
-									</li>
+									</li>*/}
 									<li className="hvrdsp mnuicon mnuhidemob">
 										<Link to="">
 											<p>College Admissions</p>
+											
 											<ul className="nav-dropdown">
-												<li>
-													{/* Made Changes here to scroll to live class Button */}
-													<Link to={`/#sectionLive`}>
-														<p>Live Sessions</p>
-													</Link>
-												</li>
-												<li>
-													<Link to="/college-admission">
-														<p>Book a free consultation</p>
-													</Link>
-												</li>
+												<div className="dropheader">
+													<li>
+														{/* Made Changes here to scroll to live class Button */}
+														<Link to={`/#sectionLive`}>
+															<p><i class="fa fa-level-up" aria-hidden="true"></i> Live Sessions</p>
+														</Link>
+													</li>
+													<li>
+														<Link to="/college-admission">
+															<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Book a free consultation</p>
+														</Link>
+													</li>
+												</div>
 											</ul>
+											
 										</Link>
 									</li>
 									<li className="hvrdsp mnuicon mnuhidemob">
 										<Link to="">
 											<p>Tutoring</p>
 											<ul className="nav-dropdown">
-												<li>
-													<Link to="/sat-master-class-pro">
-														<p>SAT/PSAT Tutoring</p>
-													</Link>
-												</li>
-												<li>
-													<Link to="/ib-tutoring">
-														<p>IB/IGCSE Tutoring</p>
-													</Link>
-												</li>
+												<div className="dropheader">
+													<li>
+														<Link to="/sat-master-class-pro">
+															<p><i class="fa fa-graduation-cap" aria-hidden="true"></i> SAT/PSAT Tutoring</p>
+														</Link>
+													</li>
+													<li>
+														<Link to="/ib-tutoring">
+															<p><i class="fa fa-book" aria-hidden="true"></i> IB/IGCSE Tutoring</p>
+														</Link>
+													</li>
+												</div>	
 											</ul>
 										</Link>
 									</li>
@@ -103,11 +109,11 @@ const BeforeLoggedInHeader = () => {
 										Log in
 									</p>
 								</li>
-								<li className="mnuhideshow">
+								{/*<li className="mnuhideshow">
 									<Link to="/">
 										<p>Home</p>
 									</Link>
-								</li>
+								</li>*/}
 								<li className="mnuhideshow">
 									<Link to="/#upcomigTop">
 										<p>Live Sessions</p>
