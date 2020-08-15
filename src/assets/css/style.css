@@ -1,3 +1,129 @@
+/* header version-2 */
+
+
+.headerv2 {
+    text-align: center;
+    display: inline-block;
+}
+ul.menu {
+    text-align: center;
+}
+ul.menu li p {
+    color: #fff;
+    font-size: 10.5px!important;
+    font-weight: 600!important;
+    letter-spacing: .12em!important;
+    opacity: .8!important;
+    text-transform: uppercase!important;
+}
+a.logo {
+    padding: 0px 0px 20px 0px;
+}
+li.mnuhidemob {
+    margin: 5px 10px!important;
+}
+.Sliders.slidev2l {
+    width: 40%;
+    float: left;
+}
+.Sliders.slidev2r {
+    width: 60%;
+    float: right;
+}
+.carousel img {
+    margin-top: 0px!important;
+}
+.banner-cont {
+	margin-top: 15%!important;
+	margin-left: 1%!important;
+	position: absolute!important;
+	top: 0;
+}
+section.client {
+    margin: 4.8rem 0px;
+    padding: 38.4rem 0rem 0rem 0rem;
+}
+.banner-cont h1 {
+    height: auto;
+    max-width: none;
+    font-weight: 900;
+    line-height: 75px;
+    font-size: 6.0rem;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+.banner-cont h5 {
+    margin-top: 2.5rem;
+    opacity: 0.6!important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+.sldbtnv2 {
+    display: inline-flex;
+    padding: 45px 0px;
+}
+.banner-cont p.bannerbtnbl {
+	padding: 0.9rem 0.8rem;
+}
+h5.btntxtv2 {
+    opacity: 0.9!important;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+
+
+h6 {
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+h1{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+h2{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+h3{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+h4{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+h5{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+p{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+span{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+a{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+div{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+body{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+label{
+	font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+/* header version-2 */
+
+
+
+
 ul.lgomnulogn {
     margin-top: 22px!important;
 }
@@ -170,7 +296,7 @@ li.top_login.mnuhidemob {
 
 .lgncontct {
     color: #fff!important;
-    margin: 5px 15px 0px 5px;
+    margin: 0px 15px 0px 5px;
 	cursor: pointer;
 	font-size: 15px!important;
 }
@@ -1184,12 +1310,8 @@ video {
     word-spacing: 0.2rem;
 }
 
-a.logo {
-	padding: 12px 0px 15px 0px;
-}
-
 div.logo {
-	padding: 20px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
 }
 
 ul.menu li .trigger1 {
@@ -1364,7 +1486,7 @@ input.lgn-btn.frgtpssbtn:hover {
 	max-width: 100%!important;
 	height: auto!important;
 	margin-left: 5px;
-	margin-top: 5px!important;
+	margin-top: 0px!important;
 }
 
 .row.h-t-a {
@@ -1484,40 +1606,14 @@ img.menu-avatar {
 	margin-top: -2px;
 }
 
-.banner-cont {
-	margin-top: 10%!important;
-}
-
-.banner-cont h1 {
-	height: auto;
-    max-height: 2.5em;
-    max-width: 600px;
-    font-weight: 700;
-    line-height: 42px;
-    font-size: 2.5rem;
-    color: rgb(230, 168, 81);
-    margin-bottom: 0.4rem;
-}
-
 .bnnrhedsndlne {
 	font-size: 22px;
 	color: #fff;
 }
 
-.banner-cont h5 {
-	margin-bottom: 3.2rem;
-	opacity: 0.8 !important;
-	color: #fff;
-	font-weight: 700;
-	line-height: 1.4;
-	font-size: 1.0rem;
-	letter-spacing: 0.03em;
-}
-
 .banner-cont p.bannerbtnbl {
 	cursor: pointer;
 	background-color: #c83232;
-	padding: 0.9rem 1.8rem;
 	font-size: 0.65rem;
 	display: inline-flex;
 	align-items: center;
@@ -1535,20 +1631,8 @@ img.menu-avatar {
 	font-family: Lato, Helvetica, Arial, sans-serif!important;
 }
 
-.banner-cont {
-	margin-top: 15%!important;
-	margin-left: 5%!important;
-	position: absolute!important;
-	top: 0;
-}
-
 .client .container .row .col-md-2 {
 	text-align: center;
-}
-
-section.client {
-	margin: 4.8rem 0px;
-	padding: 3.4rem 0rem 3.0rem 0rem;
 }
 
 .copy-e.ctt img {

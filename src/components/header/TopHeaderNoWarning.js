@@ -33,7 +33,80 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<p>Home</p>
 										</Link>
 									</li>*/}
-									<li className="hvrdsp mnuicon mnuhidemob">
+									
+								</ul>
+							<input className="menu-btn" type="checkbox" id="menu-btn" />
+							<label className="menu-icon" htmlFor="menu-btn">
+								<span className="navicon" />
+							</label>
+							<ul className="menu">
+							<div className="headerv2">
+								<li className="mnuhidemob">
+									<a
+										style={{textDecoration: "none"}}
+										href="#"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<p>MY COLLEGE PLAN</p>
+									</a>
+								</li>
+								{/*<li className="hvrdsp mnufnt">
+									<p>MY COLLEGE PLAN</p>
+									<p className="clscmingsn">*Coming Soon</p>
+									<ul className="nav-dropdown">
+										<li>
+											<p>MY TO-DO LIST</p>
+										</li>
+										<li>
+											<p>MY COLLEGE READINESS</p>
+										</li>
+									</ul>
+								</li>*/}
+								{/*<li className="mnuhideshow">
+									<Link to="/">
+										<p>Home</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/live-sessions">
+										<p>Live Sessions</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/college-admission">
+										<p>Book a free consultation</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/sat-master-class-pro">
+										<p>SAT/PSAT Tutoring</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/ib-tutoring">
+										<p>IB/IGCSE Tutoring</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/my-profile">
+										<p>PROFILE</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/account">
+										<p>ACCOUNT</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow">
+									<Link to="/plan/info">
+										<p>UPGRADE</p>
+									</Link>
+								</li>
+								<li className="mnuhideshow hvrdsp">
+									<p onClick={onClickLogoutHandler}>LOGOUT</p>
+								</li>*/}
+								<li className="hvrdsp mnuicon mnuhidemob">
 										<Link to="">
 											<p>College Admissions</p>
 											<ul className="nav-dropdown">
@@ -81,67 +154,6 @@ const AfterLoggedInHeader = ({ logout }) => {
 											<p>Blog</p>
 										</a>
 									</li>
-								</ul>
-							<input className="menu-btn" type="checkbox" id="menu-btn" />
-							<label className="menu-icon" htmlFor="menu-btn">
-								<span className="navicon" />
-							</label>
-							<ul className="menu">
-								<li className="hvrdsp mnufnt">
-									<p>MY COLLEGE PLAN</p>
-									<p className="clscmingsn">*Coming Soon</p>
-									{/*<ul className="nav-dropdown">
-										<li>
-											<p>MY TO-DO LIST</p>
-										</li>
-										<li>
-											<p>MY COLLEGE READINESS</p>
-										</li>
-									</ul>*/}
-								</li>
-								{/*<li className="mnuhideshow">
-									<Link to="/">
-										<p>Home</p>
-									</Link>
-								</li>*/}
-								<li className="mnuhideshow">
-									<Link to="/live-sessions">
-										<p>Live Sessions</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/college-admission">
-										<p>Book a free consultation</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/sat-master-class-pro">
-										<p>SAT/PSAT Tutoring</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/ib-tutoring">
-										<p>IB/IGCSE Tutoring</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/my-profile">
-										<p>PROFILE</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/account">
-										<p>ACCOUNT</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow">
-									<Link to="/plan/info">
-										<p>UPGRADE</p>
-									</Link>
-								</li>
-								<li className="mnuhideshow hvrdsp">
-									<p onClick={onClickLogoutHandler}>LOGOUT</p>
-								</li>
 								<li className="hvrdsp mnuicon mnuhidemob">
 									<p>
 										<img
@@ -173,6 +185,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 										</div>	
 									</ul>
 								</li>
+								</div>
 								<Notify></Notify>
 							</ul>
 						</div>
