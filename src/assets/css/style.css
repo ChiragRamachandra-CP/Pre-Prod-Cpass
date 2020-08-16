@@ -1,6 +1,15 @@
 /* header version-2 */
 
-
+.lgncontct i {
+    margin-right: 5px;
+    color: #fff;
+    font-size: 17px;
+}
+li.hvrdsp.mnuicon.mnuhidemob img {
+    width: 40px;
+	max-width: 100%;
+	margin-top: -10px;
+}
 .headerv2 {
     text-align: center;
     display: inline-block;
@@ -28,16 +37,17 @@ li.mnuhidemob {
 }
 .Sliders.slidev2r {
     width: 60%;
-    float: right;
+	float: right;
+	padding: 40px 0px;
 }
 .carousel img {
     margin-top: 0px!important;
 }
 .banner-cont {
-	margin-top: 15%!important;
-	margin-left: 1%!important;
-	position: absolute!important;
-	top: 0;
+    margin-top: 10%!important;
+    margin-left: 1%!important;
+    position: absolute!important;
+    top: 0;
 }
 section.client {
     margin: 4.8rem 0px;
@@ -46,9 +56,9 @@ section.client {
 .banner-cont h1 {
     height: auto;
     max-width: none;
-    font-weight: 900;
+    font-weight: 600;
     line-height: 75px;
-    font-size: 6.0rem;
+    font-size: 4rem;
     color: #fff;
     margin-bottom: 0.4rem;
 }
@@ -74,6 +84,15 @@ h5.btntxtv2 {
     font-size: 14px;
     color: #fff;
     padding: 0px 15px;
+}
+ul.menu {
+    margin-top: 15px!important;
+}
+.lgnv2 {
+    margin-top: -2px;
+}
+li.mnuhidemob.cntmenuv2 {
+    margin: 5px 0px!important;
 }
 
 
@@ -303,12 +322,6 @@ li.top_login.mnuhidemob {
 
 .lgncontct a {
     color: #fff;
-}
-
-.lgncontct i {
-    margin-right: 5px;
-    color: #c83232;
-    font-size: 17px;
 }
 
 .liveledbox {
@@ -635,7 +648,7 @@ img.dbanners {
 
 .top_login .trigger1 {
     cursor: pointer;
-    background-color: #c83232;
+    background-color: none;
     padding: 0.7rem 1.5rem;
     font-size: 0.65rem;
     display: inline-flex;
@@ -1538,10 +1551,6 @@ a.c-button-r {
 	vertical-align: middle;
 	border: 0;
 	font-family: Lato, Helvetica, Arial, sans-serif;
-}
-
-ul.menu {
-	margin-top: 25px!important;
 }
 
 a.c-button-r:hover {

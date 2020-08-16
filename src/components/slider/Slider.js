@@ -12,7 +12,7 @@ const Slider = () => {
 						<div className="container top-bnnr">
 							<div className="row">
 								<div className="col-md-5 banner-cont">
-									<h1>Join Your <br/>Dream College</h1>
+									<h1>Join<br/> Your <br/>Dream<br/> College</h1>
 									<h5>Learn from Global College Admission Advisors</h5>
 									<div className="sldbtnv2">
 									<p className="bannerbtnbl" data-toggle="modal" data-target="#myModal">Create Your Free Account</p>
