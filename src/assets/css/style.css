@@ -6,7 +6,7 @@
     font-size: 17px;
 }
 li.hvrdsp.mnuicon.mnuhidemob img {
-    width: 40px;
+    width: 35px;
 	max-width: 100%;
 	margin-top: -10px;
 }
@@ -29,7 +29,7 @@ a.logo {
     padding: 0px 0px 20px 0px;
 }
 li.mnuhidemob {
-    margin: 5px 10px!important;
+    margin: 5px 20px!important;
 }
 .Sliders.slidev2l {
     width: 40%;
