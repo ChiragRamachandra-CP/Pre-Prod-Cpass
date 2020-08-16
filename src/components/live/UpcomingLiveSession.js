@@ -45,8 +45,9 @@ const UpcomingLiveSession = ({timezone,utc_offset}) => {
 
 			console.log('utc_offset',utc_offset);
 
-			const local_time = moment.utc(availableLiveEvents[i].DATE_TIME).utcOffset(utc_offset).format("hh:mm A");
-
+			var utc_add = (utc_offset)?utc_offset:'+0530';
+			
+			const local_time = moment.utc(availableLiveEvents[i].DATE_TIME).utcOffset(utc_add).format("hh:mm A");
 			
 			enableButtons = curTime.isBetween(enableTime, stopTime);
 		
