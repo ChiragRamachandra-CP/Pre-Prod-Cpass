@@ -1,7 +1,11 @@
 img.satbnner {
     width: 100%;
     max-width: 100%;
-    margin-top: 65px;
+}
+
+button.btn.btn-danger.booksbmt {
+    background: #c83232;
+    border-color: #c83232;
 }
 
 .satID-1 {
@@ -22,26 +26,6 @@ p.bannerbtnbl a {
     color: #fff;
 }
 
-.satID-1 .new-class-heading {
-    margin: 0rem 0rem 1.5rem 0!important;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.25;
-    font-size: 1.9rem;
-    color: #000;
-    font-family: "Lato","Helvetica","Arial",sans-serif!important;
-}
-
-.satID-2 .new-class-heading {
-    margin: 0rem 0rem 1.5rem 0!important;
-    text-align: center;
-    font-weight: 700;
-    line-height: 1.25;
-    font-size: 1.9rem;
-    color: #000;
-    font-family: "Lato","Helvetica","Arial",sans-serif!important;
-}
-
 .frsttxt {
     padding: 45px 0px;
 }
@@ -49,13 +33,6 @@ p.bannerbtnbl a {
 p.heddesc {
     opacity: 0.8;
     margin-bottom: 0.5rem;
-}
-
-li.fvlnetxt {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.7rem;
-    font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
 
 .upcmngls.twoicnsl .icnimgt {
@@ -80,26 +57,18 @@ section.landingVideo {
     padding-top: 15px!important;
 }
 
-.bookform {
-    background: #000000;
-    padding: 10px 70px 85px 70px;
-}
-
 .bookform label {
     font-size: 13px;
     margin-left: 5px;
     color: #fff;
     font-weight: 600;
-    opacity: 0.6;
+    opacity: 1;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
 
 .booksbmt {
     float: right;
     margin-top: 20px;
-}
-
-.satID-1 .banner-cont h5 {
-    line-height: 1.99;
 }
 
 /*.satID-2 .banner-cont h5 {
@@ -120,14 +89,6 @@ section.landingVideo {
     opacity: 0.5;
 }
 
-.satID-1 .banner-cont h1 {
-    line-height: 35px;
-}
-
-.satID-2 .banner-cont h1 {
-    line-height: 35px;
-}
-
 .satID-2 .Sliders {
     background: #000000;
 }
@@ -137,7 +98,6 @@ section.landingVideo {
 }
 
 .upcmnglsv iframe#sing_vd {
-    height: 564px;
     max-height: 100%;
 }
 
@@ -163,11 +123,9 @@ section.landingVideo {
 
 
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
 
-    img.satbnner {
-        margin-top: 0px;
-    }
+    
 
     .bookform {
 		background: #000000;
@@ -209,4 +167,4 @@ section.landingVideo {
 		line-height: 0.1;
 	}
 
-}
+}*/

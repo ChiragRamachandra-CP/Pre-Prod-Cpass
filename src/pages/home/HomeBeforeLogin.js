@@ -1,10 +1,10 @@
 import React, {Fragment, Suspense} from "react";
 import "./HomeBeforeLogin.css";
-import ScrollHandler from "../../components/scrollHandler/ScrollHandler";
 // import axios from 'axios';
 
 //import Header from '../../header/BeforeLoggedInHeader';
 import BounceLoader from "../../utils/Loader";
+import ScrollHandler from "../../components/scrollHandler/ScrollHandler";
 
 // import Slider from '../../slider/Slider';
 // import Content from '../../marketBanner/Content';

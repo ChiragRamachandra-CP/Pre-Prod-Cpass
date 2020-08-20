@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Card from '../../components/card/Card';
 import Header from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
-import CheckUserAccess from '../../utils/checkUserAccess';
+//import CheckUserAccess from '../../utils/checkUserAccess';
 
 import { APIstoreUserMomentVideo } from '../../config/API';
 import { APIgetVideoByCategoryID } from '../../config/API';
@@ -19,7 +19,7 @@ const CategoryVideosPage = ({ match }) => {
 				page: [ { page: window.location.href }, { date: new Date().toLocaleString() } ]
 			};
 			try {
-				const result = await axios.post(APIstoreUserMomentVideo, body);
+				 await axios.post(APIstoreUserMomentVideo, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for

@@ -183,7 +183,7 @@ const ProfilePersonalDetails = ({ setAlert }) => {
 		};
 
 		try {
-			const res = await axios.post(APIupdatePersonalSection, body, config);
+			 await axios.post(APIupdatePersonalSection, body, config);
 
 			//console.log(res);
 			setAlert(succPersonal, 'success');

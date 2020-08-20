@@ -200,9 +200,7 @@
 
 
             @media only screen and (max-width: 600px) {
-                .hero-section {
-                    padding-top: 90px;
-                }
+                
                 .aldata {
                     line-height: 1.3;
                     text-align: center!important;
@@ -246,46 +244,12 @@
 
             }
 
-
-            /* Notes css */
-
-            .maincontnotes {
-                width: 100%;
-                max-width: 340px;
-                margin: 0 auto;
-                text-align: center;
-            }
-
-            span.stepLogo.planStepLogo img {
-                width: 50px;
-                margin: 50px 0 20px;
-            }
-
-            .stepTitle {
-                color: #fecf37;
-                margin: 0.8rem 0rem;
-                text-align: center;
-                font-size: 1.7rem;
-                font-weight: 700;
-                line-height: 1.25;
-                letter-spacing: 1.5px;
-            }
-
             .stepHeader {
                 color: #fff;
             }
 
             span.stepIndicator {
                 opacity: 0.8;
-            }
-
-            li.checkdetails {
-                text-align: left;
-                color: #fff;
-                line-height: 2.5rem;
-                font-size: 18px;
-                font-weight: 400;
-                margin-left: 20px;
             }
 
             input.seeplannotes {
@@ -317,16 +281,6 @@
 
             /* plan */
 
-            .stepTitle {
-                color: #fecf37;
-                margin: 0.8rem 0rem;
-                font-size: 1.7rem;
-                font-weight: 700;
-                line-height: 1.25;
-                letter-spacing: 1.5px;
-                text-align: center!important;
-            }
-
             .stepHeader {
                 color: #fff;
             }
@@ -338,17 +292,6 @@
             .allplanm {
                 margin: 45px 0px;
                 color: #fff;
-            }
-
-            label.headplncards {
-                padding: 1px;
-                background: #d9bd75;
-                -webkit-border-radius: 2px;
-                -moz-border-radius: 2px;
-                border-radius: 2px;
-                margin: 0px 50px;
-                width: 120px;
-                height: 120px;
             }
 
             table {
@@ -437,8 +380,6 @@
                 justify-content: center;
                 text-align: center!important;
                 -ms-flex-align: ;
-                top: 50;
-                top: 40%;
             }
             .headpln {
                 width: 100%;
@@ -620,14 +561,6 @@
                 width: 100%;
                 padding: 0px 20px 30px 20px;
             }
-            label.headplncards{
-                width: 24%;
-                height: 75px;
-            }
-            label.headplncards{
-                margin: 0px 10px;
-                padding: 10px 20px
-            }
             .planGrid__cell {
                 padding: 12px 12px;
                 }
@@ -639,16 +572,8 @@
             .lftttl {
                 display: none;
             }
-            label.headplncards {
-                width: 90px!important;
-                height: 80px!important;
-            }
             .allplanm {
                 margin: 15px 0px 0px 0px!important;
-            }
-
-            .page-payment-plan {
-                margin-top: 45px!important;
             }
 
             .mobtlpln {
@@ -691,10 +616,6 @@
                 margin: 80px 50px;
             }
 
-            label.headplncards{
-                margin: 0px 13px;
-            }
-
             .fxdwthpln {
                 width: 100%!important;
                 margin: 0 auto!important;
@@ -704,17 +625,6 @@
             }
 
             /* plan*/
-
-            /* Payment*/
-
-            .stepTitle {
-                color: #d9bd75;
-                margin: 0.8rem 0rem;
-                font-size: 1.7rem;
-                font-weight: 700;
-                line-height: 1.25;
-                letter-spacing: 1.5px;
-            }
 
             .stepHeader {
                 color: #fff;
@@ -727,10 +637,6 @@
             .allplanm {
                 margin: 45px 0px;
                 color: #fff;
-            }
-
-            .site-wrap.page-paymentnow {
-                padding: 70px 0px 70px 0px;
             }
 
             .page-payment-plan {
@@ -776,34 +682,15 @@
                 width: 100%;
             }
 
-            .ticonpmnt img {
-                width: 50px;
-                margin: 25px 0px;
-            }
-
             .cntstphdrpmnt {
                 width: 100%;
                 text-align: center;
-            }
-
-            .narrowContainer {
-                text-align: center;
-                max-width: 250px;
-                margin: auto;
-                padding: 20px 0px 35px 0px;
-                color: #fff;
-                letter-spacing: 0.8px;
-                opacity: 0.8;
             }
 
             .contextRow.seccmmnts {
                 padding-top: 20px;
                 line-height: 1.2rem;
                 letter-spacing: 0.9px;
-            }
-
-            .container.planbckbtn {
-                margin-top: 60px!important;
             }
 
             .handsicon i {

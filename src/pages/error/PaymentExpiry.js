@@ -5,7 +5,6 @@ import LoggedInHeader from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
 
 
-
 const PaymentExpiry = () => {
     return (
         <Fragment>

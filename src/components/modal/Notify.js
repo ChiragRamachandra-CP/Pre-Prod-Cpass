@@ -40,14 +40,17 @@ const Notify = ({setAlert}) => {
 				},
 				config
 			);
+			
+			//console.log("notify me result", result);
 
-			setAlert(
-				"Thanks for registering! You will receive an alert on the day of the event!",
-				"info"
-			);
+			if (result.status === 200) {
+				setAlert("Thanks for registering! You will receive an alert on the day of the event!", "info");
+			} else {
+				setAlert(errorFeedback, "danger");
+			}
 		} catch (err) {
 			if (err.response.status === 409) {
-				setAlert("Already In Notification list.Thank You", "info");
+				setAlert("You are already registered. You will receive an alert on the day of the event!", "info");
 			} else {
 				setAlert(errorFeedback, "danger");
 			}

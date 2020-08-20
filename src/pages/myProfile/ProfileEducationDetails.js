@@ -7,7 +7,6 @@ import { Checkbox } from 'reakit/Checkbox';
 import { loadUser, loadAccess } from '../../../src/actions/auth';
 import store from '../../store/store';
 import { succEdu } from '../../config/success';
-
 import { APIgetEducationSection } from '../../config/API';
 import { APIupdateEducationSection } from '../../config/API';
 
@@ -16,7 +15,7 @@ const ProfileEducationDetails = ({ setAlert }) => {
 	const [ grade, setGrade ] = useState(0);
 	const [ gradeArray, setGradeArray ] = useState([]);
 	let gradeComponents = null;
-	let sub = null;
+	//let sub = null;
 	const [ formData, setFormData ] = useState({
 		psat8_9: '',
 		psatnmsqt: '',
@@ -355,7 +354,7 @@ const ProfileEducationDetails = ({ setAlert }) => {
 				headers: { Authorization: `Bearer ${localStorage.token}` }
 			};
 			try {
-				const result = await axios.post(
+				 await axios.post(
 					APIupdateEducationSection,
 					body,
 					config
@@ -373,7 +372,7 @@ const ProfileEducationDetails = ({ setAlert }) => {
 		store.dispatch(loadAccess());
 	};
 
-	const setGradeOnChange = async (e, inputName) => {};
+	//const setGradeOnChange = async (e, inputName) => {};
 
 	if (gradeArray) {
 		gradeComponents = gradeArray.map((userGrade) => {

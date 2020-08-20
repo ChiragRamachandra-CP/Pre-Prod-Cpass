@@ -70,7 +70,7 @@ const Modal = ({ login, register, forgetpassword, isAuthenticated, socialLogin, 
 					'Content-Type': 'application/json'
 				}
 			};
-		const result = await axios.get(`${APIforgotPassword}${forgetemail}`, config);
+		 await axios.get(`${APIforgotPassword}${forgetemail}`, config);
 
 			//console.log('result', result);
 			setAlert(succSent, 'info fpsm');

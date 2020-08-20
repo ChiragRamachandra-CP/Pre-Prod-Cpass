@@ -19,9 +19,6 @@ const ChangePassword = lazy(() => import("../../pages/auth/ChangePassword"));
 const NotFound = lazy(() => import("../../pages/error/NotFound"));
 const PaymentExpiry = lazy(() => import("../../pages/error/PaymentExpiry"));
 const Upgrade = lazy(() => import("../../pages/error/Upgrade"));
-const UserDetails = lazy(() => import("../../pages/userDetails/UserDetails"));
-const AllPlans = lazy(() => import("../../pages/plans/AllPlans"));
-const PurchasePlan = lazy(() => import("../../pages/plans/PurchasePlan"));
 
 // import Registration from '../pages/auth/Registration.js';
 // import Privacy from '../pages/privacy/Privacy';
@@ -60,7 +57,7 @@ const MyProfile = lazy(() => import("../../pages/myProfile/MyProfile"));
 const Plan = lazy(() => import("../../pages/payment/Plan"));
 const Notes = lazy(() => import("../../pages/payment/Notes"));
 const Payment = lazy(() => import("../../pages/payment/Payment"));
-const PaymentUpgrade = lazy(() => import("../../pages/payment/PaymentUpgrade"));
+//const PaymentUpgrade = lazy(() => import("../../pages/payment/PaymentUpgrade"));
 const ThankYou = lazy(() => import("../../pages/payment/ThankYou"));
 const Account = lazy(() => import("../../pages/payment/Account"));
 const EmailValidate = lazy(() =>
@@ -133,18 +130,16 @@ const Routes = ({isAuthenticated}) => {
 					/>
 					<PrivateRoute exact path="/plan/info" component={Notes} />
 					<PrivateRoute exact path="/plan/choose" component={Plan} />
-					<PrivateRoute exact path="/all-plans" component={AllPlans} />
-					<PrivateRoute exact path="/purchase" component={PurchasePlan} />
 					<PrivateRoute
 						exact
 						path="/plan/payment/:planId"
 						component={Payment}
 					/>
-					<PrivateRoute
+					{/*<PrivateRoute
 						exact
 						path="/plan/payment-upgrade/:planId"
 						component={PaymentUpgrade}
-					/>
+					/>*/}
 					<PrivateRoute exact path="/plan/completed" component={ThankYou} />
 					<PrivateRoute exact path="/live/:sessionId" component={Zoom} />
 					<PrivateRoute exact path="/my-profile" component={MyProfile} />
@@ -173,11 +168,10 @@ const Routes = ({isAuthenticated}) => {
 					<Route exacy path="/blog" component={Blog} />
 					<Route exact path="/privacy" component={Privacy} />
 					<Route exact path="/terms" component={Terms} />
-					<Route exact path="/user-details" component={UserDetails} />
 					<PrivateRoute exact path="/expired" component={PaymentExpiry} />
 					<PrivateRoute
 						exact
-						path="/upgrade/:eventPremiumLevel"
+						path="/upgrade"
 						component={Upgrade}
 					/>
 					<PrivateRoute exact path="/vimeo" component={Vimeo} />

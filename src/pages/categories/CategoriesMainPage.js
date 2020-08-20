@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Card from '../../components/card/Card';
 import Header from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
-import CheckUserAccess from '../../utils/checkUserAccess';
+//import CheckUserAccess from '../../utils/checkUserAccess';
 
 import { APIstoreUserMoment } from '../../config/API';
 import { APIgetVideoCategories } from '../../config/API';
@@ -20,7 +20,7 @@ const Categories = () => {
 			};
 			try {
 				//console.log(APIstoreUserMoment);
-				const result = await axios.post(APIstoreUserMoment, body);
+				await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for

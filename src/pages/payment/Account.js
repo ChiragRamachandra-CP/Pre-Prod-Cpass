@@ -74,12 +74,12 @@ const Account = ({ setAlert, premiumLevel, plan_type, subscriptionId, subscripti
 		} else {
 			setPremiumPlan(premiumLevel);
 		}
-	}, []);
+	}, [plan_type, premiumLevel, subscriptionId, subscription_status]);
 
 	return (
 		<Fragment>
 			<AfterLoggedInHeader />
-			<div className="site-wrap page-payment-plan">
+			<div className="site-wrap page-payment-plan accntpgid">
 				<div className="container-fluid">
 					<div className="container">
 						<div className="row accountmhead">

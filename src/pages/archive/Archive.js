@@ -20,7 +20,7 @@ const Archive = () => {
 			};
 			try {
 				//console.log(APIstoreUserMoment);
-				const result = await axios.post(APIstoreUserMoment, body);
+				await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for

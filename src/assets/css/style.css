@@ -1,151 +1,3 @@
-/* header version-2 */
-
-.lgncontct i {
-    margin-right: 5px;
-    color: #fff;
-    font-size: 17px;
-}
-li.hvrdsp.mnuicon.mnuhidemob img {
-    width: 35px;
-	max-width: 100%;
-	margin-top: -10px;
-}
-.headerv2 {
-    text-align: center;
-    display: inline-block;
-}
-ul.menu {
-    text-align: center;
-}
-ul.menu li p {
-    color: #fff;
-    font-size: 10.5px!important;
-    font-weight: 600!important;
-    letter-spacing: .12em!important;
-    opacity: .8!important;
-    text-transform: uppercase!important;
-}
-a.logo {
-    padding: 0px 0px 20px 0px;
-}
-li.mnuhidemob {
-    margin: 5px 20px!important;
-}
-.Sliders.slidev2l {
-    width: 40%;
-    float: left;
-}
-.Sliders.slidev2r {
-    width: 60%;
-	float: right;
-	padding: 40px 0px;
-}
-.carousel img {
-    margin-top: 0px!important;
-}
-.banner-cont {
-    margin-top: 10%!important;
-    margin-left: 1%!important;
-    position: absolute!important;
-    top: 0;
-}
-section.client {
-    margin: 4.8rem 0px;
-    padding: 38.4rem 0rem 0rem 0rem;
-}
-.banner-cont h1 {
-    height: auto;
-    max-width: none;
-    font-weight: 600;
-    line-height: 75px;
-    font-size: 4rem;
-    color: #fff;
-    margin-bottom: 0.4rem;
-}
-.banner-cont h5 {
-    margin-top: 2.5rem;
-    opacity: 0.6!important;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    letter-spacing: 0.01em;
-}
-.sldbtnv2 {
-    display: inline-flex;
-    padding: 45px 0px;
-}
-.banner-cont p.bannerbtnbl {
-	padding: 0.9rem 0.8rem;
-}
-h5.btntxtv2 {
-    opacity: 0.9!important;
-    margin-top: 8px;
-    font-size: 14px;
-    color: #fff;
-    padding: 0px 15px;
-}
-ul.menu {
-    margin-top: 15px!important;
-}
-.lgnv2 {
-    margin-top: -2px;
-}
-li.mnuhidemob.cntmenuv2 {
-    margin: 5px 0px!important;
-}
-
-
-
-
-
-
-
-
-h6 {
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-h1{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-h2{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-h3{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-h4{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-h5{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-p{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-span{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-a{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-div{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-body{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-label{
-	font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-/* header version-2 */
-
-
-
-
-ul.lgomnulogn {
-    margin-top: 22px!important;
-}
 button {
     font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
@@ -184,17 +36,12 @@ span {
 	z-index: 999999!important;
 }
 
-li.mnuhideshow {
-    display: none;
-}
-
 .mnuhidemob {
     display: block;
 }
 
 ul.lgomnu {
     margin-top: 10px!important;
-    display: flex;
     float: right;
 }
 
@@ -207,12 +54,6 @@ ul.lgomnu {
     outline: none!important;
 }
 
-.lgomnulogn {
-    margin-top: 0px!important;
-    display: flex;
-    float: left;
-}
-
 ul.lgomnu li a p {
     color: #fff;
     font-size: 12px;
@@ -221,7 +62,7 @@ ul.lgomnu li a p {
 }
 ul.lgomnulogn li a p {
     color: #fff;
-    font-size: 12px;
+    font-size: 10.5px;
     text-transform: uppercase;
     font-family: Lato, Helvetica, Arial, sans-serif!important;
 }
@@ -300,28 +141,21 @@ p.latesthdng {
     padding: 0px 30px;
 }
 
-
-
-
-
-
-
-
-
-
-li.top_login.mnuhidemob {
-    display: flex;
-}
-
 .lgncontct {
     color: #fff!important;
-    margin: 0px 15px 0px 5px;
+    margin: 5px 15px 0px 5px;
 	cursor: pointer;
 	font-size: 15px!important;
 }
 
 .lgncontct a {
     color: #fff;
+}
+
+.lgncontct i {
+    margin-right: 5px;
+    color: #c83232;
+    font-size: 17px;
 }
 
 .liveledbox {
@@ -592,35 +426,10 @@ h6.title-text-h4.vid-t {
     padding: 0.7rem 1.2rem 0.1rem 1.2rem!important;
 }*/}
 
-.mobile-banner {
-    display: none;
-}
-
-.container.top-bnnr {
-    display: block;
-}
-
-img.dbanners {
-	display: block;
-	margin-top: 65px;
-}
-
 .modelicoimg {
     max-width: 25px;
     width: 100%;
     margin-right: 10px;
-}
-
-.all-categories h2.new-class-heading {
-    margin: 2.2rem 0rem 1.5rem 0rem!important;
-}
-
-.all-categories h6.title-text-h4 {
-    padding-top: 70px!important;
-}
-
-.all-categories.allcatids h6.title-text-h4 {
-    padding-top: 105px!important;
 }
 
 .cls_top {
@@ -648,7 +457,7 @@ img.dbanners {
 
 .top_login .trigger1 {
     cursor: pointer;
-    background-color: none;
+    background-color: #c83232;
     padding: 0.7rem 1.5rem;
     font-size: 0.65rem;
     display: inline-flex;
@@ -688,7 +497,7 @@ p.free-cunsultation a {
     padding: 11px 15px;
     border-radius: 4px;
     color: #fff;
-    font-size: 12px;
+    font-size: 10.5px;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
@@ -1094,7 +903,7 @@ p.pratxtw {
 /* Login Popup Css Ends here */
 
 ul.menu li p {
-    font-size: 0.78rem;
+    font-size: 10.5px;
     opacity: 0.9;
     letter-spacing: 1px;
 }
@@ -1135,7 +944,7 @@ ul.nav-dropdown {
 }
 
 ul.menu li ul.nav-dropdown li p {
-	color: #fff!important;
+	color: #000!important;
 	padding: 15px 20px;
 	margin-left: 0px;
 	font-size: 10.5px!important;
@@ -1195,7 +1004,7 @@ ul.lgomnu li ul.nav-dropdown li a p {
 }
 
 ul.lgomnulogn li ul.nav-dropdown li a p {
-	color: #fff!important;
+	color: #000!important;
 	padding: 15px 20px;
 	margin-left: 0px;
 	font-size: 10.5px!important;
@@ -1212,8 +1021,7 @@ ul.lgomnulogn li ul.nav-dropdown li a p {
 
 ul.menu li ul.nav-dropdown li p:hover {
 	color: #fff!important;
-    background: none;
-    opacity: 10!important;
+	background: #000;
 }
 
 ul.lgomnu li ul.nav-dropdown li p:hover {
@@ -1228,8 +1036,7 @@ ul.lgomnulogn li ul.nav-dropdown li p:hover {
 
 ul.menu li ul.nav-dropdown li a p:hover {
 	color: #fff!important;
-    background: none;
-    opacity: 10!important;
+	background: #000;
 }
 
 ul.lgomnu li ul.nav-dropdown li a p:hover {
@@ -1239,8 +1046,7 @@ ul.lgomnu li ul.nav-dropdown li a p:hover {
 
 ul.lgomnulogn li ul.nav-dropdown li a p:hover {
 	color: #fff!important;
-    background: none;
-    opacity: 10!important;
+	background: #000;
 }
 
 ul.nav-dropdown li a {
@@ -1323,13 +1129,9 @@ video {
     word-spacing: 0.2rem;
 }
 
-div.logo {
-	padding: 0px 0px 0px 0px;
-}
-
 ul.menu li .trigger1 {
 	color: #fff!important;
-	font-size: 12px!important;
+	font-size: 10.5px!important;
 	font-weight: 600!important;
 	letter-spacing: .12em!important;
 	line-height: normal!important;
@@ -1341,11 +1143,6 @@ ul.menu li .trigger1 {
 ul.menu li .trigger1:hover {
 	color: #fff!important;
 	opacity: 3!important;
-}
-
-.container {
-	max-width: 1328px!important;
-	margin: 0 auto!important;
 }
 
 /*.container,
@@ -1397,7 +1194,6 @@ ul.menu li .trigger1:hover {
 	cursor: pointer;
 	display: inline-block;
 	float: right;
-	padding: 28px 20px;
 	position: relative;
 	user-select: none;
 }
@@ -1499,7 +1295,7 @@ input.lgn-btn.frgtpssbtn:hover {
 	max-width: 100%!important;
 	height: auto!important;
 	margin-left: 5px;
-	margin-top: 0px!important;
+	margin-top: 5px!important;
 }
 
 .row.h-t-a {
@@ -1582,7 +1378,7 @@ p.tcc-2 {
 	margin-bottom: 0.2rem;
 	font-weight: 700;
 	line-height: 1.25;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	color: #fff;
 	letter-spacing: 0.03em;
 	text-align: center;
@@ -1606,13 +1402,29 @@ span.catvm a:hover {
 
 img.menu-avatar {
 	display: inline-block;
-	vertical-align: middle;
-	float: none;
-	width: 24px;
-	height: 24px;
-	margin-right: 12px;
-	border-radius: 2px;
-	margin-top: -2px;
+    vertical-align: middle;
+    float: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    margin-left: 12px;
+    border-radius: 2px;
+    margin-top: 0px;
+}
+
+.banner-cont {
+	margin-top: 10%!important;
+}
+
+.banner-cont h1 {
+	height: auto;
+    max-height: 2.5em;
+    max-width: 600px;
+    font-weight: 700;
+    line-height: 42px;
+    font-size: 2.5rem;
+    color: rgb(230, 168, 81);
+    margin-bottom: 0.4rem;
 }
 
 .bnnrhedsndlne {
@@ -1620,9 +1432,20 @@ img.menu-avatar {
 	color: #fff;
 }
 
+.banner-cont h5 {
+	margin-bottom: 3.2rem;
+	opacity: 0.8 !important;
+	color: #fff;
+	font-weight: 700;
+	line-height: 1.4;
+	font-size: 1.0rem;
+	letter-spacing: 0.03em;
+}
+
 .banner-cont p.bannerbtnbl {
 	cursor: pointer;
 	background-color: #c83232;
+	padding: 0.9rem 1.8rem;
 	font-size: 0.65rem;
 	display: inline-flex;
 	align-items: center;
@@ -1640,8 +1463,20 @@ img.menu-avatar {
 	font-family: Lato, Helvetica, Arial, sans-serif!important;
 }
 
+.banner-cont {
+	margin-top: 15%!important;
+	margin-left: 5%!important;
+	position: absolute!important;
+	top: 0;
+}
+
 .client .container .row .col-md-2 {
 	text-align: center;
+}
+
+section.client {
+	margin: 0.8rem 0px;
+	padding: 3.4rem 0rem 3.0rem 0rem;
 }
 
 .copy-e.ctt img {
@@ -1659,7 +1494,7 @@ h2.new-class-heading {
 	text-align: center;
 	font-weight: 700;
 	line-height: 1.25;
-	font-size: 1.9rem;
+	font-size: 1.6rem;
 	color: #fff;
 }
 
@@ -2257,7 +2092,7 @@ i.fa.fa-play-circle {
 }
 
 li.hvrdsp {
-	margin: 0px 10px;
+	margin: 0px 0px;
 }
 
 main.contact-page.bg-white.ptb100.readiness_D {
@@ -2446,16 +2281,6 @@ li.top_login {
 	top: 35%;
 	text-align: center;
 	display: none;
-	z-index: 999!important;
-	transition: opacity .35s ease;
-  }
-
-  .vidicncntrlve {
-	position: absolute;
-	width: 100%;
-	left:0;
-	top: 72%;
-	text-align: center;
 	z-index: 999!important;
 	transition: opacity .35s ease;
   }

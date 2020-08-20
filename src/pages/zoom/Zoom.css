@@ -274,14 +274,6 @@ span.footer__leave-btn-text:hover {
     text-align: center;
 }
 
-.livwidthm {
-    width: 700px;
-    margin: auto;
-    text-align: center;
-    padding: 170px 0px;
-    background: #191c21;
-}
-
 @media only screen and (max-width: 600px) {
 
     #dialog-join .tab-button, #dialog-invite .tab-button{

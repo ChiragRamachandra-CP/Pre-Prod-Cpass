@@ -28,7 +28,7 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
                 page: [ { page: window.location.href }, { date: new Date().toLocaleString() } ]
             };
             try {
-                const result = await axios.post(APIstoreUserMoment, body);
+                 await axios.post(APIstoreUserMoment, body);
                 //console.log(result);
             } catch (error) {
                 //do nothing for
@@ -385,7 +385,7 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
 
     if(redirctTo){
 
-        return <Redirect to={'/upgrade/' + eventPremiumlevel}/>
+        return <Redirect to="/upgrade" />
 
     }else{
 
@@ -398,7 +398,7 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
                             <LoggedInHeader />
 
                             <div className="container">
-                                <div className="row" style={{ width: '100%', marginTop: '150px' }}>
+                                <div className="row" style={{ marginTop: '150px' }}>
                                     <h2 className="new-class-heading livemheading" style={{ fontSize: '1.5rem' }}>
                                         {sessionTitle}
                                     </h2>

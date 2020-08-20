@@ -7,9 +7,7 @@ import {
     LOGOUT,
     USER_LOADED,
     SET_ACCESS,
-    CLEAR_ACCESS,
-    SET_TIMEZONEDATA, // add this : timezone@astitva
-    CLEAR_TIMEZONEDATA // add this : timezone@astitva
+    CLEAR_ACCESS
 } from '../actions/types';
 
 const initialState = {
@@ -29,20 +27,6 @@ const initialState = {
 export default function(state = initialState, action) {
     const { type, payload } = action;
     switch (type) {
-        case SET_TIMEZONEDATA: // add this : timezone@astitva
-            return {
-                ...state,
-                timezone: payload.timezone,
-                utc_offset: payload.utc_offset,
-                currency: payload.currency
-            };
-        case CLEAR_TIMEZONEDATA: // add this : timezone@astitva
-            return {
-                ...state,
-                timezone: 'Asia/Kolkata',
-                utc_offset: '+0530',
-                currency: 'INR'
-        };
         case SET_ACCESS:
             return {
                 ...state,

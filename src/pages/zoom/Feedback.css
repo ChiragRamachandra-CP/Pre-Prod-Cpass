@@ -4,10 +4,6 @@
 i.hoveredStars, i.clickedStars {
 	background-color: var(--Color);
 }
-
-.container.feedback {
-    margin-top: 120px!important;
-}
 .rating form { margin-top: 10px; }
 .rating form > * { display: inline-block; }
 .rating form input[type="submit"] {
@@ -41,7 +37,7 @@ form > i:active {
 }
 .form-sec {
     background: #fff;
-    padding: 0px 30px 30px 30px;
+    padding: 30px;
     text-align: left!important;
     margin-bottom: 45px!important;
 }
@@ -79,9 +75,6 @@ input.title_review {
     width: 100%;
     padding: 10px;
     margin: 10px 0px 25px 0px;
-}
-.feedback {
-    margin: 70px 0px 0px 0px!important;
 }
 .row.rating {
     padding: 0px 20px;
@@ -122,7 +115,7 @@ h1.new-class-heading a {
 .rating > input { display: none; } 
 .rating > label:before { 
   margin: 5px;
-  font-size: 2.2em;
+  font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
   content: "\f005";
@@ -150,53 +143,8 @@ h1.new-class-heading a {
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #c83232;  } 
 
-.site-wrap.page-feedback {
-    background: #000000;
-    margin-top: 20%;
-}
 
 .headsecdiff {
-    font-size: 1.6rem!important;
-    font-weight: 600;
-    width: 100%!important;
-    text-align: left!important;
-    color: #c83232!important;
-    padding-bottom: 15px!important;
-    background: #fff!important;
-    padding: 20px 20px 0px 30px;
-    margin-top: -13%;
-    font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-span.suggbugs {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    font-family: "Lato", Helvetica, Arial, sans-serif!important;
-}
-
-@media only screen and (max-width: 768px) {
-
-
-    .headsecdiff {
-        font-size: 1.6rem!important;
-        font-weight: 600;
-        width: 100%!important;
-        text-align: left!important;
-        color: #c83232!important;
-        padding-bottom: 15px!important;
-        background: #fff!important;
-        padding: 20px;
-        margin-top: -35%;
-        font-family: "Lato", Helvetica, Arial, sans-serif!important;
-    }
-
-
-}
-
-@media only screen and (max-width: 600px) {
-
-.headsecdiff {
-    font-size: 1.6rem!important;
     font-weight: 600;
     width: 100%!important;
     text-align: left!important;
@@ -204,9 +152,19 @@ span.suggbugs {
     padding-bottom: 15px!important;
     background: #fff!important;
     padding: 20px;
-    margin-top: -45%;
+    margin-top: -13%;
     font-family: "Lato", Helvetica, Arial, sans-serif!important;
 }
+
+span.suggbugs {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-family: "Lato", Helvetica, Arial, sans-serif!important;
+}
+
+@media only screen and (max-width: 600px) {
+
 
 .site-wrap.page-feedback {
     background: #fff;

@@ -1,13 +1,13 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import AfterLoggedInHeader from '../../components/header/AfterLoggedInHeader';
-import Footer from '../../components/footer/Footer';
-import './Plan.css';
-import { Link, Redirect } from 'react-router-dom';
-import axios from 'axios';
-import store from '../../store/store';
-import { loadUser, loadAccess } from '../../../src/actions/auth';
+import React, {Fragment, useState, useEffect} from "react";
+import AfterLoggedInHeader from "../../components/header/AfterLoggedInHeader";
+import Footer from "../../components/footer/Footer";
+import "./Plan.css";
+import {Link, Redirect} from "react-router-dom";
+import axios from "axios";
+import store from "../../store/store";
+import {loadUser, loadAccess} from "../../../src/actions/auth";
 
-import { APIstoreUserMoment } from '../../config/API';
+import {APIstoreUserMoment} from "../../config/API";
 
 import {
 	apiKey,
@@ -34,20 +34,23 @@ import {
 	goldSubscriptionIdINR,
 	platinumSubscription,
 	platinumSubscriptionIdINR,
-	createSubscriptionURL
-} from '../../config/PlanContent';
+	createSubscriptionURL,
+} from "../../config/PlanContent";
 
-const Payment = ({ match }) => {
+const Payment = ({match}) => {
 	useEffect(() => {
 		const storeUserMovement = async () => {
 			//console.log(window.location.href);
 			//console.log(new Date().toLocaleString());
 			let body = {
 				user_email: localStorage.user,
-				page: [ { page: window.location.href }, { date: new Date().toLocaleString() } ]
+				page: [
+					{page: window.location.href},
+					{date: new Date().toLocaleString()},
+				],
 			};
 			try {
-				const result = await axios.post(APIstoreUserMoment, body);
+				await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for
@@ -58,10 +61,10 @@ const Payment = ({ match }) => {
 	}, []);
 	//console.log(match.params.planId);
 
-	const [ orderId, setOrderID ] = useState();
-	const [ subId, setSubID ] = useState();
-	const [ countryName, setcountryName ] = useState();
-	const [ isRedirect, setIsRedirect ] = useState(false);
+	// const [ orderId, setOrderID ] = useState();
+	// const [ subId, setSubID ] = useState();
+	// const [ countryName, setcountryName ] = useState();
+	const [isRedirect, setIsRedirect] = useState(false);
 
 	useEffect(() => {
 		getGeoInfo();
@@ -77,25 +80,26 @@ const Payment = ({ match }) => {
 
 	const getGeoInfo = () => {
 		fetch(getGeoInfoURL)
-			.then(function(response) {
+			.then(function (response) {
 				if (response.status !== 200) {
 					//console.log('Looks like there was a problem. Status Code: ' + response.status);
 					return;
 				}
 				// Examine the text in the response
-				response.json().then(function(data) {
-					setcountryName(data.country);
+				response.json().then(function (data) {
+					// TO BE UNCOMMENTED WHEN USING COUNTRY BASED PRICE POINT
+					// setcountryName(data.country);
 				});
 			})
-			.catch(function(err) {
+			.catch(function (err) {
 				//console.log('Fetch Error :-S', err);
 			});
 	};
 
 	const payMonthlyHandler = async () => {
-		if (match.params.planId === 'platinum') {
+		if (match.params.planId === "platinum") {
 			createSubscription(platinumSubscription, platinumSubscriptionIdINR);
-		} else if (match.params.planId === 'gold') {
+		} else if (match.params.planId === "gold") {
 			createSubscription(goldSubscription, goldSubscriptionIdINR);
 		} else {
 			createSubscription(silverSubscription, silverSubscriptionIdINR);
@@ -103,25 +107,25 @@ const Payment = ({ match }) => {
 	};
 
 	const payYearlyHandler = async () => {
-		if (match.params.planId === 'platinum') {
+		if (match.params.planId === "platinum") {
 			const body = {
 				amount: platinumAmt,
 				currency: platinumINR,
-				plan_id: platinumId
+				plan_id: platinumId,
 			};
 			createOrder(body, platinumPass);
-		} else if (match.params.planId === 'gold') {
+		} else if (match.params.planId === "gold") {
 			const body = {
 				amount: goldAmt,
 				currency: goldINR,
-				plan_id: goldId
+				plan_id: goldId,
 			};
 			createOrder(body, goldPass);
 		} else {
 			const body = {
 				amount: silverAmt,
 				currency: silverINR,
-				plan_id: silverId
+				plan_id: silverId,
 			};
 			createOrder(body, silverPass);
 		}
@@ -131,16 +135,23 @@ const Payment = ({ match }) => {
 		try {
 			const config = {
 				headers: {
-					'Content-Type': 'application/json',
-					Authorization: `Bearer ${localStorage.token}`
-				}
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${localStorage.token}`,
+				},
 			};
 
 			const res = await axios.post(createOrderURL, body, config);
 			// console.log(res);
-			setOrderID(res.data.data.id);
 
-			paymentSubmitHandler(body.amount, body.currency, planDetail, body.plan_id, res.data.data.id);
+			// setOrderID(res.data.data.id);
+
+			paymentSubmitHandler(
+				body.amount,
+				body.currency,
+				planDetail,
+				body.plan_id,
+				res.data.data.id
+			);
 		} catch (err) {
 			//console.error(err);
 		}
@@ -155,15 +166,15 @@ const Payment = ({ match }) => {
 			description: planDetail,
 			image: image,
 			order_id: ordID,
-			handler: function(response) {
+			handler: function (response) {
 				handlePaymentResponse(response, planID, ordID, null);
 			},
 			prefill: {
-				email: localStorage.user
+				email: localStorage.user,
 			},
 			theme: {
-				color: color
-			}
+				color: color,
+			},
 		};
 		let rzp = new window.Razorpay(options);
 		rzp.open();
@@ -173,18 +184,18 @@ const Payment = ({ match }) => {
 		try {
 			const config = {
 				headers: {
-					'Content-Type': 'application/json',
-					Authorization: `Bearer ${localStorage.token}`
-				}
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${localStorage.token}`,
+				},
 			};
 			const res = await axios.post(
 				createSubscriptionURL,
 				{
-					plan_id: planID
+					plan_id: planID,
 				},
 				config
 			);
-			setSubID(res.data.data.id);
+			// setSubID(res.data.data.id);
 
 			subscriptionSubmitHandler(planText, res.data.data.id, planID);
 		} catch (err) {
@@ -200,16 +211,16 @@ const Payment = ({ match }) => {
 			name: planText,
 			description: planText,
 			image: image,
-			handler: function(response) {
+			handler: function (response) {
 				handlePaymentResponse(response, planID, null, subID);
 			},
 			prefill: {
-				email: localStorage.user
+				email: localStorage.user,
 			},
 
 			theme: {
-				color: color
-			}
+				color: color,
+			},
 		};
 
 		let rzpS = new window.Razorpay(options);
@@ -220,18 +231,20 @@ const Payment = ({ match }) => {
 		try {
 			const config = {
 				headers: {
-					'Content-Type': 'application/json',
-					Authorization: `Bearer ${localStorage.token}`
-				}
+					"Content-Type": "application/json",
+					Authorization: `Bearer ${localStorage.token}`,
+				},
 			};
 
 			const bodySuccess = {
 				payment_id: response.razorpay_payment_id,
-				razorpay_signature: response.razorpay_signature ? response.razorpay_signature : null,
+				razorpay_signature: response.razorpay_signature
+					? response.razorpay_signature
+					: null,
 				user_email: localStorage.user,
 				razorpay_subscription_id: subID ? subID : null,
 				order_id: ordID ? ordID : null,
-				plan: plan
+				plan: plan,
 			};
 
 			// console.log(bodySuccess);
@@ -281,7 +294,10 @@ const Payment = ({ match }) => {
 					<div className="container">
 						<div className="row">
 							<div className="ticonpmnt">
-								<img src="https://collegepass-logos.s3.ap-south-1.amazonaws.com/Lock.png" alt="Lock" />
+								<img
+									src="https://collegepass-logos.s3.ap-south-1.amazonaws.com/Lock.png"
+									alt="Lock"
+								/>
 							</div>
 							<div className="stepHeader-container cntstphdrpmnt">
 								<div className="stepHeader pmntstphdr">

@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import Card from '../../components/card/Card';
 //import Header from '../../components/header/AfterLoggedInHeader';
 //import Footer from '../../components/footer/Footer';
@@ -20,7 +19,7 @@ const Vimeo = () => {
 			};
 			try {
 				//console.log(APIstoreUserMoment);
-				const result = await axios.post(APIstoreUserMoment, body);
+				 await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for
@@ -31,7 +30,7 @@ const Vimeo = () => {
 	}, []);
 
 	const [ availableCategories, setAvailableCategories ] = useState([]);
-	let CardComponents = null;
+	
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -49,6 +48,8 @@ const Vimeo = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
+	let CardComponents = null;
+	
 	if (availableCategories) {
 		CardComponents = availableCategories.map((availableCategory, i) => {
 			let videoPlayUrl = '/categories/' + availableCategory.ID;
@@ -68,17 +69,11 @@ const Vimeo = () => {
 
 	return (
         <Fragment>
-        <h1 style={{textAlign: 'center', color: '#fff', margin: '3%', fontSize: '30px'}}>Vimeo Session</h1>
-			<div className="container">
-				<div className="row">
-					<div className="col-md-8">
-					<div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://player.vimeo.com/video/440595304" frameBorder="0" allow="autoplay; fullscreen" style={{position: 'absolute', top: '0', left: '0', width: '100%', height: '100%'}}></iframe></div>
-					</div>
-					<div className="col-md-4">
-					<iframe src="https://vimeo.com/live-chat/440595304/" width="400" height="100%" frameBorder="0"></iframe>
-					</div>
-				</div>
-			</div>
+        <h1 style={{textAlign: 'center', color: '#fff', marginTop: '10%', fontSize: '30px'}}>Vimeo Page</h1>
+			{/*<Header />
+			{}
+            <Footer />*/}
+			{CardComponents}
 		</Fragment>
 	);
 };

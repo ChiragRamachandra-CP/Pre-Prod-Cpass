@@ -1,0 +1,217 @@
+li.mnuhideshow {
+    display: none;
+}
+span.stepLogo.planStepLogo img {
+    width: 55px;
+}
+.ticonpmnt img {
+    width: 55px;
+    margin: 0px 0px;
+}
+.site-wrap.page-payment-plan.accntpgid {
+    margin-top: 45px;
+}
+.logo {
+    margin-right: 25px;
+}
+.bookform p {
+    text-align: left;
+}
+h6.title-text-h4 {
+    font-size: 12px;
+}
+.bookform .form-group {
+    text-align: left;
+}
+li.top_login.mnuhidemob {
+    display: flex;
+}
+ul.menu {
+    margin-top: 0px;
+}
+header.header {
+    padding: 22px 0px 12px 0px;
+}
+.container {
+    max-width: 1681px;
+    margin: 0 auto;
+}
+ul.lgomnu li a p {
+    color: #fff;
+    font-size: 10.5px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    font-family: Lato, Helvetica, Arial, sans-serif!important;
+}
+.logo ul {
+    margin-left: 25px;
+}
+.lgncontct {
+    color: #fff!important;
+    margin: 5px 15px 0px 5px;
+    cursor: pointer;
+    letter-spacing: .12em!important;
+    font-size: 14px!important;
+}
+.vidicncntrlve {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80%;
+    text-align: center;
+    z-index: 999!important;
+    transition: opacity .35s ease;
+}
+.bimg h6.title-text-h4 {
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    opacity: 0.97;
+    padding-top: 80px;
+}
+.titlecp h6.title-text-h4 {
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    opacity: 0.97;
+    padding-top: 90px;
+}
+.bimg h6.title-text-h4 {
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    opacity: 0.97;
+    padding-top: 81px!important;
+}
+.stdnt-sy {
+    margin-bottom: 440px;
+}
+.wss.w_lst {
+    padding-bottom: 28px;
+}
+.wss.w_2nd {
+    padding-bottom: 33px;
+}
+.satID-1 h2.new-class-heading {
+    margin: 1.5rem 0rem 1.5rem 0rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 1.6rem;
+    color: #000;
+}
+.satID-2 h2.new-class-heading {
+    margin: 1.5rem 0rem 1.5rem 0rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.25;
+    font-size: 1.6rem;
+    color: #000;
+}
+.satID-1 .bkngsec {
+    padding: 55px 0px!important;
+}
+.satID-2 .bkngsec {
+    padding: 55px 0px!important;
+}
+.accntpgid {
+    padding: 100px 0px;
+}
+.accntmembership .row {
+    margin: 30px 0px;
+}
+span.stepIndicator {
+    font-size: 12px;
+}
+h1.stepTitle {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+li.checkdetails {
+    color: #fff;
+    font-size: 16px;
+    line-height: 38px;
+}
+.maincontnotes {
+    width: 425px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+label.headplncards {
+    padding: 1px;
+    background: #d9bd75;
+    border-radius: 2px;
+    margin: 0px 60px;
+    width: 120px;
+    height: 120px;
+}
+span.bxplan {
+    padding: 45px 0px;
+}
+.page-paymentnow {
+    padding: 80px 0px;
+}
+.narrowContainer {
+    text-align: center;
+    margin: auto;
+    width: 450px;
+}
+.contextRow.seccmmnts {
+    padding-top: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.9px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+.contextRow.contextRowFirst {
+    font-size: 16px;
+    color: #fff;
+}
+.validmain {
+    padding: 150px 0px 55px 0px!important;
+}
+.livwidthm {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 220px 0px;
+    background: #191c21;
+}
+.site-wrap.page-feedback {
+    background: #000000;
+    margin-top: 15%;
+}
+.lgomnulogn {
+    margin-top: 10px!important;
+    display: flex;
+    float: left;
+}
+.col-md-8.banner-cont.mobbnrh {
+    display: none;
+}
+.aftrloginpage h6.title-text-h4 {
+    padding-top: 90px!important;
+}
+.afterlgnbnnr .dbanners {
+    margin-top: 85px;
+}
+.related-vid p.title-text-p {
+    padding-top: 48px;
+}
+.all-categories.allcatids h6.title-text-h4 {
+    padding-top: 140px;
+}
+section.newest-classes.all-categories.allcatids {
+    padding: 0px 0px;
+}
+.all-categories {
+    margin: 165px 0px 0px 0px;
+}
+.page-resetPass {
+    padding: 80px 0px 45px 0px;
+}
+.ticonpmnt img {
+    width: 100px;
+    margin: 25px 0px;
+}

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { setAlert } from '../../../src/actions/alert';
 import PropTypes from 'prop-types';
 import moment from 'moment';
-import { Redirect } from 'react-router-dom';
+//import { Redirect } from 'react-router-dom';
 import { loadUser, loadAccess } from '../../../src/actions/auth';
 import store from '../../store/store';
 import { error } from '../../config/error';
@@ -489,7 +489,7 @@ const ProfileExtracurricular = ({ setAlert }) => {
 				headers: { Authorization: `Bearer ${localStorage.token}` }
 			};
 			try {
-				const result = await axios.post(
+				 await axios.post(
 					APIupdateExtraSection,
 					body,
 					config
@@ -505,11 +505,11 @@ const ProfileExtracurricular = ({ setAlert }) => {
 		store.dispatch(loadAccess());
 	};
 
-	const [ isRedirect, setRedirect ] = useState(false);
+	// const [ isRedirect, setRedirect ] = useState(false);
 
-	if (isRedirect) {
-		return <Redirect to="" />;
-	}
+	// if (isRedirect) {
+	// 	return <Redirect to="" />;
+	// }
 
 	const deleteData = async (event, fieldtype, id) => {
 		//console.log(event);

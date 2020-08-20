@@ -4,331 +4,10 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/Footer';
 import './Plan.css';
 import axios from 'axios';
-import {connect} from "react-redux";
-import PropTypes from "prop-types";
 
 import { APIstoreUserMoment } from '../../config/API';
 
-const Plan = ({premiumLevel,plan_type}) => {
-
-	let continueSilver = null;
-	
-	let continueGold = null;
-	
-	let continuePlatinum = null;
-	
-	let upgradePlan = null
-
-	let plnchngeSilver = null;
-	let plnchngeGold = null;
-	let plnchngePlatinum = null;
-	
-
-	console.log("test plan_type", plan_type);
-
-	if(plan_type === 'subscription'){
-
-		if (premiumLevel === "Basic") {
-			continueSilver = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/silver">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/gold">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/platinum">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-		}
-
-		else if (premiumLevel === "Silver") {
-			continueSilver = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="#">
-							<input
-								type="button"
-								name=""
-								value="CURRENT PLAN"
-								className="cntbtn crntplnclr"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment-upgrade/gold">
-							<input
-								type="button"
-								name=""
-								value="UPGRADE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment-upgrade/platinum">
-							<input
-								type="button"
-								name=""
-								value="UPGRADE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			
-			plnchngeGold = "currntpln";
-			plnchngePlatinum = "currntpln";
-		}
-
-		else if (premiumLevel === "Gold") {
-			continueSilver = null;
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="#">
-							<input
-								type="button"
-								name=""
-								value="CURRENT PLAN"
-								className="cntbtn crntplnclr"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment-upgrade/platinum">
-							<input
-								type="button"
-								name=""
-								value="UPGRADE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-		
-			plnchngePlatinum = "currntpln";
-		}
-
-		else if (premiumLevel === "Platinum") {
-			continueSilver = null;
-			continueGold = null ;
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="#">
-							<input
-								type="button"
-								name=""
-								value="CURRENT PLAN"
-								className="cntbtn crntplnclr"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			
-		}
-	}else{
-		//for one time payment block
-		if (premiumLevel === "Basic") {
-			continueSilver = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/silver">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/gold">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="/plan/payment/platinum">
-							<input
-								type="button"
-								name=""
-								value="CONTINUE"
-								className="cntbtn"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-		}
-
-		else if (premiumLevel === "Silver") {
-			continueSilver = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="#">
-							<input
-								type="button"
-								name=""
-								value="CURRENT PLAN"
-								className="cntbtn crntplnclr"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
-							<input
-								type="button"
-								name=""
-								value="SUPPORT"
-								className="cntbtn"
-							/>
-						</a>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
-							<input
-								type="button"
-								name=""
-								value="SUPPORT"
-								className="cntbtn"
-							/>
-						</a>
-					</span>
-				</label>
-			);
-			
-			plnchngeGold = "currntpln";
-			plnchngePlatinum = "currntpln";
-		}
-
-		else if (premiumLevel === "Gold") {
-			continueSilver = null;
-			continueGold = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
-							<input
-								type="button"
-								name=""
-								value="SUPPORT"
-								className="cntbtn"
-							/>
-						</a>
-					</span>
-				</label>
-			);
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<a href="mailto:support@collegepass.org" target="_blank" rel="noopener noreferrer">
-							<input
-								type="button"
-								name=""
-								value="SUPPORT"
-								className="cntbtn"
-							/>
-						</a>
-					</span>
-				</label>
-			);
-			
-			plnchngePlatinum = "currntpln";
-		}
-
-		else if (premiumLevel === "Platinum") {
-			continueSilver = null;
-			continueGold = null ;
-			continuePlatinum = (
-				<label className="headplncards btncnt">
-					<span className="bxplan">
-						<Link to="#">
-							<input
-								type="button"
-								name=""
-								value="CURRENT PLAN"
-								className="cntbtn crntplnclr"
-							/>
-						</Link>
-					</span>
-				</label>
-			);
-			
-		}
-
-	}
-
-
-
-
-
+const Plan = () => {
 
 	useEffect( ()=> {
 		const storeUserMovement = async () => {
@@ -337,8 +16,7 @@ const Plan = ({premiumLevel,plan_type}) => {
 			let body={"user_email": localStorage.user,
 			    "page": [{"page": window.location.href},{"date": new Date().toLocaleString()}]}
 			try {
-
-				await axios.post(APIstoreUserMoment, body);
+				 await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 				
 			} catch (error) {
@@ -427,22 +105,21 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                     </td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell plnchnge ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
-
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell plnchnge ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -460,21 +137,21 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                 </td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -492,21 +169,21 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <span className="planGrid__booleanLabel">&#10004;</span>
                             </td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -522,21 +199,21 @@ const Plan = ({premiumLevel,plan_type}) => {
 												</td>
 												{/*<td className="rttttl planGrid__cell planGrid__stringCell" role="cell" aria-label="Mobile">1</td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													&#10004;
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__stringCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													&#10004;
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngePlatinum }
+													className="rttttl planGrid__cell planGrid__stringCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -556,21 +233,21 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <span className="planGrid__booleanLabel">&#10004;</span>
                         </td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' +plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' +plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -585,21 +262,21 @@ const Plan = ({premiumLevel,plan_type}) => {
 												PSAT Livestream
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' +plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum }
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -615,21 +292,21 @@ const Plan = ({premiumLevel,plan_type}) => {
 												SAT Livestream
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10004;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -645,21 +322,21 @@ const Plan = ({premiumLevel,plan_type}) => {
 												SAT Pro: Intensive SAT Tutoring
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">&#10005;</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -676,21 +353,21 @@ const Plan = ({premiumLevel,plan_type}) => {
 												</td>
 												{/*<td className="rttttl planGrid__cell planGrid__stringCell" role="cell" aria-label="Mobile">₹&nbsp;199</td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell ' +plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__stringCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													₹&nbsp;999
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__stringCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													₹&nbsp;3999
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__stringCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__stringCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -709,21 +386,21 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <span className="planGrid__booleanLabel">&#10005;</span>
                                         		</td>*/}
 												<td
-													className={'rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell ' + plnchngeSilver}
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
 													role="cell"
 													aria-label="Basic"
 												>
 													<span className="planGrid__booleanLabel">₹&nbsp;9999</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngeGold}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Standard"
 												>
 													<span className="planGrid__booleanLabel">₹&nbsp;29999</span>
 												</td>
 												<td
-													className={'rttttl planGrid__cell planGrid__booleanCell ' + plnchngePlatinum}
+													className="rttttl planGrid__cell planGrid__booleanCell"
 													role="cell"
 													aria-label="Premium"
 												>
@@ -731,7 +408,71 @@ const Plan = ({premiumLevel,plan_type}) => {
 												</td>
 											</tr>
 
-											
+											{/*<tr className="mobtlpln">
+												<td>
+													IB Live Online Sessions: English & Math (Coming Soon: August 2020)
+												</td>
+											</tr>
+											<tr role="row" className="planGrid__featureTableRow">
+												<td className="lftttl planGrid__cell planGrid__featureCell" role="cell">
+													IB Live Online Sessions: English & Math (Coming Soon: August 2020)
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													role="cell"
+													aria-label="Basic"
+												>
+													<span className="planGrid__booleanLabel">&#10005;</span>
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__booleanCell"
+													role="cell"
+													aria-label="Standard"
+												>
+													<span className="planGrid__booleanLabel">&#10005;</span>
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__booleanCell"
+													role="cell"
+													aria-label="Premium"
+												>
+													<span className="planGrid__booleanLabel">&#10004;</span>
+												</td>
+											</tr>
+
+											<tr className="mobtlpln">
+												<td>
+													IGCSE Live Online Sessions: English & Math (Coming Soon: August
+													2020)
+												</td>
+											</tr>
+											<tr role="row" className="planGrid__featureTableRow">
+												<td className="lftttl planGrid__cell planGrid__featureCell" role="cell">
+													IGCSE Live Online Sessions: English & Math (Coming Soon: August
+													2020)
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__cell--isSelected planGrid__booleanCell"
+													role="cell"
+													aria-label="Basic"
+												>
+													<span className="planGrid__booleanLabel">&#10005;</span>
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__booleanCell"
+													role="cell"
+													aria-label="Standard"
+												>
+													<span className="planGrid__booleanLabel">&#10005;</span>
+												</td>
+												<td
+													className="rttttl planGrid__cell planGrid__booleanCell"
+													role="cell"
+													aria-label="Premium"
+												>
+													<span className="planGrid__booleanLabel">&#10004;</span>
+												</td>
+											</tr>*/}
 										</tbody>
 									</table>
 									<div className="headpln">
@@ -741,10 +482,42 @@ const Plan = ({premiumLevel,plan_type}) => {
                                                     <input type="button" name="" value="CONTINUE" className="cntbtn" />
                                                 </span>
                                             </label>*/}
-											{continueSilver}
-											{continueGold}
-											{continuePlatinum}
-											{upgradePlan}
+											<label className="headplncards btncnt">
+												<span className="bxplan">
+													<Link to="/plan/payment/silver">
+														<input
+															type="button"
+															name=""
+															value="CONTINUE"
+															className="cntbtn"
+														/>
+													</Link>
+												</span>
+											</label>
+											<label className="headplncards btncnt">
+												<span className="bxplan">
+													<Link to="/plan/payment/gold">
+														<input
+															type="button"
+															name=""
+															value="CONTINUE"
+															className="cntbtn"
+														/>
+													</Link>
+												</span>
+											</label>
+											<label className="headplncards btncnt">
+												<span className="bxplan">
+													<Link to="/plan/payment/platinum">
+														<input
+															type="button"
+															name=""
+															value="CONTINUE"
+															className="cntbtn"
+														/>
+													</Link>
+												</span>
+											</label>
 										</div>
 									</div>
 								</div>
@@ -765,14 +538,4 @@ const Plan = ({premiumLevel,plan_type}) => {
 	);
 };
 
-
-Plan.propTypes = {
-	premiumLevel: PropTypes.string.isRequired,
-	plan_type:PropTypes.string.isRequired
-};
-const mapStateToProps = (state) => ({
-	premiumLevel: state.auth.premiumLevel,
-	plan_type: state.auth.plan_type
-});
-
-export default connect(mapStateToProps, null)(Plan);
+export default Plan;

@@ -92,7 +92,7 @@ const About = ({auth: {isAuthenticated}}) => {
 							</div>
 						</div>
 
-						<div className="new-class aboutestw">
+						<div className="new-class aboutestw" id="missionID">
 							<h2
 								style={{
 									textAlign: "center",

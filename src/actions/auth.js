@@ -9,7 +9,6 @@ import { APIregister } from '../config/API';
 import { APIlogin } from '../config/API';
 import { APIthirdPartyUserAuthentication } from '../config/API';
 import { APIgetUserAccessLevel } from '../config/API';
-import { APITimeZoneData } from '../config/API';
 
 
 import {
@@ -22,9 +21,7 @@ import {
     LOGOUT,
     CLEAR_PROFILE,
     SET_ACCESS,
-    CLEAR_ACCESS,
-    SET_TIMEZONEDATA, // add this : timezone@astitva
-    CLEAR_TIMEZONEDATA // add this : timezone@astitva
+    CLEAR_ACCESS
 } from './types';
 import { setAlert } from './alert';
 
@@ -268,41 +265,4 @@ export const loadAccess = () => async (dispatch) => {
             type: CLEAR_ACCESS
         });
     }
-};
-
-//Load User TimeZone Data  // add this : timezone@astitva
-export const getTimeZoneData = () => async (dispatch) => {
-   
-    try {
-        // call the authentication service to get user email
-        const config = {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        };
-        const result = await axios.get(
-            APITimeZoneData,
-            config
-        );
-
-        console.log('result from actions',result.data.location_data.utc_offset);
-        let res = {
-            timezone: result.data.location_data.timezone,
-            utc_offset: result.data.location_data.utc_offset,
-            currency: result.data.location_data.currency
-        };
-        dispatch({
-            type: SET_TIMEZONEDATA,
-            payload: res
-        });
-    } catch (err) {
-        // if any error occurs while performing axios request
-
-        //console.log(err);
-        dispatch({
-            type: CLEAR_TIMEZONEDATA
-        });
-    }
-
-    
 };

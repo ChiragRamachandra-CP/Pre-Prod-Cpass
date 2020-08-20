@@ -16,7 +16,7 @@ const ThankYou = (message) => {
 			let body={"user_email": localStorage.user,
 			    "page": [{"page": window.location.href},{"date": new Date().toLocaleString()}]}
 			try {
-				const result = await axios.post(APIstoreUserMoment, body);
+				 await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 				
 			} catch (error) {

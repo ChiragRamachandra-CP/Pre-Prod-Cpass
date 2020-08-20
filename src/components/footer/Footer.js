@@ -66,7 +66,7 @@ const Footer = () => {
 									<div className="ftr-mnu-l">
 										<ul>
 											<li>
-												<a href="noLink">
+												<a href="https://twitter.com/CollegePassOne?s=09">
 													<i
 														className="fa fa-twitter-square"
 														aria-hidden="true"
@@ -106,7 +106,7 @@ const Footer = () => {
 									<div className="ftr-mnu-l">
 										<ul>
 											<li>
-												<a href="noLink">
+												<a href="https://twitter.com/CollegePassOne?s=09">
 													<i
 														className="fa fa-twitter-square"
 														aria-hidden="true"

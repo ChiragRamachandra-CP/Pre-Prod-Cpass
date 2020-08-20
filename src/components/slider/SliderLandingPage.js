@@ -3,7 +3,7 @@ import React, {Fragment} from "react";
 const SliderLandingPage = ({sliderNumber}) => {
 	let imageComponent = (
 		<img
-			src={"../../../public/assets/images/SAT.png"}
+			src={"../../../public/assets/images/SAT.jpg"}
 			alt="Banner"
 			className="satbnner"
 		/>
@@ -13,7 +13,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 
 	if (sliderNumber === "SAT_MASTER_PRO") {
 		imageComponent = (
-			<img src={"/assets/images/SAT.png"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/SAT.jpg"} alt="Banner" className="satbnner" />
 		);
 
 		sliderTextLanding = <div className="col-md-8 banner-cont">
@@ -32,7 +32,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 
 	if (sliderNumber === "IB_TUTORING") {
 		imageComponent = (
-			<img src={"/assets/images/IBTutoring.png"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/IBTutoring.jpg"} alt="Banner" className="satbnner" />
 		);
 		sliderTextLanding = <div className="col-md-8 banner-cont">
 		<h1>
@@ -49,7 +49,7 @@ const SliderLandingPage = ({sliderNumber}) => {
 
 	if (sliderNumber === "COLLEGE_ADMISSION") {
 		imageComponent = (
-			<img src={"/assets/images/CollegeAdmission.png"} alt="Banner" className="satbnner" />
+			<img src={"/assets/images/CollegeAdmission.jpg"} alt="Banner" className="satbnner" />
 		);
 		sliderTextLanding = <div className="col-md-8 banner-cont">
 		<h1>

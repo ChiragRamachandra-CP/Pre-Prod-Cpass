@@ -4,7 +4,7 @@ import {APILandingPageInfo} from "../../config/API";
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import axios from "axios";
-import {errorFeedback} from "../../config/error";
+//import {errorFeedback} from "../../config/error";
 
 const LandingPageForm = ({landingFormText, setAlert}) => {
 	if (landingFormText === null) {
@@ -34,7 +34,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 					"Content-Type": "application/json",
 				},
 			};
-			const result = await axios.post(
+			 await axios.post(
 				APILandingPageInfo,
 				{
 					EMAIL: email,
@@ -54,10 +54,20 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 				"info"
 			);
 		} catch (err) {
-			setAlert(
-				"Something went wrong. Please write to support@collegepass.org",
-				"danger"
-			);
+
+			if (err.response.status === 409) {
+
+				setAlert("Your request is already acknowledged. A CollegePass Advisor will be in touch within 24 Hrs!", "info");
+
+			} else {
+
+				setAlert(
+					"Something went wrong. Please write to support@collegepass.org",
+					"danger"
+				);
+
+			}
+			
 		}
 	};
 
@@ -183,7 +193,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 									<div className="row">
 										<div className="col-md-6">
 											<div className="form-group">
-												<label for="first">First Name</label>
+												<label for="first">First Name*</label>
 												<input
 													name="fName"
 													value={fName}
@@ -213,7 +223,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 									<div className="row">
 										<div className="col-md-6">
 											<div className="form-group">
-												<label for="last">Email</label>
+												<label for="last">Email*</label>
 												<input
 													name="email"
 													value={email}
@@ -227,7 +237,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 										</div>
 										<div className="col-md-6">
 											<div className="form-group">
-												<label for="company">Mobile</label>
+												<label for="company">Mobile*</label>
 												<input
 													name="phone"
 													value={phone}
@@ -243,7 +253,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 									<div className="row">
 										<div className="col-md-6">
 											<div className="form-group">
-												<label for="phone">School</label>
+												<label for="phone">School*</label>
 												<input
 													name="school"
 													value={school}
@@ -257,7 +267,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 										</div>
 										<div className="col-md-6">
 											<div className="form-group">
-												<label for="email">City</label>
+												<label for="email">City*</label>
 												<input
 													name="city"
 													value={city}
@@ -277,6 +287,7 @@ const LandingPageForm = ({landingFormText, setAlert}) => {
 									>
 										Submit
 									</button>
+									<p style={{color: '#c83232', fontSize: '12px'}}>* Mandatory Field</p>
 								</form>
 							</div>
 						</div>

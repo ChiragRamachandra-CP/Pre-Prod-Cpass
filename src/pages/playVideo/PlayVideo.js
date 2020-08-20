@@ -5,7 +5,7 @@ import AfterLoggedInHeader from '../../components/header/AfterLoggedInHeader';
 import Footer from '../../components/footer/Footer';
 import BottomHorizontal from '../../components/categoryHorizontalSection/BottomHorizontal';
 import axios from 'axios';
-import CheckUserAccess from '../../utils/checkUserAccess';
+//import CheckUserAccess from '../../utils/checkUserAccess';
 
 //import { APIstoreVideoViews } from '../../config/API';
 import { APIstoreUserMoment } from '../../config/API';
@@ -21,7 +21,7 @@ const PlayVideo = ({ match, vimeoId }) => {
 				page: [ { page: window.location.href }, { date: new Date().toLocaleString() } ]
 			};
 			try {
-				const result = await axios.post(APIstoreUserMoment, body);
+				 await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for
@@ -59,7 +59,7 @@ const PlayVideo = ({ match, vimeoId }) => {
 	let videoUrl = null;
 	// const vimeoUrl = 'https://player.vimeo.com/video/' + match.params.videoId;
 	const [ title, setTitle ] = useState('Video');
-	const [ desc, setDesc ] = useState('Collegepass video');
+	//const [ desc, setDesc ] = useState('Collegepass video');
 	const [ source, setSource ] = useState(null);
 
 	// onClickHandler(() => {
@@ -74,7 +74,7 @@ const PlayVideo = ({ match, vimeoId }) => {
 					// console.log(result.data.data[0].SOURCE);
 					setSource(result.data.data[0].SOURCE);
 					setTitle(result.data.data[0].NAME);
-					setDesc(result.data.data[0].DESC);
+					//setDesc(result.data.data[0].DESC);
 				} catch (error) {
 					//do nothing for now
 				}

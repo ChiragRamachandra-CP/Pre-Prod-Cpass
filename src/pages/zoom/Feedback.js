@@ -23,7 +23,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 				page: [ { page: window.location.href }, { date: new Date().toLocaleString() } ]
 			};
 			try {
-				const result = await axios.post(APIstoreUserMoment, body);
+				 await axios.post(APIstoreUserMoment, body);
 				//console.log(result);
 			} catch (error) {
 				//do nothing for
@@ -61,7 +61,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 					'Content-Type': 'application/json'
 				}
 			};
-			const result = await axios.post(
+			 await axios.post(
 				APIstoreUserFeedback,
 				{
 					user_email: localStorage.user,
@@ -98,7 +98,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 										paddingBottom: '15px'
 									}}
 								>
-									Review the Session!
+									Please share your feedback!
 									{/*<span className="suggbugs">
 										Do you have a suggestion or found some bugs?<br /> let us know in the field
 										bellow.
@@ -209,7 +209,7 @@ const Feedback = ({ match, feedbackSubmit, isAuthenticated, setAlert }) => {
 														className="review_area"
 														value={review}
 														onChange={onChange}
-														placeholder=""
+														placeholder="Share your review."
 													/>
 												</div>
 

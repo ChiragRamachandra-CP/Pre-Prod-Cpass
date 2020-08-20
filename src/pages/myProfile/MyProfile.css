@@ -7,19 +7,6 @@
 	width: 100%;
 }
 
-.form-group label {
-	color: #000;
-	padding-top: calc(.375rem + 1px);
-	padding-bottom: calc(.375rem + 1px);
-	margin-bottom: 0;
-	font-size: 0.97rem;
-	line-height: 1.5;
-	font-weight: 700;
-	font-family: "Lato", Helvetica, Arial, sans-serif !important;
-	letter-spacing: 0.8px;
-	opacity: 0.8;
-}
-
 .col-form-label {
 	padding-top: calc(.375rem + 1px);
 	padding-bottom: calc(.375rem + 1px);
