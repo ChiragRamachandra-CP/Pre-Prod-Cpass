@@ -53,13 +53,13 @@ const Vimeo = lazy(() => import("../../pages/vimeo/Vimeo"));
 const MyProfile = lazy(() => import("../../pages/myProfile/MyProfile"));
 
 // import MyProfile from '../pages/myProfile/MyProfile';
-
-const Plan = lazy(() => import("../../pages/payment/Plan"));
-const Notes = lazy(() => import("../../pages/payment/Notes"));
-const Payment = lazy(() => import("../../pages/payment/Payment"));
+const primePayment = lazy(() => import("../../pages/primePayment/primePayment"));
+// const Plan = lazy(() => import("../../pages/payment/Plan"));
+// const Notes = lazy(() => import("../../pages/payment/Notes"));
+// const Payment = lazy(() => import("../../pages/payment/Payment"));
 //const PaymentUpgrade = lazy(() => import("../../pages/payment/PaymentUpgrade"));
-const ThankYou = lazy(() => import("../../pages/payment/ThankYou"));
-const Account = lazy(() => import("../../pages/payment/Account"));
+const ThankYou = lazy(() => import("../../pages/primePayment/ThankYou"));
+const Account = lazy(() => import("../../pages/primePayment/Account"));
 const EmailValidate = lazy(() =>
 	import("../../pages/emailValidation/EmailValidate")
 );
@@ -128,13 +128,18 @@ const Routes = ({isAuthenticated}) => {
 						path="/categories/:catId/:videoId"
 						component={PlayVideo}
 					/>
-					<PrivateRoute exact path="/plan/info" component={Notes} />
+					<PrivateRoute
+						exact
+						path="/plan/payment/"
+						component={primePayment}
+					/>
+					{/* <PrivateRoute exact path="/plan/info" component={Notes} />
 					<PrivateRoute exact path="/plan/choose" component={Plan} />
 					<PrivateRoute
 						exact
 						path="/plan/payment/:planId"
 						component={Payment}
-					/>
+					/> */}
 					{/*<PrivateRoute
 						exact
 						path="/plan/payment-upgrade/:planId"

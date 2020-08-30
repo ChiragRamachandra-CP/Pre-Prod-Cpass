@@ -15,10 +15,15 @@ import { APIgetZoomSignature } from '../../config/API';
 import { APIstoreJoinedUser } from '../../config/API';
 import { APIupdateEventSpentTime } from '../../config/API';
 
+import MandatoryFieldsModal from '../../components/modal/UserMandatoryFieldsModel'
+
 import './Zoom.css';
 // import ZoomLive from './ZoomLive';
 
-const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
+const ZoomComponent = ({ premiumLevel,accountTrial,match,mandatory_field_status }) => {
+
+    console.log('mandatory_field_status',mandatory_field_status);
+
     useEffect(() => {
         const storeUserMovement = async () => {
             //console.log(window.location.href);
@@ -387,7 +392,25 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
 
         return <Redirect to="/upgrade" />
 
+    }else if(mandatory_field_status === false){
+
+         return (
+            <Fragment>
+                <CheckUserAccess />
+                <div className="App">
+               
+                    <Fragment>
+                        <LoggedInHeader />
+                            <MandatoryFieldsModal/>
+                    </Fragment>
+
+                </div>
+            </Fragment>
+         );
+    
     }else{
+
+       
 
         return (
             <Fragment>
@@ -422,24 +445,26 @@ const ZoomComponent = ({ premiumLevel,accountTrial,match }) => {
     }
 };
 
-$(document).bind("contextmenu",function(e) {
-    e.preventDefault();
-   });
+// $(document).bind("contextmenu",function(e) {
+//     e.preventDefault();
+//    });
    
-   $(document).keydown(function(e){
-       if(e.which === 123){
-          return false;
-       }
-   });
+//    $(document).keydown(function(e){
+//        if(e.which === 123){
+//           return false;
+//        }
+//    });
 
 ZoomComponent.propTypes = {
     premiumLevel: PropTypes.string.isRequired,
-    accountTrial: PropTypes.bool.isRequired
+    accountTrial: PropTypes.bool.isRequired,
+    mandatory_field_status:PropTypes.bool.isRequired
 };
 
 const mapStateToProps = (state) => ({
     premiumLevel: state.auth.premiumLevel,
-    accountTrial: state.auth.accountTrial
+    accountTrial: state.auth.accountTrial,
+    mandatory_field_status:state.auth.mandatory_field_status,
 });
 
 export default connect(mapStateToProps, null)(ZoomComponent);

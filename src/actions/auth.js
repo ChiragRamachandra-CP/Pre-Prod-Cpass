@@ -243,7 +243,8 @@ export const loadAccess = () => async (dispatch) => {
                 plan_type:result.data.plan_type,
                 subscriptionId:result.data.subscriptionId,
                 subscription_status:result.data.subscription_status,
-                expiry_date:result.data.expiry_date
+                expiry_date:result.data.expiry_date,
+                mandatoryFieldStatus:result.data.mandatoryFieldStatus
             };
             dispatch({
                 type: SET_ACCESS,

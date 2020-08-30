@@ -1,0 +1,51 @@
+
+.accnthead h3 {
+    color: #fff;
+}
+
+.accountmhead {
+    border-bottom: 0.1px solid #888484;
+    width: 100%!important;
+    text-align: left!important;
+}
+
+.tbrdr {
+    border-top: 0.1px solid #888484;
+    padding-top: 30px;
+}
+
+.pointsaccnt ul li {
+    color: #fff;
+    line-height: 27px;
+    list-style: inside;
+}
+
+.cnclsubs button {
+    background: #c83232;
+    border: 1px solid #c83232;
+    color: #fff;
+    padding: 7px 10px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.plandetails li {
+    color: #fff;
+    line-height: 27px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+}
+
+.accnthead {
+    padding: 25px 15px;
+}
+
+.modal-content {
+    margin-top: 35%;
+    z-index: 999999!important;
+}
+
+.accntdtls.tbrdr .stepTitle{
+    text-align: left!important;
+}
+

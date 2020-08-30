@@ -334,12 +334,30 @@ const ProfileEducationDetails = ({ setAlert }) => {
 
 		form_grade_data[4] = gradeData[0].grade_data_12[0];
 
-		//console.log(form_grade_data);
+		//console.log(form_grade_data);\
+
+		let grade_id=0;
+
+		if(grade===8){
+			grade_id=1;
+		}else if(grade===9){
+			grade_id=2;
+		}else if(grade===10){
+			grade_id=3;
+		}else if(grade===11){
+			grade_id=4;
+		}else if(grade===12){
+			grade_id=5;
+		}else if(grade===1){
+			grade_id=6;
+		}else {
+			grade_id=0;
+		}
 
 		let body = {
 			user_email: localStorage.user,
 			grade_data: form_grade_data,
-			CURRENT_GRADE: grade,
+			CURRENT_GRADE: grade_id,
 			PSAT8_9: psat8_9,
 			PSATNMSQT: psatnmsqt,
 			SAT: sat,

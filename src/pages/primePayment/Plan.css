@@ -1,0 +1,765 @@
+            body {
+                font-family: "Lato", Helvetica, Arial, sans-serif !important;
+            }
+
+            .mainsecplans {
+                margin-bottom: 60px;
+            }
+
+            .site-wrap.page-payment {
+                background: #000000;
+                padding: 60px 0px 60px 0px;
+            }
+
+            .mainsecp {
+                background-color: #000;
+                background-image: linear-gradient(to right, #000 40%, transparent 58%), url(https://collegepass-slider.s3.ap-south-1.amazonaws.com/slider_Collegepass_3.jpg);
+                
+                background-position: right top;
+                background-repeat: no-repeat;
+                min-width: 300px;
+                background-size: auto;
+                clear: both;
+                color: #fff;
+            }
+
+            .hero-section img {
+                width: 100%;
+                height: auto;
+                opacity: 0.5;
+            }
+
+            .titlecp {
+                position: absolute !important;
+                top: 0;
+                left: 0;
+                align-self: flex-end !important;
+                text-align: left;
+                width: 100%;
+                padding-left: 5%;
+                color: #fff;
+            }
+
+            .showlessbtn a:hover {
+                cursor: pointer;
+            }
+
+            .header {
+                top: 0px;
+            }
+
+            .hide-top {
+                top: 69px;
+            }
+
+            .aldata {
+                line-height: 1.3;
+                padding-right: 50%;
+                flex: initial;
+                background-size: cover;
+                width: 100%;
+                padding-top: 60px;
+                font-family: "Lato", Helvetica, Arial, sans-serif !important;
+            }
+            .planwelcm {
+                font-weight: 700;
+                font-size: 2.5rem;
+                text-align: left;
+                color: #fff;
+                line-height: 1.2 !important;
+                letter-spacing: 0.2rem;
+                font-family: "Lato", Helvetica, Arial, sans-serif !important;
+            }
+            .subtawelcm {
+                margin-top: 24px;
+                text-align: left;
+                font-size: 21px;
+                line-height: 1.3;
+            }
+            .subtawelcm p {
+                padding: 0;
+                font-size: 21px;
+                color: #fff;
+                font-family: "Lato", Helvetica, Arial, sans-serif !important;
+            }
+            .frsttb {
+                max-width: 280px;
+                text-align: center;
+                margin-top: 48px;
+            }
+            .planbtn {
+                margin: 0 0 12px 0;
+                display: table;
+                margin-top: 48px;
+                padding: 16px 18px 16px;
+                border-radius: 2px;
+                text-decoration: none;
+                position: relative;
+                font-size: 17px;
+                min-width: 280px;
+                text-align: center;
+                font-weight: 500;
+                border: none;
+                border-color: transparent;
+                background-image: linear-gradient(to top, #b22c2c, #b22c2c);
+                box-shadow: none;
+                color: #fff;
+                cursor: pointer;
+            }
+            .planbtn:hover {
+                background-image: linear-gradient(to top, #4f0c0c, #570505);
+                transition-delay: 1s;
+            }
+            .aftrbtnsbtlt {
+                margin: 0;
+                font-size: 14px;
+                color: #fff;
+            }
+            .dv-button-divider.divider-left {
+                float: left;
+            }
+
+            .dv-button-divider.divider-left {
+                margin: 11px auto 25px !important;
+                width: 44% !important;
+                border-bottom: 1px solid #fff !important;
+                line-height: 0.1em !important;
+            }
+            .dv-button-divider.divider-right {
+                float: right;
+            }
+            .dv-button-divider.divider-right {
+                margin: 11px auto 25px !important;
+                width: 44% !important;
+                border-bottom: 1px solid #fff !important;
+                line-height: 0.1em !important;
+            }
+            .dv-button-divider-copy {
+                float: left;
+                width: 12%;
+                color: #fff;
+            }
+            .scndtb {
+                max-width: 280px;
+                text-align: center;
+                margin-top: 48px;
+            }
+
+            .panel-heading [data-toggle="collapse"]:after {
+                font-family: 'fontawesome';
+                content: "\f054";
+                float: right;
+                color: #ffffff;
+                font-size: 18px;
+                line-height: 22px;
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+            }
+
+            .panel-heading [data-toggle="collapse"].collapsed:after {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+                color: #ffffff;
+            }
+            .faq {
+                margin: 75px 0px 10px 0px!important;
+            }
+            .faqfixed {
+                width: 800px;
+                max-width: 100%;
+                margin: auto;
+            }
+            #accordion {
+                background: #191c21;
+                padding: 15px 20px 7px 20px;
+                margin: 15px 0px;
+            }
+            .panel-title {
+                color: #fff;
+                cursor: pointer;
+            }
+            p.accordion-toggle {
+                font-size: 16px;
+                letter-spacing: 0.7px;
+            }
+            .panel-body {
+                color: #fff;
+                opacity: 0.7;
+                padding: 15px 0px;
+            }
+            .planmobileimg{
+                display: none;
+            }
+
+
+
+            @media only screen and (max-width: 600px) {
+                
+                .aldata {
+                    line-height: 1.3;
+                    text-align: center!important;
+                    margin: auto;
+                    flex: initial;
+                    background-size: cover;
+                    width: 350px;
+                    max-width: 100%;
+                    padding: 0px;
+                }
+                .planwelcm {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                .subtawelcm {
+                    text-align: center;
+                }
+                .frsttb {
+                    max-width: 280px;
+                    text-align: center;
+                    margin: auto;
+                }
+                .scndtb {
+                    max-width: 280px;
+                    text-align: center;
+                    margin: auto;
+                }
+                .mainsecp {
+                    background: none;
+                }
+                .planmobileimg {
+                    background-image: linear-gradient(to top, #000 5%, transparent 58%), url(https://collegepass-slider.s3.ap-south-1.amazonaws.com/slider_Collegepass_3.jpg);
+                    padding: 125px;
+                    background-size: cover;
+                    background-position: center center;
+                    margin-bottom: 30px;
+                    display: block;
+                    width: 115%;
+                    margin-left: -20px;
+                }
+
+            }
+
+            .stepHeader {
+                color: #fff;
+            }
+
+            span.stepIndicator {
+                opacity: 0.8;
+            }
+
+            input.seeplannotes {
+                color: #ffffff;
+                background-color: #c83232;
+                border: 1px solid #c83232;
+                padding: 0.75rem 25.33333333px;
+                min-width: 110px;
+                width: 100%!important;
+                line-height: 19px;
+                min-height: 48px;
+                font-weight: normal;
+                font-size: 14px;
+                letter-spacing: 1.2px;
+                border-radius: 2px;
+            }
+
+            /*input.seeplannotes:hover {
+                color: #ffffff;
+                background-color: #191c21;
+                border: 1px solid #191c21;
+            }*/
+
+            .site-wrap.page-payment-notes {
+                padding: 60px 0px;
+            }
+
+            /* Notes css */
+
+            /* plan */
+
+            .stepHeader {
+                color: #fff;
+            }
+
+            span.stepIndicator {
+                opacity: 0.8;
+            }
+
+            .allplanm {
+                margin: 45px 0px;
+                color: #fff;
+            }
+
+            table {
+                width: 100%;
+            }
+            .prices {
+                text-align: center;
+                color: #fff;
+                margin-top: 45px;
+            }
+            .lfttxt {
+                color: #fff;
+                padding-left: 15px;
+                margin-top: 45px;
+            }
+            .lfttxt table tr {
+                border-bottom: 1px solid;
+            }
+            .prices table tr {
+                border-bottom: 1px solid;
+            }
+            .prices table tr td {
+                padding: 20px 0px;
+            }
+            .lfttxt table tr td {
+                padding: 20px 0px 20px 10px;
+            }
+            input.cntpln {
+                color: #000000;
+                background-color: #fecf37;
+                border: 1px solid #fecf37;
+                padding: 0.75rem 25.33333333px;
+                min-width: 110px;
+                width: 40%;
+                line-height: 19px;
+                min-height: 48px;
+                font-weight: normal;
+                font-size: 17px;
+                border-radius: 2px;
+            }
+            input.cntpln:hover {
+                color: #ffffff;
+                background-color: #e50914;
+                border: 1px solid #e50914;
+            }
+
+
+
+            .headpln {
+                width: 65%;
+            }
+            .headplnmain {
+                width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: end;
+                -webkit-align-items: flex-end;
+                -moz-box-align: end;
+                -ms-flex-align: end;
+                align-items: flex-end;
+            }
+            span.bxplan {
+                position: relative;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -moz-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                text-align: center!important;
+                -ms-flex-align: ;
+            }
+            .headpln {
+                width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: end;
+                -webkit-align-items: flex-end;
+                -moz-box-align: end;
+                -ms-flex-align: end;
+                align-items: flex-end;
+            }
+
+            .planGrid__featureTable {
+                border-collapse: collapse;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
+            .planGrid__featureTableBody {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: column;
+                -moz-box-orient: vertical;
+                -moz-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+            .planGrid__featureTableRow {
+                border-bottom: 1px solid #cccccc;
+                min-height: 60px;
+            }
+            .planGrid__featureTableRow {
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -moz-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+            }
+            .planGrid--has4Plans .planGrid__featureCell {
+                width: 35%;
+            }
+            .planGrid--has4Plans .planGrid__cell {
+                width: -webkit-calc(65% / 4);
+                width: -moz-calc(65% / 4);
+                width: calc(65% / 4);
+            }
+            .planGrid__featureCell {
+                color: #333333;
+                fill: #333333;
+                -webkit-box-flex: 0;
+                -webkit-flex: 0 0 auto;
+                -moz-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                text-align: left;
+            }
+            .planGrid__cell {
+                padding: 12px 16px;
+            }
+            .planGrid__cell {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                color: #a6a6a6;
+                fill: #a6a6a6;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1 1 auto;
+                -moz-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                text-align: right;
+                display: block;
+            }
+            .planGrid--has4Plans .planGrid__cell {
+                width: -webkit-calc(65% / 4);
+                width: -moz-calc(65% / 4);
+                width: calc(65% / 4);
+            }
+            .planGrid__cell {
+                padding: 12px 16px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                color: #a6a6a6;
+                fill: #a6a6a6;
+                -webkit-box-flex: 1;
+                -webkit-flex: 1 1 auto;
+                -moz-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                text-align: center;
+                display: block;
+            }
+            .maintblepln {
+                width: 100%;
+            }
+            .lftttl {
+                max-width: 30%;
+                text-align: left;
+            }
+            .fxdwthpln {
+                width: 1024px!important;
+                margin: 0 auto!important;
+                max-width: 100%;
+            }
+            tr.planGrid__featureTableRow td {
+                color: #fff;
+            }
+            tr.mobtlpln {
+                display: none;
+            }
+            label.headplncards.btncnt {
+                background: none;
+                height: 50px;
+            }
+            input.cntbtn {
+                background: #c83232;
+                border: 1px solid #c83232;
+                color: #fff;
+                padding: 10px;
+                border-radius: 2px;
+                font-family: "Lato", Helvetica, Arial, sans-serif!important;
+                font-size: 12px;
+                letter-spacing: 1.2px;
+            }
+
+            /*input.cntbtn:hover {
+                background: #191c21;
+                border: 1px solid #191c21;
+                color: #fff;
+            }*/
+
+            .page-payment-plan {
+                margin-top: 70px;
+            }
+
+
+
+
+            @media only screen and (max-width: 600px) {
+                .fxdwthpln {
+                    width: 100!important;
+                    margin: 0 auto!important;
+                    max-width: 100%;
+                }
+                .allplanm {
+                margin: 0 auto;
+                color: #fff;
+                width: 100%;
+                padding: 0px 20px 30px 20px;
+            }
+            .planGrid__cell {
+                padding: 12px 12px;
+                }
+                .headpln {
+                width: 100%;
+                -webkit-align-items: center;
+                align-items: center;
+            }
+            .lftttl {
+                display: none;
+            }
+            .allplanm {
+                margin: 15px 0px 0px 0px!important;
+            }
+
+            .mobtlpln {
+                color: #fff;
+                margin: 15px 0px 0px 0px;
+            }
+            tr.mobtlpln {
+                display: block;
+            }
+
+            .hndmob {
+                display: block!important;
+                margin: 20px 0px;
+            }
+
+            .hnddesk {
+                display: none!important;
+            }
+
+            .mnthp {
+                float: none!important;
+                width: 80%!important;
+                margin-bottom: 10px;
+            }
+
+            .yerlzp {
+                float: none!important;
+                width: 80%!important;
+                margin-top: 10px;
+            }
+
+            }
+
+            @media only screen and (max-width: 768px) {
+            label.headplncards {
+                width: 145px;
+                height: 120px;
+            }
+            .allplanm {
+                margin: 80px 50px;
+            }
+
+            .fxdwthpln {
+                width: 100%!important;
+                margin: 0 auto!important;
+                max-width: 100%;
+            }
+
+            }
+
+            /* plan*/
+
+            .stepHeader {
+                color: #fff;
+            }
+
+            span.stepIndicator {
+                opacity: 0.8;
+            }
+
+            .allplanm {
+                margin: 45px 0px;
+                color: #fff;
+            }
+
+            .page-payment-plan {
+                margin-top: 120px;
+            }
+
+            .pynwmain {
+                width: 100%;
+                text-align: center;
+                padding: 45px 0px;
+            }
+            input.paynowbtn {
+                color: #ffffff;
+                background-color: #c83232;
+                border: 1px solid #c83232;
+                padding: 0.75rem 25.33333333px;
+                min-width: 110px;
+                width: 45%;
+                line-height: 19px;
+                min-height: 48px;
+                font-weight: normal;
+                font-size: 13px;
+                letter-spacing: 1.2px;
+                border-radius: 2px;
+            }
+
+            .mnthp {
+                float: right;
+            }
+
+            .yerlzp {
+                float: left;
+            }
+
+            /*input.paynowbtn:hover {
+                color: #ffffff;
+                background-color: #191c21;
+                border: 1px solid #191c21;
+            }*/
+
+            .ticonpmnt {
+                text-align: center;
+                width: 100%;
+            }
+
+            .cntstphdrpmnt {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contextRow.seccmmnts {
+                padding-top: 20px;
+                line-height: 1.2rem;
+                letter-spacing: 0.9px;
+            }
+
+            .handsicon i {
+                color: #fff;
+                font-size: 40px;
+                max-width: 100%;
+                opacity: 0.7;
+                margin: 0px 20px;
+            }
+
+            .hndmob {
+                display: none;
+            }
+
+            .hnddesk {
+                display: block;
+            }
+
+            .toolbckpln {
+                position: relative;
+                display: inline-block;
+                border-bottom: 1px dotted black;
+              }
+              
+              .toolbckpln .tooltiptext {
+                visibility: hidden;
+                width: 120px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+              
+                position: absolute;
+                z-index: 1;
+              }
+              
+              .toolbckpln:hover .tooltiptext {
+                visibility: visible;
+              }
+
+            /* Payment*/
+
+            .expwidth {
+                width: 100%;
+                max-width: 500px!important;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            span#expnote {
+                opacity: 0.9;
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                line-height: 1.8rem;
+            }
+
+            .pointsexp {
+                padding: 0px 20px 20px 20px;
+            }
+
+            .expupgrade {
+                padding: 15px 0px 0px 0px;
+                letter-spacing: 0.8px;
+                line-height: 20px;
+            }
+
+            .expay {
+                max-width: 80%!important;
+            }
+            

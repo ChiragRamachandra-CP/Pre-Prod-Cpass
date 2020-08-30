@@ -21,7 +21,8 @@ const initialState = {
     subscriptionId:null,
     subscription_status:null,
     plan_type:null,
-    expiry_date:null
+    expiry_date:null,
+    mandatory_field_status:false
 };
 
 export default function(state = initialState, action) {
@@ -36,7 +37,8 @@ export default function(state = initialState, action) {
                 subscriptionId:payload.subscriptionId,
                 subscription_status:payload.subscription_status,
                 plan_type:payload.plan_type,
-                expiry_date:payload.expiry_date
+                expiry_date:payload.expiry_date,
+                mandatory_field_status:payload.mandatoryFieldStatus
             };
         case CLEAR_ACCESS:
             return {

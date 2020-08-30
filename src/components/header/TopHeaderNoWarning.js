@@ -130,7 +130,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 									</Link>
 								</li>
 								<li className="mnuhideshow">
-									<Link to="/plan/info">
+									<Link to="/plan/payment">
 										<p>UPGRADE</p>
 									</Link>
 								</li>
@@ -157,7 +157,7 @@ const AfterLoggedInHeader = ({ logout }) => {
 											</Link>
 										</li>
 										<li>
-											<Link to="/plan/info">
+											<Link to="/plan/payment">
 												<p>UPGRADE</p>
 											</Link>
 										</li>
